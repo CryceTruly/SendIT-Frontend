@@ -1,0 +1,22 @@
+{
+  "name": "sendit",
+  "version": "1.0.0",
+  "description": "App to deliver percels from one location to another",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryceTruly/si-react.git"
+  },
+  "keywords": [
+    "delivery"
+  ],
+  "author": "Cryce Truly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CryceTruly/si-react/issues"
+  },
+  "homepage": "https://github.com/CryceTruly/si-react#readme"
+}
