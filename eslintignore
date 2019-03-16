@@ -1,0 +1,8 @@
+
+
+node_modules/
+src/serviceWorker.js
+dist/*
+build/*
+config/*
+.git
