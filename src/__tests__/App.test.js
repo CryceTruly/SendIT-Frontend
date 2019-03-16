@@ -4,7 +4,7 @@ import {
 } from 'enzyme';
 
 // Components
-import App from '../../src/components/App';
+import App from "../components/App";
 
 function setup() {
     const wrapper = shallow( < App /> );
