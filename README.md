@@ -1,4 +1,22 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 ## What is SendIT? :open_mouth:
+=======
+[![Build Status](https://travis-ci.org/CryceTruly/si-react.svg?branch=ch-update-travis-164491289)](https://travis-ci.org/CryceTruly/si-react)
+
+
+
+<p align="center">
+  <h1 align="center">SendIt</h1>
+  <p align="center">SendIt is a courrier service app that enables customers to send items to different places</p>
+</p>
+
+
+## What is SendIT?
+>>>>>>> add coveralls
+=======
+## What is SendIT? :open_mouth:
+>>>>>>> setup redux
 
 - **Too Cool** - SendIt is a courrier service app that enables customers to send items to different places
 

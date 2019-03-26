@@ -5,9 +5,12 @@ import {
 
 // Components
 import App from "../components/App";
+import {
+    Parcels
+} from '../components/Parcels';
 
 function setup() {
-    const wrapper = shallow( < App /> );
+    const wrapper = shallow( < App / > );
     return {
         wrapper
     };

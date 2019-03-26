@@ -28,12 +28,14 @@ module.exports = {
         ]
     },
     plugins: [
+
         new htmlWebpackPlugin({
             template: './src/index.html',
             stats: {
                 children: false
             }
 
-        })
+        }),
+
     ]
 }
