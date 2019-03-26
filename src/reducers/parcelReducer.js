@@ -1,27 +1,23 @@
-import {GET_PARCELS,ADD_PARCEL} from '../actions/types';
+import {
+    GET_PARCELS,
+    ADD_PARCEL
+} from '../actions/types';
 
-const initialState={
+const initialState = {
 
-    parcels:[
-        {"destination_address":"Mbarara","pick_up_address":"Kampala"},
-       {
-           "destination_address": "Mbarara",
-           "pick_up_address": "Kampala"
-       },
-        {
-            "destination_address": "Mbarara",
-            "pick_up_address": "Kampala"
-        }
-    ]
+    parcels: [],
 
 
 }
-export default function(state=initialState,action){
+export default function (state = initialState, action) {
+
     switch (action.type) {
         case GET_PARCELS:
-        return {
-            ...state
-        }
+            return {
+                ...state,
+                parcels: action.payload
+
+            }
         default:
             return state
     }

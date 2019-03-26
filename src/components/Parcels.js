@@ -1,29 +1,97 @@
-import React, { Component } from 'react'
-import {getParcels} from  '../actions/parcelActions';
-import  PropTypes  from 'prop-types';
-import {connect} from 'react-redux';
-export  class Parcels extends Component {
+import React, {
+    Component,
+    Fragment
+} from 'react'
+import {
+    getParcels
+} from '../actions/parcelActions';
+import PropTypes from 'prop-types';
+import {
+    connect
+} from 'react-redux';
+import ParcelItem from './ParcelItem';
+import {
+    Row,
+    Card,
+    CardBody,
+    CardTitle,
+    Table
+} from 'reactstrap';
+export class Parcels extends Component {
 
-    componentDidMount(){
+    componentDidMount() {
         this.props.getParcels();
+
+
     }
-  render() {
-    return (
-      <div>
-           <p className = "btn btn-group-lg btn-secondary">Hello and welcome to send it </p>
+
+    render() {
+
+        return ( <
+            div >
+            <
+            Card >
+            <
+            CardBody >
+            <
+            CardTitle > Parcels < /CardTitle> <
+            Table >
+            <
+            thead >
+            <
+            tr >
+            <
+            th > Customer < /th><th>Pickup Location</th > < th > Destination < /th><td>Placed</td >
+            <
+            /tr> <
+            /thead>
+
+            <
+            tbody > {
+                this.props.parcels.map(parcel => ( <
+                    ParcelItem key = {
+                        parcel.parcel_id
+                    }
+                    data = {
+                        parcel
+                    } > < /ParcelItem>
+
+                ))
+            }
 
 
-      </div>
-    )
-  }
+
+
+            <
+            /tbody>
+
+            <
+            /Table>
+
+            <
+            /CardBody> <
+            /Card>
+
+            <
+            /div>
+        );
+    }
+
+
+
+
 }
-const mapStateToProps=(state)=>({
-    parcels:state.parcels
+
+
+const mapStateToProps = (state) => ({
+    parcels: state.parcels.parcels
 })
 
 
-Parcels.propTypes={
-    getParcels:PropTypes.func.isRequired,
-    parcels:PropTypes.object.isRequired
+Parcels.propTypes = {
+    getParcels: PropTypes.func.isRequired,
+    parcels: PropTypes.array.isRequired
 }
-export default connect(mapStateToProps,{getParcels})(Parcels)
+export default connect(mapStateToProps, {
+    getParcels
+})(Parcels)
