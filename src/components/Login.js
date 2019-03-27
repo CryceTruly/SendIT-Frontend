@@ -15,8 +15,9 @@ import {
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { clearErrors } from '../actions/errorActions';
-import {register} from '../actions/authActions'
-class RegisterComponent extends Component {
+import {register} from '../actions/authActions';
+import {Link} from 'react-router-dom';
+class Login extends Component {
   state = {
     name: '',
     email: '',
@@ -77,31 +78,23 @@ class RegisterComponent extends Component {
   render() {
     return (
       <div>
+        <Row>
+<div className="col col-md-3"></div>
+< div className = "col col-md-6" >
+
+
          <Card>
         <CardBody>
-          <CardTitle>Register</CardTitle>
+          <CardTitle>Login</CardTitle>
             {this.state.msg ? (
               <Alert color='danger'>{this.state.msg}</Alert>
             ) : null}
 
             <Form onSubmit={this.onSubmit}>
-            <Row>
-              <div className="col-md-6">
-
-              <FormGroup>
-                <Label for='fullname'>Fullname</Label>
-                <Input
-                  type='text'
-                  name='fullname'
-                  id='fullname'
-                  placeholder='Full Name'
-                  className='mb-3'
-                  onChange={this.onChange}
-                />
-                </FormGroup>
 
 
-<FormGroup>
+
+               <FormGroup>
                 <Label for='email'>Email</Label>
                 <Input
                   type='email'
@@ -111,31 +104,9 @@ class RegisterComponent extends Component {
                   className='mb-3'
                   onChange={this.onChange}
                 /></FormGroup >
-                <FormGroup>
-<Label for='phone'>Phone Number</Label>
-                <Input
-                  type='text'
-                  name='phone'
-                  id='phone'
-                  placeholder='phone'
-                  className='mb-3'
-                  onChange={this.onChange}
-                />
-                </FormGroup>
 
-              </div>
-               <div className="col-md-6">
-<FormGroup>
-  <Label for='username'>Username</Label>
-                <Input
-                  type='text'
-                  name='username'
-                  id='username'
-                  placeholder='phone'
-                  className='mb-3'
-                  onChange={this.onChange}
-                />
-</FormGroup>
+
+
 <FormGroup>
    <Label for='password'>Password</Label>
                 <Input
@@ -151,27 +122,16 @@ class RegisterComponent extends Component {
 
 </FormGroup>
 
-<FormGroup>
 
-                  <Label for='password_comfirm'>Comfirm Password </Label>
-                <Input
-                  type='password_comfirm'
-                  name='password'
-                  id='password_comfirm'
-                  placeholder=''
-                  className='mb-3'
-                  onChange={this.onChange}
-                />
-</FormGroup>
- <Button color='dark' style={{ marginTop: '2rem' }} block>
-                  Register
+<p className="text-right">Forgot Password?</p>
+ <Button color='dark' style={{ marginTop: '1rem' }} block>
+                  Login
                 </Button>
+                <h5 className="text-center mb-2 mt-2">New to SendIT? <span> <Link to="/register">Create an account</Link></span></h5>
 
 
-               </div>
 
 
-            </Row>
 
 
 
@@ -179,6 +139,11 @@ class RegisterComponent extends Component {
             </Form>
             </CardBody>
             </Card>
+
+</div>
+< div className = "col col-md-3" > </div>
+
+        </Row>
 
       </div>
     );
@@ -190,4 +155,4 @@ const mapStateToProps = state => ({
   error: state.error
 });
 
-export default connect(mapStateToProps,{ register, clearErrors })(RegisterComponent);
+export default connect(mapStateToProps,{ register, clearErrors })(Login);

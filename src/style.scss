@@ -1,7 +1,5 @@
-$primary-color:#eaecef;
-$text_color:#000;
+$font-size: 1.1em;
 
 body {
-  background-color: $primary-color;
-  color: $text_color;
+  font-size: $font-size;
 }

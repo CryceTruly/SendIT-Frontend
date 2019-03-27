@@ -8,7 +8,6 @@ import {
 } from 'reactstrap';
 
 export default function ParcelItem(props) {
-  console.log(props);
 
   const {
     parcel_id,
@@ -18,20 +17,17 @@ export default function ParcelItem(props) {
     placed
   } = props.data;
   return (
-
-
-
-    <
-    tr >
-    <
-    td > {
+  <tr>
+    <td>
+    {
       sender_email
-    } < /td>  <td>{pickup_address}</td > < td > {
+    } </td>
+     <td>{pickup_address}</td> <td>
+     {
       destination_address
-    } < /td> <
-    td > {
-      placed
-    } < /td></tr >
+    } </td>
+    <td> {placed}
+    </td></tr>
 
   )
 }

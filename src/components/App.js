@@ -5,8 +5,6 @@ import {
     Provider
 } from 'react-redux';
 import {
-    Jumbotron,
-    Button,
     Container
 } from "reactstrap";
 import store from "../Store";
@@ -16,42 +14,37 @@ import {
     loadUser
 } from "../actions/authActions";
 import {
-    BrowserRouter
+    BrowserRouter as Router, Switch, Link, Route
 } from 'react-router-dom'
-import {
-    Route,
-    Link
-} from 'react-router-dom'
-/**
- * App
- */
-export class App extends Component { // eslint-disable-line react/prefer-stateless-function
+import About from "./About";
+import Login from './Login';
+import RegisterComponent from './Register';
+export class App extends Component {
+
+    componentDidMount(){
+        store.dispatch(loadUser())
+    }
 
     render() {
         return (
+            <Router>
+            <Provider store = {store} >
 
-            <
-            Provider store = {
-                store
-            } >
+             <Navbar/>
+            <Container >
+            <p> </p>
 
-            <
-            Navbar / >>
-            <
-            Container >
-            <
-            p > < /p> <
-            Parcels / >
-
-            <
-            /Container>
-
+            <Route exact path="/" component={Parcels}></Route>
+              <Route exact path="/login" component={Login}></Route>
+              <Route exact path="/parcels" component={Parcels}></Route>
+              <Route exact path="/about" component={About}></Route>
+              <Route exact path="/register" component={RegisterComponent}></Route>
+               </Container>
+             </Provider>
+            </Router>
 
 
 
-
-            <
-            /Provider>
 
 
         );
