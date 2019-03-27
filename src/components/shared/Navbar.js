@@ -11,21 +11,16 @@ import {
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Register from '../Register';
+import {Link} from 'react-router-dom';
 class Navigationbar extends Component {
-  state = {
-    isOpen: false
-  };
+
 
   static propTypes = {
     auth: PropTypes.object.isRequired
   };
 
-  toggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  };
+
+
 
   render() {
     const { isAuthenticated, user } = this.props.auth;
@@ -46,7 +41,10 @@ class Navigationbar extends Component {
     const guestLinks = (
       <Fragment>
         <NavItem>
-          <Register />
+          <Link  to={"/login"}>Login</Link>
+        </NavItem>
+        <NavItem>
+          <Link  to={"/register"}>Register</Link>
         </NavItem>
       </Fragment>
     );
@@ -55,9 +53,9 @@ class Navigationbar extends Component {
       <div>
         <Navbar color='dark' dark expand='sm' className='mb-5'>
           <Container>
-            <NavbarBrand href='/'>SendIT</NavbarBrand>
+            <NavbarBrand href='/'><span className="fa fa-send"></span>SendIT</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
+            <Collapse navbar>
               <Nav className='ml-auto' navbar>
                 {isAuthenticated ? authLinks : guestLinks}
               </Nav>

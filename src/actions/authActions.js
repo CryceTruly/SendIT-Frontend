@@ -18,7 +18,10 @@ export const loadUser = () => (dispatch, getState) => {
   dispatch({ type: USER_LOADING });
 
   axios
-    .get('/api/auth/user', tokenConfig(getState))
+    .get('/api/v2/users/11', {
+          headers: {
+      "Authorization": `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTM2ODA3NzEsInVzZXJfaWQiOjExLCJlbWFpbCI6InRydWx5eSIsImlzX2FkbWluIjp0cnVlfQ.qEFKj8j6qILA_UfytEMXO9rG7yrzcuA0OAcOlefFGKk`
+    }})
     .then(res =>
       dispatch({
         type: USER_LOADED,

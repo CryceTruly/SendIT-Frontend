@@ -12,6 +12,7 @@ dist
 # Runtime data
 pids
 *.pid
+.vscode/settings.json
 *.seed
 *.pid.lock
 

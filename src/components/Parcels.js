@@ -17,6 +17,7 @@ import {
     CardTitle,
     Table
 } from 'reactstrap';
+import {Link} from 'react-router-dom';
 export class Parcels extends Component {
 
     componentDidMount() {
@@ -27,53 +28,32 @@ export class Parcels extends Component {
 
     render() {
 
-        return ( <
-            div >
-            <
-            Card >
-            <
-            CardBody >
-            <
-            CardTitle > Parcels < /CardTitle> <
-            Table >
-            <
-            thead >
-            <
-            tr >
-            <
-            th > Customer < /th><th>Pickup Location</th > < th > Destination < /th><td>Placed</td >
-            <
-            /tr> <
-            /thead>
+        return ( <div>
+            <Link to={'/about'}></Link>
+            <Card >
+            <CardBody >
+            <CardTitle> Parcels </CardTitle>
+            <Table>
+            <thead>
+            <tr>
+            <th> Customer </th><th>Pickup Location</th> < th> Destination </th><td>Placed</td>
+            </tr>
+            </thead>
 
-            <
-            tbody > {
-                this.props.parcels.map(parcel => ( <
-                    ParcelItem key = {
-                        parcel.parcel_id
-                    }
-                    data = {
-                        parcel
-                    } > < /ParcelItem>
+            <tbody > {
+                this.props.parcels.map(parcel => (
+                    <ParcelItem key = {parcel.parcel_id} data = {parcel}> </ParcelItem>
 
                 ))
             }
 
+            </tbody>
 
+            </Table>
 
+            </CardBody> </Card>
 
-            <
-            /tbody>
-
-            <
-            /Table>
-
-            <
-            /CardBody> <
-            /Card>
-
-            <
-            /div>
+            </div>
         );
     }
 
@@ -92,6 +72,4 @@ Parcels.propTypes = {
     getParcels: PropTypes.func.isRequired,
     parcels: PropTypes.array.isRequired
 }
-export default connect(mapStateToProps, {
-    getParcels
-})(Parcels)
+export default connect(mapStateToProps, {getParcels})(Parcels)
