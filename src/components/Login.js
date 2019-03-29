@@ -15,11 +15,10 @@ import {
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { clearErrors } from '../actions/errorActions';
-import {register} from '../actions/authActions';
-import {Link} from 'react-router-dom';
+import {login} from '../actions/authActions';
+import {Link,Redirect} from 'react-router-dom';
 class Login extends Component {
   state = {
-    name: '',
     email: '',
     password: '',
     msg: null
@@ -28,7 +27,7 @@ class Login extends Component {
   static propTypes = {
     isAuthenticated: PropTypes.bool,
     error: PropTypes.object.isRequired,
-    register: PropTypes.func.isRequired,
+    login: PropTypes.func.isRequired,
     clearErrors: PropTypes.func.isRequired
   };
 
@@ -36,19 +35,16 @@ class Login extends Component {
     const { error, isAuthenticated } = this.props;
     if (error !== prevProps.error) {
       // Check for register error
-      if (error.id === 'REGISTER_FAIL') {
-        this.setState({ msg: error.msg.msg });
+      if (error.id === 'LOGIN_FAIL') {
+        this.setState({ msg: error.msg });
       } else {
         this.setState({ msg: null });
       }
     }
 
-    // If authenticated, close modal
-    if (this.state.modal) {
       if (isAuthenticated) {
-        this.toggle();
       }
-    }
+
   }
 
 
@@ -59,40 +55,36 @@ class Login extends Component {
   onSubmit = e => {
     e.preventDefault();
 
-    const { username,fullname,phone,password_comfirm, email, password } = this.state;
+    const { email, password } = this.state;
 
-    // Create user object
+    // Create user data
     const newUser = {
-      username,
       email,
-      password,
-      password_comfirm,
-      phone,
-      fullname
+      password
     };
 
-    // Attempt to register
-    this.props.register(newUser);
+    // Attempt to login
+    this.props.login(newUser);
   };
 
   render() {
+
     return (
       <div>
         <Row>
-<div className="col col-md-3"></div>
-< div className = "col col-md-6" >
+<div className="col col-md-3 col-sm-0"></div>
+< div className = "col col-md-6 col-sm-12" >
 
 
          <Card>
         <CardBody>
-          <CardTitle>Login</CardTitle>
-            {this.state.msg ? (
-              <Alert color='danger'>{this.state.msg}</Alert>
-            ) : null}
+          <CardTitle lead><strong>Login to SendIT.</strong></CardTitle>
 
             <Form onSubmit={this.onSubmit}>
 
-
+  {this.state.msg ? (
+              <Alert color='danger'>{this.state.msg}</Alert>
+            ) : null}
 
                <FormGroup>
                 <Label for='email'>Email</Label>
@@ -102,7 +94,7 @@ class Login extends Component {
                   id='email'
                   placeholder='Email'
                   className='mb-3'
-                  onChange={this.onChange}
+                  onChange={this.onChange} required
                 /></FormGroup >
 
 
@@ -112,7 +104,7 @@ class Login extends Component {
                 <Input
                   type='password'
                   name='password'
-                  id='password'
+                  id='password' required
                   placeholder=''
                   className='mb-3'
                   onChange={this.onChange}
@@ -141,7 +133,7 @@ class Login extends Component {
             </Card>
 
 </div>
-< div className = "col col-md-3" > </div>
+< div className = "col col-md-3 col-sm-0" > </div>
 
         </Row>
 
@@ -152,7 +144,8 @@ class Login extends Component {
 
 const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated,
-  error: state.error
+  error: state.errors,
+  auth:state.auth
 });
 
-export default connect(mapStateToProps,{ register, clearErrors })(Login);
+export default connect(mapStateToProps,{ login, clearErrors })(Login);

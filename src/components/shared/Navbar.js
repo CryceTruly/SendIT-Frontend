@@ -18,22 +18,38 @@ class Navigationbar extends Component {
   static propTypes = {
     auth: PropTypes.object.isRequired
   };
+getStyle=()=>{
+  return {
+     background: '#7C3085',
+     color: '#ffffff',
 
+
+  }
+}
+
+myStyle=()=>{
+return{
+  color:"#fff",
+  marginRight:20
+}
+}
 
 
 
   render() {
-    const { isAuthenticated, user } = this.props.auth;
+    const { isAuthenticated,user, username } = this.props.auth;
+    console.log(user);
+
 
     const authLinks = (
       <Fragment>
         <NavItem>
           <span className='navbar-text mr-3'>
-            <strong>{user ? `Welcome ${user.name}` : ''}</strong>
+            <strong>{username ? `Welcome ${user}` : ''}</strong>
           </span>
         </NavItem>
         <NavItem>
-          LOGOUT
+          Logout
         </NavItem>
       </Fragment>
     );
@@ -41,22 +57,23 @@ class Navigationbar extends Component {
     const guestLinks = (
       <Fragment>
         <NavItem>
-          <Link  to={"/login"}>Login</Link>
+          <Link  to={"/login"}>Login </Link>
         </NavItem>
-        <NavItem>
-          <Link  to={"/register"}>Register</Link>
+        < NavItem className = "text-white" >
+          <span className="mr-4"></span>
+          <Link  to={"/register"}> Register</Link>
         </NavItem>
       </Fragment>
     );
 
     return (
-      <div>
+      <div style={this.getStyle()}>
         <Navbar color='dark' dark expand='sm' className='mb-5'>
           <Container>
             <NavbarBrand href='/'><span className="fa fa-send"></span>SendIT</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse navbar>
-              <Nav className='ml-auto' navbar>
+              <Nav className='ml-auto' navbar style={this.myStyle()}>
                 {isAuthenticated ? authLinks : guestLinks}
               </Nav>
             </Collapse>

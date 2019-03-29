@@ -9,7 +9,8 @@ import {
   LOGIN_FAIL,
   LOGOUT_SUCCESS,
   REGISTER_SUCCESS,
-  REGISTER_FAIL
+  REGISTER_FAIL,
+  REGISTER_LOADING
 } from './types';
 
 // Check token & load user
@@ -18,9 +19,9 @@ export const loadUser = () => (dispatch, getState) => {
   dispatch({ type: USER_LOADING });
 
   axios
-    .get('/api/v2/users/11', {
+    .get(`http://127.0.0.1:3000/api/v2/users/${localStorage.getItem('user_id')}`, {
           headers: {
-      "Authorization": `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTM2ODA3NzEsInVzZXJfaWQiOjExLCJlbWFpbCI6InRydWx5eSIsImlzX2FkbWluIjp0cnVlfQ.qEFKj8j6qILA_UfytEMXO9rG7yrzcuA0OAcOlefFGKk`
+      "Authorization": `Bearer ${localStorage.getItem('auth_token')}`
     }})
     .then(res =>
       dispatch({
@@ -29,7 +30,7 @@ export const loadUser = () => (dispatch, getState) => {
       })
     )
     .catch(err => {
-      dispatch(returnErrors(err.response.data, err.response.status));
+      dispatch(returnErrors(err.response.data.message, err.response.status));
       dispatch({
         type: AUTH_ERROR
       });
@@ -37,7 +38,11 @@ export const loadUser = () => (dispatch, getState) => {
 };
 
 // Register User
-export const register = ({ name, email, password }) => dispatch => {
+export const register = ({ fullname, phone_number,username,email, password }) => dispatch => {
+
+  dispatch({
+    type: USER_LOADING
+  })
   // Headers
   const config = {
     headers: {
@@ -46,10 +51,10 @@ export const register = ({ name, email, password }) => dispatch => {
   };
 
   // Request body
-  const body = JSON.stringify({ name, email, password });
+  const body = JSON.stringify({fullname, phone_number,username,email, password });
 
   axios
-    .post('/api/users', body, config)
+    .post('http://127.0.0.1:3000/api/v2/auth/signup', body, config)
     .then(res =>
       dispatch({
         type: REGISTER_SUCCESS,
@@ -57,8 +62,10 @@ export const register = ({ name, email, password }) => dispatch => {
       })
     )
     .catch(err => {
+      console.log(err.response.data.message);
+
       dispatch(
-        returnErrors(err.response.data, err.response.status, 'REGISTER_FAIL')
+        returnErrors(err.response.data.message, err.response.status, 'REGISTER_FAIL')
       );
       dispatch({
         type: REGISTER_FAIL
@@ -79,16 +86,18 @@ export const login = ({ email, password }) => dispatch => {
   const body = JSON.stringify({ email, password });
 
   axios
-    .post('/api/auth', body, config)
-    .then(res =>
+    .post('http://127.0.0.1:3000/api/v2/auth/login', body, config)
+    .then(res =>{
+
       dispatch({
         type: LOGIN_SUCCESS,
         payload: res.data
       })
+    }
     )
     .catch(err => {
-      dispatch(
-        returnErrors(err.response.data, err.response.status, 'LOGIN_FAIL')
+     dispatch(
+        returnErrors(err.response.data.message, err.response.status, 'LOGIN_FAIL')
       );
       dispatch({
         type: LOGIN_FAIL
@@ -106,7 +115,7 @@ export const logout = () => {
 // Setup config/headers and token
 export const tokenConfig = getState => {
   // Get token from localstorage
-  const token = getState().auth.token;
+  const token = getState().auth.auth_token;
 
   // Headers
   const config = {
