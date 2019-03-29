@@ -18,9 +18,11 @@ import { clearErrors } from '../actions/errorActions';
 import {register} from '../actions/authActions'
 class RegisterComponent extends Component {
   state = {
-    name: '',
+    fullname: '',
     email: '',
     password: '',
+    phone_number:'',
+    username:'',
     msg: null
   };
 
@@ -36,20 +38,13 @@ class RegisterComponent extends Component {
     if (error !== prevProps.error) {
       // Check for register error
       if (error.id === 'REGISTER_FAIL') {
-        this.setState({ msg: error.msg.msg });
+        this.setState({ msg: error.msg });
       } else {
         this.setState({ msg: null });
       }
     }
 
-    // If authenticated, close modal
-    if (this.state.modal) {
-      if (isAuthenticated) {
-        this.toggle();
-      }
-    }
   }
-
 
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -57,16 +52,13 @@ class RegisterComponent extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-
-    const { username,fullname,phone,password_comfirm, email, password } = this.state;
-
+    const { username,fullname,phone_number, email, password,password_comfirm } = this.state;
     // Create user object
     const newUser = {
       username,
       email,
       password,
-      password_comfirm,
-      phone,
+      phone_number,
       fullname
     };
 
@@ -79,12 +71,16 @@ class RegisterComponent extends Component {
       <div>
          <Card>
         <CardBody>
-          <CardTitle>Register</CardTitle>
-            {this.state.msg ? (
-              <Alert color='danger'>{this.state.msg}</Alert>
-            ) : null}
+          <CardTitle></CardTitle>
+
+          <CardTitle lead><strong>Register an Account.</strong></CardTitle>
+
 
             <Form onSubmit={this.onSubmit}>
+
+
+{this.state.msg?<Alert color="danger">{this.state.msg}</Alert>:null}
+
             <Row>
               <div className="col-md-6">
 
@@ -94,7 +90,7 @@ class RegisterComponent extends Component {
                   type='text'
                   name='fullname'
                   id='fullname'
-                  placeholder='Full Name'
+                  placeholder='Full Name' required
                   className='mb-3'
                   onChange={this.onChange}
                 />
@@ -106,18 +102,18 @@ class RegisterComponent extends Component {
                 <Input
                   type='email'
                   name='email'
-                  id='email'
+                  id='email' required
                   placeholder='Email'
                   className='mb-3'
                   onChange={this.onChange}
-                /></FormGroup >
+                 /></FormGroup >
                 <FormGroup>
-<Label for='phone'>Phone Number</Label>
+<Label for='phone_number'>Phone Number</Label>
                 <Input
                   type='text'
-                  name='phone'
-                  id='phone'
-                  placeholder='phone'
+                  name='phone_number'
+                  id='phone_number' required
+                  placeholder='phone_number'
                   className='mb-3'
                   onChange={this.onChange}
                 />
@@ -130,8 +126,8 @@ class RegisterComponent extends Component {
                 <Input
                   type='text'
                   name='username'
-                  id='username'
-                  placeholder='phone'
+                  id='username' required
+                  placeholder=''
                   className='mb-3'
                   onChange={this.onChange}
                 />
@@ -140,7 +136,7 @@ class RegisterComponent extends Component {
    <Label for='password'>Password</Label>
                 <Input
                   type='password'
-                  name='password'
+                  name='password' required
                   id='password'
                   placeholder=''
                   className='mb-3'
@@ -153,11 +149,11 @@ class RegisterComponent extends Component {
 
 <FormGroup>
 
-                  <Label for='password_comfirm'>Comfirm Password </Label>
+                  <Label for='password_comfirm'>Confirm Password </Label>
                 <Input
                   type='password_comfirm'
                   name='password'
-                  id='password_comfirm'
+                  id='password_comfirm' required
                   placeholder=''
                   className='mb-3'
                   onChange={this.onChange}
@@ -183,11 +179,11 @@ class RegisterComponent extends Component {
       </div>
     );
   }
-}
 
+}
 const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated,
-  error: state.error
+  error: state.errors
 });
 
 export default connect(mapStateToProps,{ register, clearErrors })(RegisterComponent);

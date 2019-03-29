@@ -19,6 +19,7 @@ import {
 import About from "./About";
 import Login from './Login';
 import RegisterComponent from './Register';
+import PrivateRoute from './common/PrivateRoute'
 export class App extends Component {
 
     componentDidMount(){
@@ -34,7 +35,7 @@ export class App extends Component {
             <Container >
             <p> </p>
 
-            <Route exact path="/" component={Parcels}></Route>
+            <PrivateRoute exact path="/" component={Parcels}></PrivateRoute>
               <Route exact path="/login" component={Login}></Route>
               <Route exact path="/parcels" component={Parcels}></Route>
               <Route exact path="/about" component={About}></Route>

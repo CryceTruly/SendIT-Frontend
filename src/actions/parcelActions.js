@@ -7,10 +7,10 @@ import Axios from 'axios';
 export const getParcels = () => dispatch => {
     console.log('items connected from redux');
 
-    Axios.get("http://127.0.0.1:3000/api/v2/users/11/parcels", {
+    Axios.get(`http://127.0.0.1:3000/api/v2/users/${localStorage.getItem('user_id')}/parcels`, {
 
         headers: {
-            "Authorization": `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTM3NjU5NzEsInVzZXJfaWQiOjExLCJlbWFpbCI6InRydWx5eSIsImlzX2FkbWluIjp0cnVlfQ.IuVRlJYToFyZwuhAZeRDFfIFz5ZepkU_TupCWzSmgyw`
+            "Authorization": `Bearer ${localStorage.getItem('auth_token')}`
         }
     }).then(res =>
 
