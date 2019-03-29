@@ -70,6 +70,7 @@
     "typescript": "^3.3.4000",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "proxy": "http://127.0.0.1:3000"
   }
 }
