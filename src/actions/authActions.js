@@ -1,6 +1,11 @@
 import axios from 'axios';
-import { returnErrors } from './errorActions';
-
+import {
+  returnErrors
+} from './errorActions';
+// history.js
+import {
+  createBrowserHistory
+} from 'history'
 import {
   USER_LOADED,
   USER_LOADING,
@@ -16,13 +21,16 @@ import {
 // Check token & load user
 export const loadUser = () => (dispatch, getState) => {
   // User loading
-  dispatch({ type: USER_LOADING });
+  dispatch({
+    type: USER_LOADING
+  });
 
   axios
     .get(`http://127.0.0.1:3000/api/v2/users/${localStorage.getItem('user_id')}`, {
-          headers: {
-      "Authorization": `Bearer ${localStorage.getItem('auth_token')}`
-    }})
+      headers: {
+        "Authorization": `Bearer ${localStorage.getItem('auth_token')}`
+      }
+    })
     .then(res =>
       dispatch({
         type: USER_LOADED,
@@ -38,7 +46,13 @@ export const loadUser = () => (dispatch, getState) => {
 };
 
 // Register User
-export const register = ({ fullname, phone_number,username,email, password }) => dispatch => {
+export const register = ({
+  fullname,
+  phone_number,
+  username,
+  email,
+  password
+}) => dispatch => {
 
   dispatch({
     type: USER_LOADING
@@ -51,7 +65,13 @@ export const register = ({ fullname, phone_number,username,email, password }) =>
   };
 
   // Request body
-  const body = JSON.stringify({fullname, phone_number,username,email, password });
+  const body = JSON.stringify({
+    fullname,
+    phone_number,
+    username,
+    email,
+    password
+  });
 
   axios
     .post('http://127.0.0.1:3000/api/v2/auth/signup', body, config)
@@ -74,7 +94,10 @@ export const register = ({ fullname, phone_number,username,email, password }) =>
 };
 
 // Login User
-export const login = ({ email, password }) => dispatch => {
+export const login = ({
+  email,
+  password
+}, obj) => dispatch => {
   // Headers
   const config = {
     headers: {
@@ -83,20 +106,24 @@ export const login = ({ email, password }) => dispatch => {
   };
 
   // Request body
-  const body = JSON.stringify({ email, password });
+  const body = JSON.stringify({
+    email,
+    password
+  });
 
   axios
     .post('http://127.0.0.1:3000/api/v2/auth/login', body, config)
-    .then(res =>{
-
+    .then(res => {
       dispatch({
         type: LOGIN_SUCCESS,
         payload: res.data
       })
-    }
-    )
+      obj.history.push('/')
+
+
+    })
     .catch(err => {
-     dispatch(
+      dispatch(
         returnErrors(err.response.data.message, err.response.status, 'LOGIN_FAIL')
       );
       dispatch({

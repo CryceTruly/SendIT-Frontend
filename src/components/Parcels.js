@@ -2,22 +2,20 @@ import React, {
     Component,
     Fragment
 } from 'react'
-import {
-    getParcels
-} from '../actions/parcelActions';
+import {getParcels} from '../actions/parcelActions';
 import PropTypes from 'prop-types';
 import {
     connect
-} from 'react-redux';
-import ParcelItem from './ParcelItem';
+} from "react-redux";
 import {
     Row,
     Card,
     CardBody,
     CardTitle,
     Table
-} from 'reactstrap';
-import {Link} from 'react-router-dom';
+} from "reactstrap";
+import {Link} from "react-router-dom";
+import ParcelItem from './ParcelItem';
 export class Parcels extends Component {
 
     componentDidMount() {
@@ -28,7 +26,8 @@ export class Parcels extends Component {
 
     render() {
 
-        return ( <div>
+        return (
+<div>
             <Link to={'/about'}></Link>
             <Card >
             <CardBody >
@@ -40,9 +39,10 @@ export class Parcels extends Component {
             </tr>
             </thead>
 
-            <tbody > {
+            <tbody >
+                {
                 this.props.parcels.map(parcel => (
-                    <ParcelItem key = {parcel.parcel_id} data = {parcel}> </ParcelItem>
+                    <ParcelItem key = {parcel.parcel_id} data = {parcel}/>
 
                 ))
             }
@@ -51,7 +51,9 @@ export class Parcels extends Component {
 
             </Table>
 
-            </CardBody> </Card>
+            </CardBody>
+{' '}
+ </Card>
 
             </div>
         );
@@ -65,7 +67,7 @@ export class Parcels extends Component {
 
 const mapStateToProps = (state) => ({
     parcels: state.parcels.parcels
-})
+ })
 
 
 Parcels.propTypes = {

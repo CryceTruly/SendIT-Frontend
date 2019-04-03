@@ -64,7 +64,7 @@ class Login extends Component {
     };
 
     // Attempt to login
-    this.props.login(newUser);
+    this.props.login(newUser,this.props);
   };
 
   render() {
@@ -78,7 +78,7 @@ class Login extends Component {
 
          <Card>
         <CardBody>
-          <CardTitle lead><strong>Login to SendIT.</strong></CardTitle>
+          <CardTitle><strong>Login to SendIT.</strong></CardTitle>
 
             <Form onSubmit={this.onSubmit}>
 
