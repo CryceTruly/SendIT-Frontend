@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/CryceTruly/si-react.svg?branch=develop)](https://travis-ci.org/CryceTruly/si-react)
 
 ## What is SendIT? :open_mouth:
 
