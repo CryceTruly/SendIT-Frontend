@@ -48,6 +48,10 @@ return{
             <strong>{username ? `Welcome ${user}` : ''}</strong>
           </span>
         </NavItem>
+        <NavItem className="mr-5">
+        <Link to="/new">Create Order</Link>
+
+        </NavItem>
         <NavItem>
           Logout
         </NavItem>

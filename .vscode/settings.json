@@ -1,6 +1,11 @@
 {
     // Use 'prettier-eslint' instead of 'prettier'. Other settings will only be fallbacks in case they could not be inferred from eslint rules.
     "prettier.eslintIntegration": true,
-    "editor.formatOnPaste": true,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "prettier.useTabs": false,
+    "editor.parameterHints.enabled": false,
+    "html.format.enable": false,
+    "html.format.preserveNewLines": false,
+    "javascript.format.insertSpaceAfterCommaDelimiter": false,
+    "javascript.format.enable": false
 }

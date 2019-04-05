@@ -1,9 +1,8 @@
 import React, {
     Component,
     Fragment
-} from 'react'
-import {getParcels} from '../actions/parcelActions';
-import PropTypes from 'prop-types';
+} from "react";
+import PropTypes from "prop-types";
 import {
     connect
 } from "react-redux";
@@ -11,11 +10,13 @@ import {
     Row,
     Card,
     CardBody,
-    CardTitle,
+    CardTitle,Container,
     Table
 } from "reactstrap";
 import {Link} from "react-router-dom";
-import ParcelItem from './ParcelItem';
+import {getParcels} from "../actions/parcelActions";
+import ParcelItem from "./ParcelItem";
+import Profile from './Profile'
 export class Parcels extends Component {
 
     componentDidMount() {
@@ -27,33 +28,54 @@ export class Parcels extends Component {
     render() {
 
         return (
-<div>
-            <Link to={'/about'}></Link>
-            <Card >
-            <CardBody >
-            <CardTitle> Parcels </CardTitle>
-            <Table>
-            <thead>
-            <tr>
-            <th> Customer </th><th>Pickup Location</th> < th> Destination </th><td>Placed</td>
-            </tr>
-            </thead>
+            <div>
 
-            <tbody >
-                {
-                this.props.parcels.map(parcel => (
-                    <ParcelItem key = {parcel.parcel_id} data = {parcel}/>
+<Row>
+    <div className="col-md-4">
+   <Profile/>
+    </div>
 
-                ))
-            }
 
-            </tbody>
+    <div className="col-md-8">
 
-            </Table>
 
-            </CardBody>
-{' '}
- </Card>
+    <Card>
+                    <CardBody>
+                        <CardTitle> My Parcels </CardTitle>
+                        <Table className="table-responsive">
+                            <thead>
+                                <tr>
+                                    <th> Order </th>
+                                    <th>Status</th>
+                                    {" "}
+                                    <th> Created</th>
+<th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                {
+                                    this.props.parcels.map(parcel => (
+                                        <ParcelItem key={parcel.parcel_id} data={parcel} />
+
+                                    ))
+                                }
+
+                            </tbody>
+
+                        </Table>
+
+                    </CardBody>
+                    {" "}
+                </Card>
+                </div>
+
+
+</Row>
+
+
+
+
 
             </div>
         );
@@ -67,11 +89,11 @@ export class Parcels extends Component {
 
 const mapStateToProps = (state) => ({
     parcels: state.parcels.parcels
- })
+});
 
 
 Parcels.propTypes = {
     getParcels: PropTypes.func.isRequired,
     parcels: PropTypes.array.isRequired
-}
-export default connect(mapStateToProps, {getParcels})(Parcels)
+};
+export default connect(mapStateToProps, {getParcels})(Parcels);

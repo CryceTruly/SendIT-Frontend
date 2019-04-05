@@ -1,32 +1,32 @@
-import React from 'react';
+import React from "react";
 import {
     shallow
-} from 'enzyme';
-import reducers from '../reducers';
+} from "enzyme";
+import reducers from "../reducers";
 // Components
 import App from "../components/App";
 import {
     Parcels
-} from '../components/Parcels';
+} from "../components/Parcels";
 
 function setup() {
-    const wrapper = shallow( < App / > );
+    const wrapper = shallow( <App /> );
     return {
         wrapper
     };
 }
 
-describe('Welcome Test Suite', () => {
-    it('Should have a paragraph', () => {
+describe("Welcome Test Suite", () => {
+    it("Should have a paragraph", () => {
         const {
             wrapper
         } = setup();
-        expect(wrapper.find('p').exists()).toBe(true);
+        expect(wrapper.find("p").exists()).toBe(true);
     });
 
 
 
-    test('reducers', () => {
+    test("reducers", () => {
         let state;
         state = reducers({
             parcels: {
@@ -44,30 +44,30 @@ describe('Welcome Test Suite', () => {
                 user: null
             }
         }, {
-            type: 'GET_PARCELS',
+            type: "GET_PARCELS",
             payload: [{
-                destination_address: 'Uganda',
+                destination_address: "Uganda",
                 parcel_id: 7,
-                pickup_address: 'Ntungamo - Katunguru Rd, Uganda',
-                placed: 'Tue, 26 Mar 2019 11:12:18 GMT',
-                recipient_email: 'Ntungamo - Katunguru Rd, Uganda',
-                recipient_phone_number: '0766765423',
-                sender_email: 'aacryce@gmail.com',
-                status: 'order_placed',
+                pickup_address: "Ntungamo - Katunguru Rd, Uganda",
+                placed: "Tue, 26 Mar 2019 11:12:18 GMT",
+                recipient_email: "Ntungamo - Katunguru Rd, Uganda",
+                recipient_phone_number: "0766765423",
+                sender_email: "aacryce@gmail.com",
+                status: "order_placed",
                 user_id: 11
             }]
         });
         expect(state).toEqual({
             parcels: {
                 parcels: [{
-                    destination_address: 'Uganda',
+                    destination_address: "Uganda",
                     parcel_id: 7,
-                    pickup_address: 'Ntungamo - Katunguru Rd, Uganda',
-                    placed: 'Tue, 26 Mar 2019 11:12:18 GMT',
-                    recipient_email: 'Ntungamo - Katunguru Rd, Uganda',
-                    recipient_phone_number: '0766765423',
-                    sender_email: 'aacryce@gmail.com',
-                    status: 'order_placed',
+                    pickup_address: "Ntungamo - Katunguru Rd, Uganda",
+                    placed: "Tue, 26 Mar 2019 11:12:18 GMT",
+                    recipient_email: "Ntungamo - Katunguru Rd, Uganda",
+                    recipient_phone_number: "0766765423",
+                    sender_email: "aacryce@gmail.com",
+                    status: "order_placed",
                     user_id: 11
                 }]
             },

@@ -105,8 +105,8 @@ class RegisterComponent extends Component {
                   id='email' required
                   placeholder='Email'
                   className='mb-3'
-                  onChange={this.onChange}
-                 /></FormGroup >
+                  onChange={this.onChange}/>
+                 </FormGroup>
                 <FormGroup>
 <Label for='phone_number'>Phone Number</Label>
                 <Input
