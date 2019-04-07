@@ -33,32 +33,26 @@ export default function (state = initialState, action) {
             user: action.payload
         };
     case LOGIN_SUCCESS:
-
-        console.log(action.payload);
-
         localStorage.setItem("auth_token", action.payload.auth_token);
         localStorage.setItem("user_id",action.payload.user_id);
         return {
             ...state,
-            ...action.payload,
+            user: action.payload,
             isAuthenticated: true,
             isLoading: false
         };
     case REGISTER_SUCCESS:
-
-
-
         return {
             ...state,
             ...action.payload,
             isAuthenticated: false,
             isLoading: false
         };
-    case AUTH_ERROR:
     case LOGIN_FAIL:
     case LOGOUT_SUCCESS:
     case REGISTER_FAIL:
         localStorage.removeItem("auth_token");
+        localStorage.removeItem("user_id");
         return {
             ...state,
             auth_token: null,

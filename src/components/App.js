@@ -19,7 +19,8 @@ import {
 import Login from "./Login";
 import RegisterComponent from "./Register";
 import PrivateRoute from "./common/PrivateRoute";
-
+import NewOrder from './NewOrder'
+import ParcelDetails from "./ParcelDetails";
 export class App extends Component {
 
     componentDidMount(){
@@ -34,11 +35,13 @@ export class App extends Component {
                     <Navbar />
                     <Container>
                         <p />
-
+                        <Switch>
                         <PrivateRoute exact path="/" component={Parcels} />
                         <Route exact path="/login" component={Login} />
-                        <Route exact path="/parcels" component={Parcels} />
-                        <Route exact path="/register" component={RegisterComponent} />
+                        <PrivateRoute exact path="/details" component={ParcelDetails}></PrivateRoute>
+                        <PrivateRoute exact path="/new" component={NewOrder} />
+                        <Route exact path="/register" component={RegisterComponent} /></Switch>
+
                     </Container>
                 </Provider>
             </Router>

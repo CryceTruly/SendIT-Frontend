@@ -11,12 +11,13 @@ class Profile extends Component {
     }
   render() {
 
+    const { isAuthenticated,user } = this.props.auth;
 
-    if(this.props.authState.isLoading){
+    if(this.props.auth.isLoading){
        return <h3>Loading User...</h3>
     }else{
-        const user = this.props.user;
-        console.log(typeof(user));
+        const {user} = this.props.auth;
+
 
 
 
@@ -25,8 +26,9 @@ return(
         <div className="card mx-auto">
           <div className="card-body pt-5">
             <img src="https://avatars1.githubusercontent.com/u/20795487?s=400&v=4" height="200" className="rounded-circle" alt="profile-image"/>
-             <h6 className="card-title mt-3">{1}</h6>
-            <p className="card-text">{1}</p>
+             <p className="card-text">   FullName:  <strong>{user ? `${user.fullname}` : ''}</strong></p>
+             <p className="card-text">  Username:   <strong>{user ? `${user.username}` : ''}</strong></p>
+            <p className="card-text">Email:<strong>{user ? `${user.email}` : ''}</strong></p>
             <Button className="btn-success">Edit  Profile</Button>
 
 </div>
@@ -51,7 +53,8 @@ return(
 }
 }
 const mapStateToProps=(state)=>({
-    authState:state.auth,
+
+  auth: state.auth,
     user:state.auth.user
 });
 export default connect(mapStateToProps,{})(Profile)

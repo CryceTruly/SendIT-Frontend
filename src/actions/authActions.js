@@ -17,7 +17,7 @@ import {
     REGISTER_FAIL,
     REGISTER_LOADING
 } from "./types";
-
+import BASE_URL from "../constants";
 // Check token & load user
 export const loadUser = () => (dispatch, getState) => {
     // User loading
@@ -26,7 +26,7 @@ export const loadUser = () => (dispatch, getState) => {
     });
 
     axios
-        .get(`http://127.0.0.1:3000/api/v2/users/${localStorage.getItem("user_id")}`, {
+        .get(`${BASE_URL}/users/${localStorage.getItem("user_id")}`, {
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem("auth_token")}`
             }
@@ -74,7 +74,7 @@ export const register = ({
     });
 
     axios
-        .post("http://127.0.0.1:3000/api/v2/auth/signup", body, config)
+        .post(`${BASE_URL}/auth/signup`, body, config)
         .then(res =>
             dispatch({
                 type: REGISTER_SUCCESS,
@@ -82,7 +82,6 @@ export const register = ({
             })
         )
         .catch(err => {
-            console.log(err.response.data.message);
 
             dispatch(
                 returnErrors(err.response.data.message, err.response.status, "REGISTER_FAIL")
@@ -112,8 +111,9 @@ export const login = ({
     });
 
     axios
-        .post("http://127.0.0.1:3000/api/v2/auth/login", body, config)
+        .post(`${BASE_URL}/auth/login`, body, config)
         .then(res => {
+
             dispatch({
                 type: LOGIN_SUCCESS,
                 payload: res.data
