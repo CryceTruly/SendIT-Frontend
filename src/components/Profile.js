@@ -1,19 +1,9 @@
 import React, { Component } from 'react'
 import {Button,Card,CardImg,CardBody,CardSubtitle,CardText,CardTitle} from 'reactstrap';
 import {connect} from 'react-redux';
-class Profile extends Component {
-
-    getStyle=()=>{
-        return{
-            color: 'blue',
-            border:'2px solid black'
-        }
-    }
+export class Profile extends Component {
   render() {
-
-    const { isAuthenticated,user } = this.props.auth;
-
-    if(this.props.auth.isLoading){
+if(this.props.auth.isLoading){
        return <h3>Loading User...</h3>
     }else{
         const {user} = this.props.auth;
@@ -42,8 +32,11 @@ return(
        <CardBody>
           <CardTitle>Statistics</CardTitle>
         </CardBody>
-
-        <h6>All orders <span className="badge badge-info">5</span></h6><h6>Delivered <span  className="badge badge-info">5</span></h6><h6 >Undelivered <span className="badge badge-info">5</span></h6>
+        <h6>All orders <span className="badge badge-info">{this.props.parcels.length
+        }</span></h6><h6>Delivered <span  className="badge badge-info">{this.props.parcels.filter(parcel=>parcel.status==='delivered').length
+        }</span></h6>
+        <h6 >Pending <span className="badge badge-info">{this.props.parcels.filter(parcel=>parcel.status==='order_placed').length
+        }</span></h6>
       </Card>
     </div>
 
@@ -53,9 +46,9 @@ return(
 }
 }
 }
-const mapStateToProps=(state)=>({
+export const mapStateToProps=(state)=>({
 
   auth: state.auth,
-    user:state.auth.user
+  parcels:state.parcels.parcels
 });
 export default connect(mapStateToProps,{})(Profile)

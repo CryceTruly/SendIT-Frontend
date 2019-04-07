@@ -113,7 +113,8 @@ export const login = ({
     axios
         .post(`${BASE_URL}/auth/login`, body, config)
         .then(res => {
-
+            localStorage.setItem("auth_token",  res.data.auth_token);
+            localStorage.setItem("user_id", res.data.user.user_id);
             dispatch({
                 type: LOGIN_SUCCESS,
                 payload: res.data
