@@ -10,12 +10,10 @@ import {
 } from "../actions/types";
 
 const initialState = {
-    auth_token: localStorage.getItem("auth_token"),
     user_id:localStorage.getItem("user_id"),
     isAuthenticated: null,
     isLoading: false,
-    user: null,
-    username: null
+    user:null
 };
 
 export default function (state = initialState, action) {
@@ -34,10 +32,10 @@ export default function (state = initialState, action) {
         };
     case LOGIN_SUCCESS:
         localStorage.setItem("auth_token", action.payload.auth_token);
-        localStorage.setItem("user_id",action.payload.user_id);
+        localStorage.setItem("user_id",action.payload.user.user_id);
         return {
             ...state,
-            user: action.payload,
+            ...action.payload,
             isAuthenticated: true,
             isLoading: false
         };
@@ -45,6 +43,7 @@ export default function (state = initialState, action) {
         return {
             ...state,
             ...action.payload,
+            user:null,
             isAuthenticated: false,
             isLoading: false
         };
@@ -56,7 +55,7 @@ export default function (state = initialState, action) {
         return {
             ...state,
             auth_token: null,
-            username: null,
+            user: null,
             isAuthenticated: false,
             isLoading: false
         };

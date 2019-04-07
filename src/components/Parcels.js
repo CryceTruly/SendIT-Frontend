@@ -87,7 +87,7 @@ export class Parcels extends Component {
 }
 
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
     parcels: state.parcels.parcels
 });
 

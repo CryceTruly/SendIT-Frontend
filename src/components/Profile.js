@@ -29,6 +29,7 @@ return(
              <p className="card-text">   FullName:  <strong>{user ? `${user.fullname}` : ''}</strong></p>
              <p className="card-text">  Username:   <strong>{user ? `${user.username}` : ''}</strong></p>
             <p className="card-text">Email:<strong>{user ? `${user.email}` : ''}</strong></p>
+            <p className="card-text">Joined:<strong>{user ? `${user.joined}` : ''}</strong></p>
             <Button className="btn-success">Edit  Profile</Button>
 
 </div>

@@ -12,7 +12,7 @@ import {
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-class Navigationbar extends Component {
+export class Navigationbar extends Component {
 
 
   static propTypes = {
@@ -67,7 +67,7 @@ class Navigationbar extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   auth: state.auth
 });
 
