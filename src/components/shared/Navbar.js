@@ -12,41 +12,24 @@ import {
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-class Navigationbar extends Component {
+export class Navigationbar extends Component {
 
 
   static propTypes = {
-    auth: PropTypes.object.isRequired
-  };
-getStyle=()=>{
-  return {
-     background: '#7C3085',
-     color: '#ffffff',
-
-
-  }
-}
-
-myStyle=()=>{
-return{
-  color:"#fff",
-  marginRight:20
-}
-}
-
-
+    auth: PropTypes.object.isRequired  };
 
   render() {
-    const { isAuthenticated,user, username } = this.props.auth;
-    console.log(user);
-
-
-    const authLinks = (
+    const { isAuthenticated,user } = this.props.auth;
+     const authLinks = (
       <Fragment>
         <NavItem>
           <span className='navbar-text mr-3'>
-            <strong>{username ? `Welcome ${user}` : ''}</strong>
+            <strong>{user ? `Welcome ${user.username}` : ''}</strong>
           </span>
+        </NavItem>
+        <NavItem className="mr-5">
+        <Link to="/new">Create Order</Link>
+
         </NavItem>
         <NavItem>
           Logout
@@ -67,13 +50,13 @@ return{
     );
 
     return (
-      <div style={this.getStyle()}>
+      <div>
         <Navbar color='dark' dark expand='sm' className='mb-5'>
           <Container>
             <NavbarBrand href='/'><span className="fa fa-send"></span>SendIT</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse navbar>
-              <Nav className='ml-auto' navbar style={this.myStyle()}>
+              <Nav className='ml-auto' navbar>
                 {isAuthenticated ? authLinks : guestLinks}
               </Nav>
             </Collapse>
@@ -84,7 +67,7 @@ return{
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   auth: state.auth
 });
 

@@ -43,6 +43,7 @@ class Login extends Component {
     }
 
       if (isAuthenticated) {
+
       }
 
   }
@@ -79,7 +80,6 @@ class Login extends Component {
          <Card>
         <CardBody>
           <CardTitle><strong>Login to SendIT.</strong></CardTitle>
-
             <Form onSubmit={this.onSubmit}>
 
   {this.state.msg ? (

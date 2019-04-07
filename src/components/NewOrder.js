@@ -1,79 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
-  Button,
-  Card,
-  CardBody,
-  CardTitle,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Alert,
-  Row,
-  Col
-} from 'reactstrap';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { clearErrors } from '../actions/errorActions';
-import {register} from '../actions/authActions'
-class RegisterComponent extends Component {
-  state = {
-    fullname: '',
-    email: '',
-    password: '',
-    phone_number:'',
-    username:'',
-    msg: null
-  };
-
-  static propTypes = {
-    isAuthenticated: PropTypes.bool,
-    error: PropTypes.object.isRequired,
-    register: PropTypes.func.isRequired,
-    clearErrors: PropTypes.func.isRequired
-  };
-
-  componentDidUpdate(prevProps) {
-    const { error, isAuthenticated } = this.props;
-    if (error !== prevProps.error) {
-      // Check for register error
-      if (error.id === 'REGISTER_FAIL') {
-        this.setState({ msg: error.msg });
-      } else {
-        this.setState({ msg: null });
-      }
-    }
-
-  }
-
-  onChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  onSubmit = e => {
-    e.preventDefault();
-    const { username,fullname,phone_number, email, password,password_comfirm } = this.state;
-    // Create user object
-    const newUser = {
-      username,
-      email,
-      password,
-      phone_number,
-      fullname
-    };
-
-    // Attempt to register
-    this.props.register(newUser);
-  };
+    Button,
+    Card,
+    CardBody,
+    CardTitle,
+    Form,
+    FormGroup,
+    Label,
+    Input,
+    Alert,
+    Row,
+    Col
+  } from 'reactstrap';
+export default class NewOrder extends Component {
+    state = {
+        fullname: '',
+        email: '',
+        password: '',
+        phone_number:'',
+        username:'',
+        msg: null
+      };
 
   render() {
     return (
       <div>
+
          <Card>
         <CardBody>
           <CardTitle></CardTitle>
 
-          <CardTitle lead><strong>Register an Account.</strong></CardTitle>
+          <CardTitle><strong>Add a new Parcel Request.</strong></CardTitle>
 
 
             <Form onSubmit={this.onSubmit}>
@@ -85,7 +42,7 @@ class RegisterComponent extends Component {
               <div className="col-md-6">
 
               <FormGroup>
-                <Label for='fullname'>Fullname</Label>
+                <Label for='fullname'>Pickup Location</Label>
                 <Input
                   type='text'
                   name='fullname'
@@ -98,7 +55,7 @@ class RegisterComponent extends Component {
 
 
 <FormGroup>
-                <Label for='email'>Email</Label>
+                <Label for='email'>Destination address</Label>
                 <Input
                   type='email'
                   name='email'
@@ -108,7 +65,7 @@ class RegisterComponent extends Component {
                   onChange={this.onChange}/>
                  </FormGroup>
                 <FormGroup>
-<Label for='phone_number'>Phone Number</Label>
+<Label for='phone_number'>Recipient Phone Number</Label>
                 <Input
                   type='text'
                   name='phone_number'
@@ -122,7 +79,7 @@ class RegisterComponent extends Component {
               </div>
                <div className="col-md-6">
 <FormGroup>
-  <Label for='username'>Username</Label>
+  <Label for='username'>Recipient Fullname</Label>
                 <Input
                   type='text'
                   name='username'
@@ -133,7 +90,7 @@ class RegisterComponent extends Component {
                 />
 </FormGroup>
 <FormGroup>
-   <Label for='password'>Password</Label>
+   <Label for='password'>Parcel Description</Label>
                 <Input
                   type='password'
                   name='password' required
@@ -149,7 +106,7 @@ class RegisterComponent extends Component {
 
 <FormGroup>
 
-                  <Label for='password_comfirm'>Confirm Password </Label>
+                  <Label for='password_comfirm'>Weight </Label>
                 <Input
                   type='password_comfirm'
                   name='password'
@@ -160,7 +117,7 @@ class RegisterComponent extends Component {
                 />
 </FormGroup>
  <Button color='dark' style={{ marginTop: '2rem' }} block>
-                  Register
+                  Submit
                 </Button>
 
 
@@ -176,14 +133,9 @@ class RegisterComponent extends Component {
             </CardBody>
             </Card>
 
+
+
       </div>
-    );
+    )
   }
-
 }
-const mapStateToProps = state => ({
-  isAuthenticated: state.auth.isAuthenticated,
-  error: state.errors
-});
-
-export default connect(mapStateToProps,{ register, clearErrors })(RegisterComponent);
