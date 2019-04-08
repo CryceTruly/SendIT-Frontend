@@ -1,4 +1,4 @@
-import { GET_ERRORS, CLEAR_ERRORS } from "../actions/types";
+import { GET_ERRORS, CLEAR_ERRORS,ADD_MESSAGE } from "../actions/types";
 
 const initialState = {
     msg: null,
@@ -19,6 +19,12 @@ export default function(state = initialState, action) {
             msg: null,
             status: null,
             id: null
+        };
+        case ADD_MESSAGE:
+        return {
+            msg: action.payload.msg,
+            status: action.payload.status,
+            id: action.payload.id
         };
     default:
         return state;

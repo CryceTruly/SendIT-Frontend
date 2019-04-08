@@ -12,11 +12,17 @@ import {
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
+import {logout} from '../../actions/authActions';
 export class Navigationbar extends Component {
 
 
   static propTypes = {
     auth: PropTypes.object.isRequired  };
+
+    onLogoutClick=()=>{
+      this.props.logout(this.props)
+
+    }
 
   render() {
     const { isAuthenticated,user } = this.props.auth;
@@ -27,11 +33,11 @@ export class Navigationbar extends Component {
             <strong>{user ? `Welcome ${user.username}` : ''}</strong>
           </span>
         </NavItem>
-        <NavItem className="mr-5">
+        <NavItem className="mr-1 mt-2">
         <Link to="/new">Create Order</Link>
 
         </NavItem>
-        <NavItem>
+        <NavItem className="btn btn-link" onClick={this.onLogoutClick.bind(this)}>
           Logout
         </NavItem>
       </Fragment>
@@ -73,5 +79,5 @@ export const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  null
+  {logout},
 )(Navigationbar);

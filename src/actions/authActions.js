@@ -15,7 +15,8 @@ import {
     LOGOUT_SUCCESS,
     REGISTER_SUCCESS,
     REGISTER_FAIL,
-    REGISTER_LOADING
+    REGISTER_LOADING,
+    ADD_MESSAGE
 } from "./types";
 import BASE_URL from "../constants";
 // Check token & load user
@@ -134,10 +135,18 @@ export const login = ({
 };
 
 // Logout User
-export const logout = () => {
-    return {
+export const logout = (props)=>(dispatch) => {
+dispatch({
+    type:ADD_MESSAGE,
+    payload:{ msg:'You have successfuly loged out',
+    status: 'Success',
+            id: 'LOGOUT-SUCCESS'}
+
+})
+    dispatch( {
         type: LOGOUT_SUCCESS
-    };
+    }
+    )
 };
 
 // Setup config/headers and token
