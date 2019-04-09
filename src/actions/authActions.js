@@ -16,7 +16,8 @@ import {
     REGISTER_SUCCESS,
     REGISTER_FAIL,
     REGISTER_LOADING,
-    ADD_MESSAGE
+    ADD_MESSAGE,
+    SOMETHING_LOADING
 } from "./types";
 import BASE_URL from "../constants";
 // Check token & load user
@@ -55,9 +56,12 @@ export const register = ({
     password
 },routes) => dispatch => {
 
+
     dispatch({
-        type: USER_LOADING
-    });
+        type:SOMETHING_LOADING
+    })
+    setTimeout(() => {
+
     // Headers
     const config = {
         headers: {
@@ -77,8 +81,6 @@ export const register = ({
     axios
         .post(`${BASE_URL}/auth/signup`, body, config)
         .then(res =>{
-            if(res.data){
-
                 dispatch({
                     type: REGISTER_SUCCESS,
                     payload: res.data
@@ -93,16 +95,6 @@ export const register = ({
 
 
         routes.history.push('/login')
-            }else{
-
-            dispatch(
-                returnErrors("Unknown Error", err.response.status, "REGISTER_FAIL")
-            );
-            dispatch({
-                type: REGISTER_FAIL
-            });
-            }
-
         }
         )
         .catch(err => {
@@ -113,6 +105,7 @@ export const register = ({
         type: REGISTER_FAIL
     });
 });
+    }, 200);
 };
 
 // Login User
@@ -120,13 +113,18 @@ export const login = ({
     email,
     password
 }, routes) => dispatch => {
+
+
+    dispatch({
+        type:SOMETHING_LOADING
+    })
     // Headers
     const config = {
         headers: {
             "Content-Type": "application/json"
         }
     };
-
+setTimeout(() => {
     // Request body
     const body = JSON.stringify({
         email,
@@ -158,13 +156,15 @@ export const login = ({
                 type: LOGIN_FAIL
             });
         });
+}, 100);
+
 };
 
 // Logout User
 export const logout = (props)=>(dispatch) => {
 dispatch({
     type:ADD_MESSAGE,
-    payload:{ msg:'You have successfuly loged out',
+    payload:{ msg:'You have successfuly logged out',
     status: 'Success',
             id: 'LOGOUT-SUCCESS'}
 

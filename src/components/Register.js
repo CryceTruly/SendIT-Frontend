@@ -151,13 +151,23 @@ class RegisterComponent extends Component {
 
                   <Label for='password_comfirm'>Confirm Password </Label>
                 <Input
-                  type='password_comfirm'
+                  type='password'
                   name='password'
                   id='password_comfirm' required
                   placeholder=''
                   className='mb-3'
                   onChange={this.onChange}
                 />
+                {
+  this.props.error.processing?(
+    <div class="d-flex text-primary justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  ):null
+}
+
 </FormGroup>
  <Button color='dark' style={{ marginTop: '2rem' }} block>
                   Register

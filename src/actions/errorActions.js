@@ -1,5 +1,5 @@
 
-import { GET_ERRORS, CLEAR_ERRORS,ADD_MESSAGE } from "./types";
+import { GET_ERRORS, CLEAR_ERRORS,ADD_MESSAGE} from "./types";
 
 // RETURN ERRORS
 export const returnErrors = (msg, status, id = null) => {

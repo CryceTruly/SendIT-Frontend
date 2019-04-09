@@ -18,6 +18,7 @@ import { clearErrors } from '../actions/errorActions';
 import {login} from '../actions/authActions';
 import {Link,Redirect} from 'react-router-dom';
 class Login extends Component {
+
   state = {
     email: '',
     password: '',
@@ -40,6 +41,7 @@ class Login extends Component {
       } else {
         this.setState({ msg: null });
       }
+
     }
 
   }
@@ -89,6 +91,7 @@ class Login extends Component {
 
             }
 
+
                <FormGroup>
                 <Label for='email'>Email</Label>
                 <Input
@@ -114,14 +117,31 @@ class Login extends Component {
                 />
 
 
+{
+  this.props.error.processing?(
+    <div class="d-flex text-primary justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  ):null
+}
+
 
 </FormGroup>
 
 
 <p className="text-right">Forgot Password?</p>
- <Button color='dark' style={{ marginTop: '1rem' }} block>
-                  Login
-                </Button>
+{
+  this.props.error.processing?(
+
+    <Button disabled color='dark' style={{ marginTop: '1rem' }} block>
+    Please wait
+  </Button>
+  ): <Button color='dark' style={{ marginTop: '1rem' }} block>
+  Login
+</Button>
+}
                 <p className="text-center mb-2 mt-2">New to SendIT? <span> <Link to="/register">Create an account</Link></span></p>
 
 

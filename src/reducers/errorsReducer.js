@@ -1,9 +1,10 @@
-import { GET_ERRORS, CLEAR_ERRORS,ADD_MESSAGE } from "../actions/types";
+import { GET_ERRORS, CLEAR_ERRORS,ADD_MESSAGE, SOMETHING_LOADING } from "../actions/types";
 
 const initialState = {
     msg: null,
     status: null,
-    id: null
+    id: null,
+    processing:null
 };
 
 export default function(state = initialState, action) {
@@ -18,7 +19,8 @@ export default function(state = initialState, action) {
         return {
             msg: null,
             status: null,
-            id: null
+            id: null,
+            processing:null
         };
         case ADD_MESSAGE:
         return {
@@ -26,6 +28,12 @@ export default function(state = initialState, action) {
             status: action.payload.status,
             id: action.payload.id
         };
+        case SOMETHING_LOADING:
+        return {
+            ...state,
+            processing:true
+        };
+
     default:
         return state;
     }
