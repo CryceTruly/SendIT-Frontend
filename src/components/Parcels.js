@@ -17,6 +17,7 @@ import {Link} from "react-router-dom";
 import {getParcels} from "../actions/parcelActions";
 import ParcelItem from "./ParcelItem";
 import Profile from './Profile'
+import Dashboard from './Dashboard'
 export class Parcels extends Component {
 
     componentDidMount() {
@@ -27,29 +28,32 @@ export class Parcels extends Component {
 
     render() {
 
+        const { user } = this.props.auth;
+        if(user && user.is_admin){
+           return <Dashboard/>
+        }else{
         return (
+
             <div>
 
 <Row>
-    <div className="col-md-4">
+    <div className="col-md-5">
    <Profile/>
     </div>
 
 
-    <div className="col-md-8">
+    <div className="col-md-7">
 
 
     <Card>
                     <CardBody>
                         <CardTitle> My Parcels </CardTitle>
-                        <Table className="table-responsive">
+                        <Table className="table table-responsive table-condensed">
                             <thead>
                                 <tr>
-                                    <th> Order </th>
+                                    <th> Order</th>
                                     <th>Status</th>
-                                    {" "}
                                     <th> Created</th>
-<th></th>
                                 </tr>
                             </thead>
 
@@ -66,7 +70,6 @@ export class Parcels extends Component {
                         </Table>
 
                     </CardBody>
-                    {" "}
                 </Card>
                 </div>
 
@@ -85,10 +88,12 @@ export class Parcels extends Component {
 
 
 }
+}
 
 
 export const mapStateToProps = (state) => ({
-    parcels: state.parcels.parcels
+    parcels: state.parcels.parcels,
+    auth:state.auth
 });
 
 

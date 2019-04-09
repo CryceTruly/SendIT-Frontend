@@ -23,22 +23,14 @@ export default function ParcelItem(props) {
     return (
         <tr>
             <td>
-                {
-                    parcel_id
-                }
+                { parcel_id}
             </td>
             <td>{status}</td>
-            {" "}
             <td>
-                {
-                    <Moment fromNow>{placed}</Moment>
-
-                }
+                {<Moment fromNow>{placed}</Moment>}
             </td>
-            <td>
-                <Link className="btn btn-info" to="/details">Details</Link>
+            <td><Link className="btn btn-info" to="/details" data={props.data}>Details</Link>
             </td>
-
         </tr>
 
     );

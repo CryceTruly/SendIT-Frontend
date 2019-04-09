@@ -21,6 +21,7 @@ import RegisterComponent from "./Register";
 import PrivateRoute from "./common/PrivateRoute";
 import NewOrder from './NewOrder'
 import ParcelDetails from "./ParcelDetails";
+import Dashboard from "./Dashboard";
 export class App extends Component {
 
     componentDidMount(){
@@ -40,8 +41,9 @@ export class App extends Component {
                         <Route exact path="/login" component={Login} />
                         <PrivateRoute exact path="/details" component={ParcelDetails}></PrivateRoute>
                         <PrivateRoute exact path="/new" component={NewOrder} />
-                        <Route exact path="/register" component={RegisterComponent} /></Switch>
-
+                        <Route exact path="/register" component={RegisterComponent} />
+<PrivateRoute exact path="/dashboard" component={Dashboard}></PrivateRoute>
+</Switch>
                     </Container>
                 </Provider>
             </Router>
