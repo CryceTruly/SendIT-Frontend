@@ -10,7 +10,6 @@ import {
   Input,
   Alert,
   Row,
-  Col
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -160,9 +159,9 @@ class RegisterComponent extends Component {
                 />
                 {
   this.props.error.processing?(
-    <div class="d-flex text-primary justify-content-center">
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
+    <div className="d-flex text-primary justify-content-center">
+    <div className="spinner-border" role="status">
+      <span className="sr-only">Loading...</span>
     </div>
   </div>
   ):null

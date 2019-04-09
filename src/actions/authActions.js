@@ -1,8 +1,5 @@
 import axios from "axios";
 import {
-    createBrowserHistory
-} from "history";
-import {
     returnErrors
 } from "./errorActions";
 // history.js
@@ -15,13 +12,12 @@ import {
     LOGOUT_SUCCESS,
     REGISTER_SUCCESS,
     REGISTER_FAIL,
-    REGISTER_LOADING,
     ADD_MESSAGE,
     SOMETHING_LOADING
 } from "./types";
 import BASE_URL from "../constants";
 // Check token & load user
-export const loadUser = () => (dispatch, getState) => {
+export const loadUser = () => (dispatch) => {
     // User loading
     dispatch({
         type: USER_LOADING
@@ -140,13 +136,7 @@ setTimeout(() => {
                 type: LOGIN_SUCCESS,
                 payload: res.data
             });
-
-
             routes.history.push("/");
-
-
-
-
         })
         .catch(err => {
             dispatch(
