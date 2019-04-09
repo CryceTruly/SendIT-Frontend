@@ -53,7 +53,7 @@ export const register = ({
     username,
     email,
     password
-}) => dispatch => {
+},routes) => dispatch => {
 
     dispatch({
         type: USER_LOADING
@@ -76,28 +76,50 @@ export const register = ({
 
     axios
         .post(`${BASE_URL}/auth/signup`, body, config)
-        .then(res =>
-            dispatch({
-                type: REGISTER_SUCCESS,
-                payload: res.data
-            })
-        )
-        .catch(err => {
+        .then(res =>{
+            if(res.data){
+
+                dispatch({
+                    type: REGISTER_SUCCESS,
+                    payload: res.data
+                }),
+                dispatch({
+                    type:ADD_MESSAGE,
+                    payload:{ msg:'Account created successfully,You may login now',
+                    status: 'Success',
+                            id: 'LOGOUT-SUCCESS'}
+
+                }),
+
+
+        routes.history.push('/login')
+            }else{
 
             dispatch(
-                returnErrors(err.response.data.message, err.response.status, "REGISTER_FAIL")
+                returnErrors("Unknown Error", err.response.status, "REGISTER_FAIL")
             );
             dispatch({
                 type: REGISTER_FAIL
             });
-        });
+            }
+
+        }
+        )
+        .catch(err => {
+    dispatch(
+        returnErrors(err.response.data.message, err.response.status, "REGISTER_FAIL")
+    );
+    dispatch({
+        type: REGISTER_FAIL
+    });
+});
 };
 
 // Login User
 export const login = ({
     email,
     password
-}, obj) => dispatch => {
+}, routes) => dispatch => {
     // Headers
     const config = {
         headers: {
@@ -120,7 +142,11 @@ export const login = ({
                 type: LOGIN_SUCCESS,
                 payload: res.data
             });
-            obj.history.push("/");
+
+
+            routes.history.push("/");
+
+
 
 
         })

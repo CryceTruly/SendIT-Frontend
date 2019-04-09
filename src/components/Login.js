@@ -69,8 +69,8 @@ class Login extends Component {
     return (
       <div>
         <Row>
-<div className="col col-md-3 col-sm-0"></div>
-< div className = "col col-md-6 col-sm-12" >
+<div className="col-md-3"></div>
+< div className = "col-md-6" >
 
 
          <Card>
@@ -136,7 +136,7 @@ class Login extends Component {
             </Card>
 
 </div>
-< div className = "col col-md-3 col-sm-0" > </div>
+< div className = "col-md-3" > </div>
 
         </Row>
 

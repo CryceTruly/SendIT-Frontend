@@ -63,7 +63,7 @@ class RegisterComponent extends Component {
     };
 
     // Attempt to register
-    this.props.register(newUser);
+    this.props.register(newUser,this.props);
   };
 
   render() {
@@ -73,7 +73,7 @@ class RegisterComponent extends Component {
         <CardBody>
           <CardTitle></CardTitle>
 
-          <CardTitle lead><strong>Register an Account.</strong></CardTitle>
+          <CardTitle><strong>Register an Account.</strong></CardTitle>
 
 
             <Form onSubmit={this.onSubmit}>

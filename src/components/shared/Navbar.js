@@ -34,7 +34,8 @@ export class Navigationbar extends Component {
           </span>
         </NavItem>
         <NavItem className="mr-1 mt-2">
-        <Link to="/new">Create Order</Link>
+        {user && user.is_admin ? ( <Link to="/new">All Activity</Link>) :( <Link to="/new">Create Order</Link>
+)}
 
         </NavItem>
         <NavItem className="btn btn-link" onClick={this.onLogoutClick.bind(this)}>
