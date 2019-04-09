@@ -32,7 +32,7 @@ class Login extends Component {
   };
 
   componentDidUpdate(prevProps) {
-    const { error, isAuthenticated } = this.props;
+    const { error } = this.props;
     if (error !== prevProps.error) {
       // Check for register error
       if (error.id === 'LOGIN_FAIL') {
@@ -41,10 +41,6 @@ class Login extends Component {
         this.setState({ msg: null });
       }
     }
-
-      if (isAuthenticated) {
-
-      }
 
   }
 
@@ -85,6 +81,13 @@ class Login extends Component {
   {this.state.msg ? (
               <Alert color='danger'>{this.state.msg}</Alert>
             ) : null}
+            {
+              this.props.error.id==="LOGOUT-SUCCESS"?(
+                <Alert color='success'>{this.props.error.msg}</Alert>
+              ):null
+
+
+            }
 
                <FormGroup>
                 <Label for='email'>Email</Label>
@@ -119,7 +122,7 @@ class Login extends Component {
  <Button color='dark' style={{ marginTop: '1rem' }} block>
                   Login
                 </Button>
-                <h5 className="text-center mb-2 mt-2">New to SendIT? <span> <Link to="/register">Create an account</Link></span></h5>
+                <p className="text-center mb-2 mt-2">New to SendIT? <span> <Link to="/register">Create an account</Link></span></p>
 
 
 
