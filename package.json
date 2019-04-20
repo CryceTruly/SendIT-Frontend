@@ -2,9 +2,9 @@
   "name": "sendit",
   "version": "1.0.0",
   "description": "App to deliver parcels from one location to another",
-  "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "npm run build && node server.js",
+    "dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "test": "jest",
     "lint": "eslint . --ignore-path .gitignore",
@@ -27,6 +27,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "expect": "^24.7.1",
+    "express": "^4.16.4",
     "fetch-mock": "^7.3.1",
     "history": "^4.9.0",
     "moment": "^2.24.0",

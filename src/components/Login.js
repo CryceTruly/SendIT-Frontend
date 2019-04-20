@@ -9,14 +9,13 @@ import {
   Label,
   Input,
   Alert,
-  Row,
-  Col
+  Row
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { clearErrors } from '../actions/errorActions';
 import {login} from '../actions/authActions';
-import {Link,Redirect} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 class Login extends Component {
 
   state = {
@@ -119,9 +118,9 @@ class Login extends Component {
 
 {
   this.props.error.processing?(
-    <div class="d-flex text-primary justify-content-center">
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
+    <div className="d-flex text-primary justify-content-center">
+    <div className="spinner-border" role="status">
+      <span className="sr-only">Loading...</span>
     </div>
   </div>
   ):null

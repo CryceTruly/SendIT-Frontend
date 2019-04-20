@@ -1,4 +1,5 @@
 export const GET_PARCELS = "GET_PARCELS";
+export const GET_PARCEL="GET_PARCEL";
 export const ADD_PARCEL = "ADD_PARCEL";
 export const PARCELS_LOADING = "PARCELS_LOADING";
 export const DELETE_PARCEL = "ITEMS_LOADING";

@@ -2,11 +2,12 @@ import Axios from "axios";
 import {
     GET_PARCELS,
     GET_PARCEL,
-    ADD_PARCEL
 } from "./types";
 
+import BASE_URL from "../constants";
+
 export const getParcels = () => dispatch => {
-     Axios.get(`http://127.0.0.1:3000/api/v2/users/${localStorage.getItem("user_id")}/parcels`, {
+     Axios.get(`${BASE_URL}/users/${localStorage.getItem("user_id")}/parcels`, {
 
         headers: {
             "Authorization": `Bearer ${localStorage.getItem("auth_token")}`
@@ -27,7 +28,7 @@ export const getParcels = () => dispatch => {
 };
 
 export const getParcel = () => dispatch => {
-    Axios.get(`http://127.0.0.1:3000/api/v2/parcels/1`, {
+    Axios.get(`${BASE_URL}/parcels/1`, {
 
        headers: {
            "Authorization": `Bearer ${localStorage.getItem("auth_token")}`
