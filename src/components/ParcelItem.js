@@ -20,6 +20,7 @@ export default function ParcelItem(props) {
         placed,
         status
     } = props.data;
+    const detail=props.data;
     return (
         <tr>
             <td>
@@ -29,7 +30,7 @@ export default function ParcelItem(props) {
             <td>
                 {<Moment fromNow>{placed}</Moment>}
             </td>
-            <td><Link className="btn btn-info" to="/details" data={props.data}>Details</Link>
+            <td><Link className="btn btn-info" to={{pathname:"/details", state:{data:detail}}}>Details</Link>
             </td>
         </tr>
 
