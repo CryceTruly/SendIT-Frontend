@@ -1,9 +1,7 @@
 import Axios from "axios";
-import {
-    GET_PARCELS,
-    GET_PARCEL,
+import {ADDING_PARCEL,ADD_PARCEL_SUCCESS,ADD_PARCEL_FAIL,GET_PARCELS,GET_PARCEL
 } from "./types";
-
+import {returnErrors} from "./errorActions";
 import BASE_URL from "../constants";
 
 export const getParcels = () => dispatch => {
@@ -47,3 +45,42 @@ export const getParcel = () => dispatch => {
        type: GET_PARCEL
    };
 };
+
+
+
+export const createParcel = (data,routes)=> dispatch => {
+
+console.log(data);
+
+    dispatch({
+        type:ADDING_PARCEL
+    })
+    // Headers
+    const config = {
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization":`Bearer ${localStorage.getItem("auth_token")}`
+        }
+    };
+    const body = data;
+
+    Axios
+        .post(`${BASE_URL}/parcels`, body,config)
+        .then(res => {
+                returnErrors(null, null,null)
+                dispatch({
+                    type: ADD_PARCEL_SUCCESS,
+                    payload: res.data
+                });
+                routes.history.push("/");
+
+        })
+        .catch(err => {
+            dispatch(
+                returnErrors(err.response.data.message, err.response.status, "ADD_PARCEL_FAIL")
+            );
+            dispatch({
+                type: ADD_PARCEL_FAIL
+            });
+        });
+}

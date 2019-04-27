@@ -1,11 +1,15 @@
 import {
     GET_PARCELS,
-    ADD_PARCEL
+    ADD_PARCEL,
+    ADDING_PARCEL,
+    ADD_PARCEL_FAIL,
+    ADD_PARCEL_SUCCESS
 } from "../actions/types";
 
 const initialState = {
 
     parcels: [],
+    isAdding:false,
 
 
 };
@@ -18,6 +22,32 @@ export default function (state = initialState, action) {
             parcels: action.payload
 
         };
+        case ADDING_PARCEL:
+        return {
+            ...state,
+            isAdding:true,
+
+
+        }
+        ;
+        case ADD_PARCEL_SUCCESS:
+        return {
+            ...state,
+            isAdding:false,
+
+
+
+        }
+        ;
+        case ADD_PARCEL_FAIL:
+        return {
+            ...state,
+            isAdding:false,
+            msg:action.payload
+
+
+
+        }
     default:
         return state;
     }
