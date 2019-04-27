@@ -1,24 +1,17 @@
 language: node_js
 node_js:
-  - "stable"
-
-addons:
-    code_climate
-env:
-  global:
-    -   CC_TEST_REPORTER_ID=b7860c93eebfd9f3532893a22983c3a9c422564625b35826ff93c5c236110622
-
-
-before_script:
-  - export CC_TEST_REPORTER_ID=b7860c93eebfd9f3532893a22983c3a9c422564625b35826ff93c5c236110622
-  
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-
+  - 10.15.1
 cache:
   directories:
   - node_modules
+env:
+  global:
+    -   CC_TEST_REPORTER_ID=b7860c93eebfd9f3532893a22983c3a9c422564625b35826ff93c5c236110622
+before_script:
+  - export CC_TEST_REPORTER_ID=b7860c93eebfd9f3532893a22983c3a9c422564625b35826ff93c5c236110622
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
   - npm install
   - npm test -- --coverage

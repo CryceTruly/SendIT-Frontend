@@ -1,6 +1,8 @@
 export const GET_PARCELS = "GET_PARCELS";
 export const GET_PARCEL="GET_PARCEL";
-export const ADD_PARCEL = "ADD_PARCEL";
+export const ADDING_PARCEL = "ADDING_PARCEL";
+export const ADD_PARCEL_SUCCESS="ADD_PARCEL_SUCCESS";
+export const ADD_PARCEL_FAIL="ADD_PARCEL_FAIL";
 export const PARCELS_LOADING = "PARCELS_LOADING";
 export const DELETE_PARCEL = "ITEMS_LOADING";
 export const USER_LOADING = "USER_LOADING";
