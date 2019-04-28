@@ -2,7 +2,7 @@ const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./public/index.js",
     output: {
         path: path.join(__dirname, "/dist"),
         filename: "index_bundle.js"
@@ -43,5 +43,3 @@ module.exports = {
         historyApiFallback: true
     }
 };
-
-

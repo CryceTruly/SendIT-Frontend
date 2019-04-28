@@ -1,0 +1,10 @@
+exclude_patterns:
+ - "**/*.test.js"
+ - "src/index.js"
+  method-lines:
+    config:
+      threshold: 80
+  similar-code:
+    enabled: false
+  identical-code:
+    enabled: false

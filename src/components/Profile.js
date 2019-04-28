@@ -1,54 +1,23 @@
-import React, { Component } from 'react'
-import {Button,Card,CardImg,CardBody,CardSubtitle,CardText,CardTitle} from 'reactstrap';
-import {connect} from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import ProfileView from "../views/Profile";
+
 export class Profile extends Component {
   render() {
-if(this.props.auth.isLoading){
-       return <h3>Loading User...</h3>
-    }else{
-        const {user} = this.props.auth;
-
-
-
-
-return(
-        <center>
-        <div className="card mx-auto">
-          <div className="card-body pt-5">
-            <img src="https://avatars1.githubusercontent.com/u/20795487?s=400&v=4" height="200" className="rounded-circle" alt="profile-image"/>
-             <p className="card-text">   FullName:  <strong>{user ? `${user.fullname}` : ''}</strong></p>
-             <p className="card-text">  Username:   <strong>{user ? `${user.username}` : ''}</strong></p>
-            <p className="card-text">Email:<strong>{user ? `${user.email}` : ''}</strong></p>
-            <p className="card-text">Joined:<strong>{user ? `${user.joined}` : ''}</strong></p>
-            <Button className="btn-success">Edit  Profile</Button>
-
-</div>
-
-</div>
-
-<br>
-</br> <div>
-      <Card>
-       <CardBody>
-          <CardTitle>Statistics</CardTitle>
-        </CardBody>
-        <h6>All orders <span className="badge badge-info">{this.props.parcels.length
-        }</span></h6><h6>Delivered <span  className="badge badge-info">{this.props.parcels.filter(parcel=>parcel.status==='delivered').length
-        }</span></h6>
-        <h6 >Pending <span className="badge badge-info">{this.props.parcels.filter(parcel=>parcel.status==='order_placed').length
-        }</span></h6>
-      </Card>
-    </div>
-
-
-</center>
-  )
+    if (this.props.auth.isLoading) {
+      return <h3>Loading User...</h3>;
+    }
+    const { user } = this.props.auth;
+    return (
+      <ProfileView
+        parcels={this.props.parcels}
+        user={user}
+      />
+    );
+  }
 }
-}
-}
-export const mapStateToProps=(state)=>({
-
+export const mapStateToProps = state => ({
   auth: state.auth,
-  parcels:state.parcels.parcels
+  parcels: state.parcels.parcels,
 });
-export default connect(mapStateToProps,{})(Profile)
+export default connect(mapStateToProps, {})(Profile);

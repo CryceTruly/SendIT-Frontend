@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Provider
+        store={
+          Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          }
+        }
+      >
+        <Connect(Navigationbar) />
+        <Container
+          tag="div"
+        >
+          <p />
+          <Switch>
+            <Connect(PrivateRoute)
+              component={[Function]}
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/login"
+            />
+            <Connect(PrivateRoute)
+              component={[Function]}
+              exact={true}
+              path="/details"
+            />
+            <Connect(PrivateRoute)
+              component={[Function]}
+              exact={true}
+              path="/new"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/register"
+            />
+            <Connect(PrivateRoute)
+              component={[Function]}
+              exact={true}
+              path="/dashboard"
+            />
+          </Switch>
+        </Container>
+      </Provider>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Connect(Navigationbar) />,
+          <Container
+            tag="div"
+          >
+            <p />
+            <Switch>
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+              />
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/details"
+              />
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/new"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/register"
+              />
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/dashboard"
+              />
+            </Switch>
+          </Container>,
+        ],
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <p />,
+              <Switch>
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/login"
+                />
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/details"
+                />
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/new"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/register"
+                />
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/dashboard"
+                />
+              </Switch>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+                  />,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/login"
+                  />,
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/details"
+                  />,
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/new"
+                  />,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/register"
+                  />,
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/dashboard"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/login",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/details",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/new",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/register",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/dashboard",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Provider
+          store={
+            Object {
+              "dispatch": [Function],
+              "getState": [Function],
+              "replaceReducer": [Function],
+              "subscribe": [Function],
+              Symbol(observable): [Function],
+            }
+          }
+        >
+          <Connect(Navigationbar) />
+          <Container
+            tag="div"
+          >
+            <p />
+            <Switch>
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+              />
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/details"
+              />
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/new"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/register"
+              />
+              <Connect(PrivateRoute)
+                component={[Function]}
+                exact={true}
+                path="/dashboard"
+              />
+            </Switch>
+          </Container>
+        </Provider>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Connect(Navigationbar) />,
+            <Container
+              tag="div"
+            >
+              <p />
+              <Switch>
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/login"
+                />
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/details"
+                />
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/new"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/register"
+                />
+                <Connect(PrivateRoute)
+                  component={[Function]}
+                  exact={true}
+                  path="/dashboard"
+                />
+              </Switch>
+            </Container>,
+          ],
+          "store": Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <p />,
+                <Switch>
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+                  />
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/login"
+                  />
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/details"
+                  />
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/new"
+                  />
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/register"
+                  />
+                  <Connect(PrivateRoute)
+                    component={[Function]}
+                    exact={true}
+                    path="/dashboard"
+                  />
+                </Switch>,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Connect(PrivateRoute)
+                      component={[Function]}
+                      exact={true}
+                      path="/"
+                    />,
+                    <Route
+                      component={[Function]}
+                      exact={true}
+                      path="/login"
+                    />,
+                    <Connect(PrivateRoute)
+                      component={[Function]}
+                      exact={true}
+                      path="/details"
+                    />,
+                    <Connect(PrivateRoute)
+                      component={[Function]}
+                      exact={true}
+                      path="/new"
+                    />,
+                    <Route
+                      component={[Function]}
+                      exact={true}
+                      path="/register"
+                    />,
+                    <Connect(PrivateRoute)
+                      component={[Function]}
+                      exact={true}
+                      path="/dashboard"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/login",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/details",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/new",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/register",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/dashboard",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

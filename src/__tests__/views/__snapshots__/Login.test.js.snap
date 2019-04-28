@@ -1,0 +1,2755 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login View Tests should not regress 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoginView
+    errorId={1}
+    errorMessage="Invalid password"
+    msg="Logged In success"
+    onChange={[MockFunction]}
+    onSubmit={[MockFunction]}
+    processing={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Row
+        tag="div"
+      >
+        <div
+          className="col-md-3"
+        />
+        <div
+          className="col-md-6"
+        >
+          <Card
+            tag="div"
+          >
+            <CardBody
+              tag="div"
+            >
+              <CardTitle
+                tag="div"
+              >
+                <strong>
+                  Login to SendIT.
+                </strong>
+              </CardTitle>
+              <Form
+                onSubmit={[MockFunction]}
+                tag="form"
+              >
+                <Alert
+                  closeAriaLabel="Close"
+                  color="danger"
+                  fade={true}
+                  isOpen={true}
+                  tag="div"
+                  transition={
+                    Object {
+                      "appear": true,
+                      "baseClass": "fade",
+                      "baseClassActive": "show",
+                      "enter": true,
+                      "exit": true,
+                      "in": true,
+                      "mountOnEnter": false,
+                      "onEnter": [Function],
+                      "onEntered": [Function],
+                      "onEntering": [Function],
+                      "onExit": [Function],
+                      "onExited": [Function],
+                      "onExiting": [Function],
+                      "tag": "div",
+                      "timeout": 150,
+                      "unmountOnExit": true,
+                    }
+                  }
+                >
+                  Logged In success
+                </Alert>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="email"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Email
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="email"
+                    name="email"
+                    onChange={[MockFunction]}
+                    placeholder="Email"
+                    required={true}
+                    type="email"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="password"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Password
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="password"
+                    name="password"
+                    onChange={[MockFunction]}
+                    placeholder=""
+                    required={true}
+                    type="password"
+                  />
+                  <div
+                    className="d-flex text-primary justify-content-center"
+                  >
+                    <div
+                      className="spinner-border"
+                      role="status"
+                    >
+                      <span
+                        className="sr-only"
+                      >
+                        Loading...
+                      </span>
+                    </div>
+                  </div>
+                </FormGroup>
+                <p
+                  className="text-right"
+                >
+                  Forgot Password?
+                </p>
+                <Button
+                  block={true}
+                  color="dark"
+                  disabled={true}
+                  style={
+                    Object {
+                      "marginTop": "1rem",
+                    }
+                  }
+                  tag="button"
+                >
+                  Please wait
+                </Button>
+                <p
+                  className="text-center mb-2 mt-2"
+                >
+                  New to SendIT?
+                  <span>
+                     
+                    <Link
+                      replace={false}
+                      to="/register"
+                    >
+                      Create an account
+                    </Link>
+                  </span>
+                </p>
+              </Form>
+            </CardBody>
+          </Card>
+        </div>
+        <div
+          className="col-md-3"
+        />
+      </Row>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col-md-3"
+          />,
+          <div
+            className="col-md-6"
+          >
+            <Card
+              tag="div"
+            >
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  tag="div"
+                >
+                  <strong>
+                    Login to SendIT.
+                  </strong>
+                </CardTitle>
+                <Form
+                  onSubmit={[MockFunction]}
+                  tag="form"
+                >
+                  <Alert
+                    closeAriaLabel="Close"
+                    color="danger"
+                    fade={true}
+                    isOpen={true}
+                    tag="div"
+                    transition={
+                      Object {
+                        "appear": true,
+                        "baseClass": "fade",
+                        "baseClassActive": "show",
+                        "enter": true,
+                        "exit": true,
+                        "in": true,
+                        "mountOnEnter": false,
+                        "onEnter": [Function],
+                        "onEntered": [Function],
+                        "onEntering": [Function],
+                        "onExit": [Function],
+                        "onExited": [Function],
+                        "onExiting": [Function],
+                        "tag": "div",
+                        "timeout": 150,
+                        "unmountOnExit": true,
+                      }
+                    }
+                  >
+                    Logged In success
+                  </Alert>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="email"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="email"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Password
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password"
+                      name="password"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="password"
+                    />
+                    <div
+                      className="d-flex text-primary justify-content-center"
+                    >
+                      <div
+                        className="spinner-border"
+                        role="status"
+                      >
+                        <span
+                          className="sr-only"
+                        >
+                          Loading...
+                        </span>
+                      </div>
+                    </div>
+                  </FormGroup>
+                  <p
+                    className="text-right"
+                  >
+                    Forgot Password?
+                  </p>
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "1rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait
+                  </Button>
+                  <p
+                    className="text-center mb-2 mt-2"
+                  >
+                    New to SendIT?
+                    <span>
+                       
+                      <Link
+                        replace={false}
+                        to="/register"
+                      >
+                        Create an account
+                      </Link>
+                    </span>
+                  </p>
+                </Form>
+              </CardBody>
+            </Card>
+          </div>,
+          <div
+            className="col-md-3"
+          />,
+        ],
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "col-md-3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Card
+              tag="div"
+            >
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  tag="div"
+                >
+                  <strong>
+                    Login to SendIT.
+                  </strong>
+                </CardTitle>
+                <Form
+                  onSubmit={[MockFunction]}
+                  tag="form"
+                >
+                  <Alert
+                    closeAriaLabel="Close"
+                    color="danger"
+                    fade={true}
+                    isOpen={true}
+                    tag="div"
+                    transition={
+                      Object {
+                        "appear": true,
+                        "baseClass": "fade",
+                        "baseClassActive": "show",
+                        "enter": true,
+                        "exit": true,
+                        "in": true,
+                        "mountOnEnter": false,
+                        "onEnter": [Function],
+                        "onEntered": [Function],
+                        "onEntering": [Function],
+                        "onExit": [Function],
+                        "onExited": [Function],
+                        "onExiting": [Function],
+                        "tag": "div",
+                        "timeout": 150,
+                        "unmountOnExit": true,
+                      }
+                    }
+                  >
+                    Logged In success
+                  </Alert>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="email"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="email"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Password
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password"
+                      name="password"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="password"
+                    />
+                    <div
+                      className="d-flex text-primary justify-content-center"
+                    >
+                      <div
+                        className="spinner-border"
+                        role="status"
+                      >
+                        <span
+                          className="sr-only"
+                        >
+                          Loading...
+                        </span>
+                      </div>
+                    </div>
+                  </FormGroup>
+                  <p
+                    className="text-right"
+                  >
+                    Forgot Password?
+                  </p>
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "1rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait
+                  </Button>
+                  <p
+                    className="text-center mb-2 mt-2"
+                  >
+                    New to SendIT?
+                    <span>
+                       
+                      <Link
+                        replace={false}
+                        to="/register"
+                      >
+                        Create an account
+                      </Link>
+                    </span>
+                  </p>
+                </Form>
+              </CardBody>
+            </Card>,
+            "className": "col-md-6",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  tag="div"
+                >
+                  <strong>
+                    Login to SendIT.
+                  </strong>
+                </CardTitle>
+                <Form
+                  onSubmit={[MockFunction]}
+                  tag="form"
+                >
+                  <Alert
+                    closeAriaLabel="Close"
+                    color="danger"
+                    fade={true}
+                    isOpen={true}
+                    tag="div"
+                    transition={
+                      Object {
+                        "appear": true,
+                        "baseClass": "fade",
+                        "baseClassActive": "show",
+                        "enter": true,
+                        "exit": true,
+                        "in": true,
+                        "mountOnEnter": false,
+                        "onEnter": [Function],
+                        "onEntered": [Function],
+                        "onEntering": [Function],
+                        "onExit": [Function],
+                        "onExited": [Function],
+                        "onExiting": [Function],
+                        "tag": "div",
+                        "timeout": 150,
+                        "unmountOnExit": true,
+                      }
+                    }
+                  >
+                    Logged In success
+                  </Alert>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="email"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="email"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Password
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password"
+                      name="password"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="password"
+                    />
+                    <div
+                      className="d-flex text-primary justify-content-center"
+                    >
+                      <div
+                        className="spinner-border"
+                        role="status"
+                      >
+                        <span
+                          className="sr-only"
+                        >
+                          Loading...
+                        </span>
+                      </div>
+                    </div>
+                  </FormGroup>
+                  <p
+                    className="text-right"
+                  >
+                    Forgot Password?
+                  </p>
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "1rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait
+                  </Button>
+                  <p
+                    className="text-center mb-2 mt-2"
+                  >
+                    New to SendIT?
+                    <span>
+                       
+                      <Link
+                        replace={false}
+                        to="/register"
+                      >
+                        Create an account
+                      </Link>
+                    </span>
+                  </p>
+                </Form>
+              </CardBody>,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <CardTitle
+                    tag="div"
+                  >
+                    <strong>
+                      Login to SendIT.
+                    </strong>
+                  </CardTitle>,
+                  <Form
+                    onSubmit={[MockFunction]}
+                    tag="form"
+                  >
+                    <Alert
+                      closeAriaLabel="Close"
+                      color="danger"
+                      fade={true}
+                      isOpen={true}
+                      tag="div"
+                      transition={
+                        Object {
+                          "appear": true,
+                          "baseClass": "fade",
+                          "baseClassActive": "show",
+                          "enter": true,
+                          "exit": true,
+                          "in": true,
+                          "mountOnEnter": false,
+                          "onEnter": [Function],
+                          "onEntered": [Function],
+                          "onEntering": [Function],
+                          "onExit": [Function],
+                          "onExited": [Function],
+                          "onExiting": [Function],
+                          "tag": "div",
+                          "timeout": 150,
+                          "unmountOnExit": true,
+                        }
+                      }
+                    >
+                      Logged In success
+                    </Alert>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="email"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="email"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Password
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="password"
+                      />
+                      <div
+                        className="d-flex text-primary justify-content-center"
+                      >
+                        <div
+                          className="spinner-border"
+                          role="status"
+                        >
+                          <span
+                            className="sr-only"
+                          >
+                            Loading...
+                          </span>
+                        </div>
+                      </div>
+                    </FormGroup>
+                    <p
+                      className="text-right"
+                    >
+                      Forgot Password?
+                    </p>
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "1rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait
+                    </Button>
+                    <p
+                      className="text-center mb-2 mt-2"
+                    >
+                      New to SendIT?
+                      <span>
+                         
+                        <Link
+                          replace={false}
+                          to="/register"
+                        >
+                          Create an account
+                        </Link>
+                      </span>
+                    </p>
+                  </Form>,
+                ],
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <strong>
+                      Login to SendIT.
+                    </strong>,
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Login to SendIT.",
+                    },
+                    "ref": null,
+                    "rendered": "Login to SendIT.",
+                    "type": "strong",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <Alert
+                        closeAriaLabel="Close"
+                        color="danger"
+                        fade={true}
+                        isOpen={true}
+                        tag="div"
+                        transition={
+                          Object {
+                            "appear": true,
+                            "baseClass": "fade",
+                            "baseClassActive": "show",
+                            "enter": true,
+                            "exit": true,
+                            "in": true,
+                            "mountOnEnter": false,
+                            "onEnter": [Function],
+                            "onEntered": [Function],
+                            "onEntering": [Function],
+                            "onExit": [Function],
+                            "onExited": [Function],
+                            "onExiting": [Function],
+                            "tag": "div",
+                            "timeout": 150,
+                            "unmountOnExit": true,
+                          }
+                        }
+                      >
+                        Logged In success
+                      </Alert>,
+                      null,
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="email"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Email
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="email"
+                          name="email"
+                          onChange={[MockFunction]}
+                          placeholder="Email"
+                          required={true}
+                          type="email"
+                        />
+                      </FormGroup>,
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="password"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Password
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="password"
+                          name="password"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="password"
+                        />
+                        <div
+                          className="d-flex text-primary justify-content-center"
+                        >
+                          <div
+                            className="spinner-border"
+                            role="status"
+                          >
+                            <span
+                              className="sr-only"
+                            >
+                              Loading...
+                            </span>
+                          </div>
+                        </div>
+                      </FormGroup>,
+                      <p
+                        className="text-right"
+                      >
+                        Forgot Password?
+                      </p>,
+                      <Button
+                        block={true}
+                        color="dark"
+                        disabled={true}
+                        style={
+                          Object {
+                            "marginTop": "1rem",
+                          }
+                        }
+                        tag="button"
+                      >
+                        Please wait
+                      </Button>,
+                      <p
+                        className="text-center mb-2 mt-2"
+                      >
+                        New to SendIT?
+                        <span>
+                           
+                          <Link
+                            replace={false}
+                            to="/register"
+                          >
+                            Create an account
+                          </Link>
+                        </span>
+                      </p>,
+                    ],
+                    "onSubmit": [MockFunction],
+                    "tag": "form",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "Logged In success",
+                        "closeAriaLabel": "Close",
+                        "color": "danger",
+                        "fade": true,
+                        "isOpen": true,
+                        "tag": "div",
+                        "transition": Object {
+                          "appear": true,
+                          "baseClass": "fade",
+                          "baseClassActive": "show",
+                          "enter": true,
+                          "exit": true,
+                          "in": true,
+                          "mountOnEnter": false,
+                          "onEnter": [Function],
+                          "onEntered": [Function],
+                          "onEntering": [Function],
+                          "onExit": [Function],
+                          "onExited": [Function],
+                          "onExiting": [Function],
+                          "tag": "div",
+                          "timeout": 150,
+                          "unmountOnExit": true,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": "Logged In success",
+                      "type": [Function],
+                    },
+                    null,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [
+                          <Label
+                            for="email"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Email
+                          </Label>,
+                          <Input
+                            className="mb-3"
+                            id="email"
+                            name="email"
+                            onChange={[MockFunction]}
+                            placeholder="Email"
+                            required={true}
+                            type="email"
+                          />,
+                        ],
+                        "tag": "div",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": "Email",
+                            "for": "email",
+                            "tag": "label",
+                            "widths": Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": "Email",
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "mb-3",
+                            "id": "email",
+                            "name": "email",
+                            "onChange": [MockFunction],
+                            "placeholder": "Email",
+                            "required": true,
+                            "type": "email",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [
+                          <Label
+                            for="password"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Password
+                          </Label>,
+                          <Input
+                            className="mb-3"
+                            id="password"
+                            name="password"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="password"
+                          />,
+                          <div
+                            className="d-flex text-primary justify-content-center"
+                          >
+                            <div
+                              className="spinner-border"
+                              role="status"
+                            >
+                              <span
+                                className="sr-only"
+                              >
+                                Loading...
+                              </span>
+                            </div>
+                          </div>,
+                        ],
+                        "tag": "div",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": "Password",
+                            "for": "password",
+                            "tag": "label",
+                            "widths": Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": "Password",
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "mb-3",
+                            "id": "password",
+                            "name": "password",
+                            "onChange": [MockFunction],
+                            "placeholder": "",
+                            "required": true,
+                            "type": "password",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <div
+                              className="spinner-border"
+                              role="status"
+                            >
+                              <span
+                                className="sr-only"
+                              >
+                                Loading...
+                              </span>
+                            </div>,
+                            "className": "d-flex text-primary justify-content-center",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <span
+                                className="sr-only"
+                              >
+                                Loading...
+                              </span>,
+                              "className": "spinner-border",
+                              "role": "status",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Loading...",
+                                "className": "sr-only",
+                              },
+                              "ref": null,
+                              "rendered": "Loading...",
+                              "type": "span",
+                            },
+                            "type": "div",
+                          },
+                          "type": "div",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Forgot Password?",
+                        "className": "text-right",
+                      },
+                      "ref": null,
+                      "rendered": "Forgot Password?",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "block": true,
+                        "children": "Please wait",
+                        "color": "dark",
+                        "disabled": true,
+                        "style": Object {
+                          "marginTop": "1rem",
+                        },
+                        "tag": "button",
+                      },
+                      "ref": null,
+                      "rendered": "Please wait",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "New to SendIT?",
+                          <span>
+                             
+                            <Link
+                              replace={false}
+                              to="/register"
+                            >
+                              Create an account
+                            </Link>
+                          </span>,
+                        ],
+                        "className": "text-center mb-2 mt-2",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "New to SendIT?",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              " ",
+                              <Link
+                                replace={false}
+                                to="/register"
+                              >
+                                Create an account
+                              </Link>,
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            " ",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": "Create an account",
+                                "replace": false,
+                                "to": "/register",
+                              },
+                              "ref": null,
+                              "rendered": "Create an account",
+                              "type": [Function],
+                            },
+                          ],
+                          "type": "span",
+                        },
+                      ],
+                      "type": "p",
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "col-md-3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Row
+          tag="div"
+        >
+          <div
+            className="col-md-3"
+          />
+          <div
+            className="col-md-6"
+          >
+            <Card
+              tag="div"
+            >
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  tag="div"
+                >
+                  <strong>
+                    Login to SendIT.
+                  </strong>
+                </CardTitle>
+                <Form
+                  onSubmit={[MockFunction]}
+                  tag="form"
+                >
+                  <Alert
+                    closeAriaLabel="Close"
+                    color="danger"
+                    fade={true}
+                    isOpen={true}
+                    tag="div"
+                    transition={
+                      Object {
+                        "appear": true,
+                        "baseClass": "fade",
+                        "baseClassActive": "show",
+                        "enter": true,
+                        "exit": true,
+                        "in": true,
+                        "mountOnEnter": false,
+                        "onEnter": [Function],
+                        "onEntered": [Function],
+                        "onEntering": [Function],
+                        "onExit": [Function],
+                        "onExited": [Function],
+                        "onExiting": [Function],
+                        "tag": "div",
+                        "timeout": 150,
+                        "unmountOnExit": true,
+                      }
+                    }
+                  >
+                    Logged In success
+                  </Alert>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="email"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="email"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Password
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password"
+                      name="password"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="password"
+                    />
+                    <div
+                      className="d-flex text-primary justify-content-center"
+                    >
+                      <div
+                        className="spinner-border"
+                        role="status"
+                      >
+                        <span
+                          className="sr-only"
+                        >
+                          Loading...
+                        </span>
+                      </div>
+                    </div>
+                  </FormGroup>
+                  <p
+                    className="text-right"
+                  >
+                    Forgot Password?
+                  </p>
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "1rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait
+                  </Button>
+                  <p
+                    className="text-center mb-2 mt-2"
+                  >
+                    New to SendIT?
+                    <span>
+                       
+                      <Link
+                        replace={false}
+                        to="/register"
+                      >
+                        Create an account
+                      </Link>
+                    </span>
+                  </p>
+                </Form>
+              </CardBody>
+            </Card>
+          </div>
+          <div
+            className="col-md-3"
+          />
+        </Row>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col-md-3"
+            />,
+            <div
+              className="col-md-6"
+            >
+              <Card
+                tag="div"
+              >
+                <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    tag="div"
+                  >
+                    <strong>
+                      Login to SendIT.
+                    </strong>
+                  </CardTitle>
+                  <Form
+                    onSubmit={[MockFunction]}
+                    tag="form"
+                  >
+                    <Alert
+                      closeAriaLabel="Close"
+                      color="danger"
+                      fade={true}
+                      isOpen={true}
+                      tag="div"
+                      transition={
+                        Object {
+                          "appear": true,
+                          "baseClass": "fade",
+                          "baseClassActive": "show",
+                          "enter": true,
+                          "exit": true,
+                          "in": true,
+                          "mountOnEnter": false,
+                          "onEnter": [Function],
+                          "onEntered": [Function],
+                          "onEntering": [Function],
+                          "onExit": [Function],
+                          "onExited": [Function],
+                          "onExiting": [Function],
+                          "tag": "div",
+                          "timeout": 150,
+                          "unmountOnExit": true,
+                        }
+                      }
+                    >
+                      Logged In success
+                    </Alert>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="email"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="email"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Password
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="password"
+                      />
+                      <div
+                        className="d-flex text-primary justify-content-center"
+                      >
+                        <div
+                          className="spinner-border"
+                          role="status"
+                        >
+                          <span
+                            className="sr-only"
+                          >
+                            Loading...
+                          </span>
+                        </div>
+                      </div>
+                    </FormGroup>
+                    <p
+                      className="text-right"
+                    >
+                      Forgot Password?
+                    </p>
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "1rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait
+                    </Button>
+                    <p
+                      className="text-center mb-2 mt-2"
+                    >
+                      New to SendIT?
+                      <span>
+                         
+                        <Link
+                          replace={false}
+                          to="/register"
+                        >
+                          Create an account
+                        </Link>
+                      </span>
+                    </p>
+                  </Form>
+                </CardBody>
+              </Card>
+            </div>,
+            <div
+              className="col-md-3"
+            />,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "col-md-3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Card
+                tag="div"
+              >
+                <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    tag="div"
+                  >
+                    <strong>
+                      Login to SendIT.
+                    </strong>
+                  </CardTitle>
+                  <Form
+                    onSubmit={[MockFunction]}
+                    tag="form"
+                  >
+                    <Alert
+                      closeAriaLabel="Close"
+                      color="danger"
+                      fade={true}
+                      isOpen={true}
+                      tag="div"
+                      transition={
+                        Object {
+                          "appear": true,
+                          "baseClass": "fade",
+                          "baseClassActive": "show",
+                          "enter": true,
+                          "exit": true,
+                          "in": true,
+                          "mountOnEnter": false,
+                          "onEnter": [Function],
+                          "onEntered": [Function],
+                          "onEntering": [Function],
+                          "onExit": [Function],
+                          "onExited": [Function],
+                          "onExiting": [Function],
+                          "tag": "div",
+                          "timeout": 150,
+                          "unmountOnExit": true,
+                        }
+                      }
+                    >
+                      Logged In success
+                    </Alert>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="email"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="email"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Password
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="password"
+                      />
+                      <div
+                        className="d-flex text-primary justify-content-center"
+                      >
+                        <div
+                          className="spinner-border"
+                          role="status"
+                        >
+                          <span
+                            className="sr-only"
+                          >
+                            Loading...
+                          </span>
+                        </div>
+                      </div>
+                    </FormGroup>
+                    <p
+                      className="text-right"
+                    >
+                      Forgot Password?
+                    </p>
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "1rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait
+                    </Button>
+                    <p
+                      className="text-center mb-2 mt-2"
+                    >
+                      New to SendIT?
+                      <span>
+                         
+                        <Link
+                          replace={false}
+                          to="/register"
+                        >
+                          Create an account
+                        </Link>
+                      </span>
+                    </p>
+                  </Form>
+                </CardBody>
+              </Card>,
+              "className": "col-md-6",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    tag="div"
+                  >
+                    <strong>
+                      Login to SendIT.
+                    </strong>
+                  </CardTitle>
+                  <Form
+                    onSubmit={[MockFunction]}
+                    tag="form"
+                  >
+                    <Alert
+                      closeAriaLabel="Close"
+                      color="danger"
+                      fade={true}
+                      isOpen={true}
+                      tag="div"
+                      transition={
+                        Object {
+                          "appear": true,
+                          "baseClass": "fade",
+                          "baseClassActive": "show",
+                          "enter": true,
+                          "exit": true,
+                          "in": true,
+                          "mountOnEnter": false,
+                          "onEnter": [Function],
+                          "onEntered": [Function],
+                          "onEntering": [Function],
+                          "onExit": [Function],
+                          "onExited": [Function],
+                          "onExiting": [Function],
+                          "tag": "div",
+                          "timeout": 150,
+                          "unmountOnExit": true,
+                        }
+                      }
+                    >
+                      Logged In success
+                    </Alert>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="email"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="email"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Password
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="password"
+                      />
+                      <div
+                        className="d-flex text-primary justify-content-center"
+                      >
+                        <div
+                          className="spinner-border"
+                          role="status"
+                        >
+                          <span
+                            className="sr-only"
+                          >
+                            Loading...
+                          </span>
+                        </div>
+                      </div>
+                    </FormGroup>
+                    <p
+                      className="text-right"
+                    >
+                      Forgot Password?
+                    </p>
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "1rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait
+                    </Button>
+                    <p
+                      className="text-center mb-2 mt-2"
+                    >
+                      New to SendIT?
+                      <span>
+                         
+                        <Link
+                          replace={false}
+                          to="/register"
+                        >
+                          Create an account
+                        </Link>
+                      </span>
+                    </p>
+                  </Form>
+                </CardBody>,
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <CardTitle
+                      tag="div"
+                    >
+                      <strong>
+                        Login to SendIT.
+                      </strong>
+                    </CardTitle>,
+                    <Form
+                      onSubmit={[MockFunction]}
+                      tag="form"
+                    >
+                      <Alert
+                        closeAriaLabel="Close"
+                        color="danger"
+                        fade={true}
+                        isOpen={true}
+                        tag="div"
+                        transition={
+                          Object {
+                            "appear": true,
+                            "baseClass": "fade",
+                            "baseClassActive": "show",
+                            "enter": true,
+                            "exit": true,
+                            "in": true,
+                            "mountOnEnter": false,
+                            "onEnter": [Function],
+                            "onEntered": [Function],
+                            "onEntering": [Function],
+                            "onExit": [Function],
+                            "onExited": [Function],
+                            "onExiting": [Function],
+                            "tag": "div",
+                            "timeout": 150,
+                            "unmountOnExit": true,
+                          }
+                        }
+                      >
+                        Logged In success
+                      </Alert>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="email"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Email
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="email"
+                          name="email"
+                          onChange={[MockFunction]}
+                          placeholder="Email"
+                          required={true}
+                          type="email"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="password"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Password
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="password"
+                          name="password"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="password"
+                        />
+                        <div
+                          className="d-flex text-primary justify-content-center"
+                        >
+                          <div
+                            className="spinner-border"
+                            role="status"
+                          >
+                            <span
+                              className="sr-only"
+                            >
+                              Loading...
+                            </span>
+                          </div>
+                        </div>
+                      </FormGroup>
+                      <p
+                        className="text-right"
+                      >
+                        Forgot Password?
+                      </p>
+                      <Button
+                        block={true}
+                        color="dark"
+                        disabled={true}
+                        style={
+                          Object {
+                            "marginTop": "1rem",
+                          }
+                        }
+                        tag="button"
+                      >
+                        Please wait
+                      </Button>
+                      <p
+                        className="text-center mb-2 mt-2"
+                      >
+                        New to SendIT?
+                        <span>
+                           
+                          <Link
+                            replace={false}
+                            to="/register"
+                          >
+                            Create an account
+                          </Link>
+                        </span>
+                      </p>
+                    </Form>,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <strong>
+                        Login to SendIT.
+                      </strong>,
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Login to SendIT.",
+                      },
+                      "ref": null,
+                      "rendered": "Login to SendIT.",
+                      "type": "strong",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <Alert
+                          closeAriaLabel="Close"
+                          color="danger"
+                          fade={true}
+                          isOpen={true}
+                          tag="div"
+                          transition={
+                            Object {
+                              "appear": true,
+                              "baseClass": "fade",
+                              "baseClassActive": "show",
+                              "enter": true,
+                              "exit": true,
+                              "in": true,
+                              "mountOnEnter": false,
+                              "onEnter": [Function],
+                              "onEntered": [Function],
+                              "onEntering": [Function],
+                              "onExit": [Function],
+                              "onExited": [Function],
+                              "onExiting": [Function],
+                              "tag": "div",
+                              "timeout": 150,
+                              "unmountOnExit": true,
+                            }
+                          }
+                        >
+                          Logged In success
+                        </Alert>,
+                        null,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="email"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Email
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="email"
+                            name="email"
+                            onChange={[MockFunction]}
+                            placeholder="Email"
+                            required={true}
+                            type="email"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="password"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Password
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="password"
+                            name="password"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="password"
+                          />
+                          <div
+                            className="d-flex text-primary justify-content-center"
+                          >
+                            <div
+                              className="spinner-border"
+                              role="status"
+                            >
+                              <span
+                                className="sr-only"
+                              >
+                                Loading...
+                              </span>
+                            </div>
+                          </div>
+                        </FormGroup>,
+                        <p
+                          className="text-right"
+                        >
+                          Forgot Password?
+                        </p>,
+                        <Button
+                          block={true}
+                          color="dark"
+                          disabled={true}
+                          style={
+                            Object {
+                              "marginTop": "1rem",
+                            }
+                          }
+                          tag="button"
+                        >
+                          Please wait
+                        </Button>,
+                        <p
+                          className="text-center mb-2 mt-2"
+                        >
+                          New to SendIT?
+                          <span>
+                             
+                            <Link
+                              replace={false}
+                              to="/register"
+                            >
+                              Create an account
+                            </Link>
+                          </span>
+                        </p>,
+                      ],
+                      "onSubmit": [MockFunction],
+                      "tag": "form",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": "Logged In success",
+                          "closeAriaLabel": "Close",
+                          "color": "danger",
+                          "fade": true,
+                          "isOpen": true,
+                          "tag": "div",
+                          "transition": Object {
+                            "appear": true,
+                            "baseClass": "fade",
+                            "baseClassActive": "show",
+                            "enter": true,
+                            "exit": true,
+                            "in": true,
+                            "mountOnEnter": false,
+                            "onEnter": [Function],
+                            "onEntered": [Function],
+                            "onEntering": [Function],
+                            "onExit": [Function],
+                            "onExited": [Function],
+                            "onExiting": [Function],
+                            "tag": "div",
+                            "timeout": 150,
+                            "unmountOnExit": true,
+                          },
+                        },
+                        "ref": null,
+                        "rendered": "Logged In success",
+                        "type": [Function],
+                      },
+                      null,
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="email"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Email
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="email"
+                              name="email"
+                              onChange={[MockFunction]}
+                              placeholder="Email"
+                              required={true}
+                              type="email"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Email",
+                              "for": "email",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Email",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "email",
+                              "name": "email",
+                              "onChange": [MockFunction],
+                              "placeholder": "Email",
+                              "required": true,
+                              "type": "email",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="password"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Password
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="password"
+                              name="password"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="password"
+                            />,
+                            <div
+                              className="d-flex text-primary justify-content-center"
+                            >
+                              <div
+                                className="spinner-border"
+                                role="status"
+                              >
+                                <span
+                                  className="sr-only"
+                                >
+                                  Loading...
+                                </span>
+                              </div>
+                            </div>,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Password",
+                              "for": "password",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Password",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "password",
+                              "name": "password",
+                              "onChange": [MockFunction],
+                              "placeholder": "",
+                              "required": true,
+                              "type": "password",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <div
+                                className="spinner-border"
+                                role="status"
+                              >
+                                <span
+                                  className="sr-only"
+                                >
+                                  Loading...
+                                </span>
+                              </div>,
+                              "className": "d-flex text-primary justify-content-center",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <span
+                                  className="sr-only"
+                                >
+                                  Loading...
+                                </span>,
+                                "className": "spinner-border",
+                                "role": "status",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Loading...",
+                                  "className": "sr-only",
+                                },
+                                "ref": null,
+                                "rendered": "Loading...",
+                                "type": "span",
+                              },
+                              "type": "div",
+                            },
+                            "type": "div",
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Forgot Password?",
+                          "className": "text-right",
+                        },
+                        "ref": null,
+                        "rendered": "Forgot Password?",
+                        "type": "p",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "block": true,
+                          "children": "Please wait",
+                          "color": "dark",
+                          "disabled": true,
+                          "style": Object {
+                            "marginTop": "1rem",
+                          },
+                          "tag": "button",
+                        },
+                        "ref": null,
+                        "rendered": "Please wait",
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "New to SendIT?",
+                            <span>
+                               
+                              <Link
+                                replace={false}
+                                to="/register"
+                              >
+                                Create an account
+                              </Link>
+                            </span>,
+                          ],
+                          "className": "text-center mb-2 mt-2",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "New to SendIT?",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                " ",
+                                <Link
+                                  replace={false}
+                                  to="/register"
+                                >
+                                  Create an account
+                                </Link>,
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              " ",
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "class",
+                                "props": Object {
+                                  "children": "Create an account",
+                                  "replace": false,
+                                  "to": "/register",
+                                },
+                                "ref": null,
+                                "rendered": "Create an account",
+                                "type": [Function],
+                              },
+                            ],
+                            "type": "span",
+                          },
+                        ],
+                        "type": "p",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "col-md-3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -3,21 +3,20 @@ import { Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 
 const PrivateRoute = ({ component: Component, auth, ...rest }) => (
-    <Route
-        {...rest}
-        render={props => {
-            const token = localStorage.getItem("auth_token");
-            if (!token) {
-                return <Redirect to="/login" />;
-            } else {
-                return <Component {...props} />;
-            }
-        }}
-    />
+  <Route
+    {...rest}
+    render={(props) => {
+      const token = localStorage.getItem("auth_token");
+      if (!token) {
+        return <Redirect to="/login" />;
+      }
+      return <Component {...props} />;
+    }}
+  />
 );
 
 const mapStateToProps = state => ({
-    auth: state.auth
+  auth: state.auth,
 });
 
 export default connect(mapStateToProps)(PrivateRoute);
