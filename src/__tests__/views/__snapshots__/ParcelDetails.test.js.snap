@@ -1,0 +1,3023 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Parcel Detail View Tests should not regress 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ParcelDetails
+    location={
+      Object {
+        "state": Object {
+          "data": Object {
+            "addresses": Object {
+              "current": "Mbarara, Uganda",
+              "destination": "Mbarara, Uganda",
+              "pickup": "Mbarara, Uganda",
+            },
+            "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+            "last_modified": "Sun, 28 Apr 2019 15:39:10 GMT",
+            "latLngCodinates": Object {
+              "destination": Object {
+                "lat": -0.6066829,
+                "lng": 30.6756735,
+              },
+              "pickup": Object {
+                "lat": -0.6071596,
+                "lng": 30.6545022,
+              },
+            },
+            "parcel_description": "This is the application",
+            "parcel_id": 42,
+            "recipient": Object {
+              "email": "mkyokusiima@gmail.com",
+              "fullname": "AHEBWA CHRIS",
+              "phone_number": "0773172299",
+            },
+            "sender": Object {
+              "email": "aacryce@gmail.com",
+              "fullname": "AHEBWA CHRIS",
+              "imageUrl": "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+              "is_admin": false,
+              "joined": "Sat, 20 Apr 2019 07:36:20 GMT",
+              "telephone_number": "0758939187",
+              "user_id": 10,
+              "username": "crycetrulytest",
+            },
+            "stats": Object {
+              "price": 8.03585461851507,
+              "quantity": 6,
+              "status": "order_placed",
+              "tripDistance": 2.35723641234338,
+              "weight": 6,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="col-md-12"
+      >
+        <div
+          className="card mt-4 block"
+        >
+          <div
+            className="card-header"
+          >
+            Parcel Details
+            <div
+              className="float-right"
+            >
+              <button
+                className="btn btn-info"
+              >
+                Update Destistination
+              </button>
+               
+              <button
+                className="btn btn-warning"
+              >
+                Cancel Order
+              </button>
+            </div>
+          </div>
+          <div
+            className="card-body"
+          >
+            <ul
+              className="list-group"
+            >
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  PickUp Location
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  Mbarara, Uganda
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Destination Location
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  Mbarara, Uganda
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Current Location
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  Mbarara, Uganda
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Recipient Name
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  AHEBWA CHRIS
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Recipient Email
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  mkyokusiima@gmail.com
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Recipient Phone
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  0773172299
+                </span>
+              </li>
+              <li
+                className="list-group-item active"
+              >
+                <strong>
+                  Stats
+                </strong>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Price
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  8.03585461851507
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Qty
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  6
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Trip Distance
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  2.35723641234338
+                   
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Weight
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  6
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Status
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  order_placed
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>,
+      "className": "row",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card mt-4 block"
+        >
+          <div
+            className="card-header"
+          >
+            Parcel Details
+            <div
+              className="float-right"
+            >
+              <button
+                className="btn btn-info"
+              >
+                Update Destistination
+              </button>
+               
+              <button
+                className="btn btn-warning"
+              >
+                Cancel Order
+              </button>
+            </div>
+          </div>
+          <div
+            className="card-body"
+          >
+            <ul
+              className="list-group"
+            >
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  PickUp Location
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  Mbarara, Uganda
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Destination Location
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  Mbarara, Uganda
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Current Location
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  Mbarara, Uganda
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Recipient Name
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  AHEBWA CHRIS
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Recipient Email
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  mkyokusiima@gmail.com
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Recipient Phone
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  0773172299
+                </span>
+              </li>
+              <li
+                className="list-group-item active"
+              >
+                <strong>
+                  Stats
+                </strong>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Price
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  8.03585461851507
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Qty
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  6
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Trip Distance
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  2.35723641234338
+                   
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Weight
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  6
+                </span>
+              </li>
+              <li
+                className="list-group-item"
+              >
+                <strong>
+                  Status
+                </strong>
+                <span
+                  className="float-right"
+                >
+                  order_placed
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>,
+        "className": "col-md-12",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="card-header"
+            >
+              Parcel Details
+              <div
+                className="float-right"
+              >
+                <button
+                  className="btn btn-info"
+                >
+                  Update Destistination
+                </button>
+                 
+                <button
+                  className="btn btn-warning"
+                >
+                  Cancel Order
+                </button>
+              </div>
+            </div>,
+            <div
+              className="card-body"
+            >
+              <ul
+                className="list-group"
+              >
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    PickUp Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Destination Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Current Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Name
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    AHEBWA CHRIS
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Email
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    mkyokusiima@gmail.com
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Phone
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    0773172299
+                  </span>
+                </li>
+                <li
+                  className="list-group-item active"
+                >
+                  <strong>
+                    Stats
+                  </strong>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Price
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    8.03585461851507
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Qty
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Trip Distance
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    2.35723641234338
+                     
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Weight
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Status
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    order_placed
+                  </span>
+                </li>
+              </ul>
+            </div>,
+          ],
+          "className": "card mt-4 block",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Parcel Details",
+                <div
+                  className="float-right"
+                >
+                  <button
+                    className="btn btn-info"
+                  >
+                    Update Destistination
+                  </button>
+                   
+                  <button
+                    className="btn btn-warning"
+                  >
+                    Cancel Order
+                  </button>
+                </div>,
+              ],
+              "className": "card-header",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Parcel Details",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      className="btn btn-info"
+                    >
+                      Update Destistination
+                    </button>,
+                    " ",
+                    <button
+                      className="btn btn-warning"
+                    >
+                      Cancel Order
+                    </button>,
+                  ],
+                  "className": "float-right",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Update Destistination",
+                      "className": "btn btn-info",
+                    },
+                    "ref": null,
+                    "rendered": "Update Destistination",
+                    "type": "button",
+                  },
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Cancel Order",
+                      "className": "btn btn-warning",
+                    },
+                    "ref": null,
+                    "rendered": "Cancel Order",
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className="list-group"
+              >
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    PickUp Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Destination Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Current Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Name
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    AHEBWA CHRIS
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Email
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    mkyokusiima@gmail.com
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Phone
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    0773172299
+                  </span>
+                </li>
+                <li
+                  className="list-group-item active"
+                >
+                  <strong>
+                    Stats
+                  </strong>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Price
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    8.03585461851507
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Qty
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Trip Distance
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    2.35723641234338
+                     
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Weight
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Status
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    order_placed
+                  </span>
+                </li>
+              </ul>,
+              "className": "card-body",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      PickUp Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Destination Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Current Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Name
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      AHEBWA CHRIS
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Email
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      mkyokusiima@gmail.com
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Phone
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      0773172299
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item active"
+                  >
+                    <strong>
+                      Stats
+                    </strong>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Price
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      8.03585461851507
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Qty
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      6
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Trip Distance
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      2.35723641234338
+                       
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Weight
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      6
+                    </span>
+                  </li>,
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Status
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      order_placed
+                    </span>
+                  </li>,
+                ],
+                "className": "list-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        PickUp Location
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        Mbarara, Uganda
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "PickUp Location",
+                      },
+                      "ref": null,
+                      "rendered": "PickUp Location",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Mbarara, Uganda",
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": "Mbarara, Uganda",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Destination Location
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        Mbarara, Uganda
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Destination Location",
+                      },
+                      "ref": null,
+                      "rendered": "Destination Location",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Mbarara, Uganda",
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": "Mbarara, Uganda",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Current Location
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        Mbarara, Uganda
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Current Location",
+                      },
+                      "ref": null,
+                      "rendered": "Current Location",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Mbarara, Uganda",
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": "Mbarara, Uganda",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Recipient Name
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        AHEBWA CHRIS
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Recipient Name",
+                      },
+                      "ref": null,
+                      "rendered": "Recipient Name",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "AHEBWA CHRIS",
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": "AHEBWA CHRIS",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Recipient Email
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        mkyokusiima@gmail.com
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Recipient Email",
+                      },
+                      "ref": null,
+                      "rendered": "Recipient Email",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "mkyokusiima@gmail.com",
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": "mkyokusiima@gmail.com",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Recipient Phone
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        0773172299
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Recipient Phone",
+                      },
+                      "ref": null,
+                      "rendered": "Recipient Phone",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "0773172299",
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": "0773172299",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <strong>
+                      Stats
+                    </strong>,
+                    "className": "list-group-item active",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Stats",
+                    },
+                    "ref": null,
+                    "rendered": "Stats",
+                    "type": "strong",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Price
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        8.03585461851507
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Price",
+                      },
+                      "ref": null,
+                      "rendered": "Price",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": 8.03585461851507,
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": 8.03585461851507,
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Qty
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        6
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Qty",
+                      },
+                      "ref": null,
+                      "rendered": "Qty",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": 6,
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": 6,
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Trip Distance
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        2.35723641234338
+                         
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Trip Distance",
+                      },
+                      "ref": null,
+                      "rendered": "Trip Distance",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          2.35723641234338,
+                          " ",
+                        ],
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        2.35723641234338,
+                        " ",
+                      ],
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Weight
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        6
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Weight",
+                      },
+                      "ref": null,
+                      "rendered": "Weight",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": 6,
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": 6,
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <strong>
+                        Status
+                      </strong>,
+                      <span
+                        className="float-right"
+                      >
+                        order_placed
+                      </span>,
+                    ],
+                    "className": "list-group-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Status",
+                      },
+                      "ref": null,
+                      "rendered": "Status",
+                      "type": "strong",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "order_placed",
+                        "className": "float-right",
+                      },
+                      "ref": null,
+                      "rendered": "order_placed",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="col-md-12"
+        >
+          <div
+            className="card mt-4 block"
+          >
+            <div
+              className="card-header"
+            >
+              Parcel Details
+              <div
+                className="float-right"
+              >
+                <button
+                  className="btn btn-info"
+                >
+                  Update Destistination
+                </button>
+                 
+                <button
+                  className="btn btn-warning"
+                >
+                  Cancel Order
+                </button>
+              </div>
+            </div>
+            <div
+              className="card-body"
+            >
+              <ul
+                className="list-group"
+              >
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    PickUp Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Destination Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Current Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Name
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    AHEBWA CHRIS
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Email
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    mkyokusiima@gmail.com
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Phone
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    0773172299
+                  </span>
+                </li>
+                <li
+                  className="list-group-item active"
+                >
+                  <strong>
+                    Stats
+                  </strong>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Price
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    8.03585461851507
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Qty
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Trip Distance
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    2.35723641234338
+                     
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Weight
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Status
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    order_placed
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>,
+        "className": "row",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="card mt-4 block"
+          >
+            <div
+              className="card-header"
+            >
+              Parcel Details
+              <div
+                className="float-right"
+              >
+                <button
+                  className="btn btn-info"
+                >
+                  Update Destistination
+                </button>
+                 
+                <button
+                  className="btn btn-warning"
+                >
+                  Cancel Order
+                </button>
+              </div>
+            </div>
+            <div
+              className="card-body"
+            >
+              <ul
+                className="list-group"
+              >
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    PickUp Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Destination Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Current Location
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    Mbarara, Uganda
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Name
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    AHEBWA CHRIS
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Email
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    mkyokusiima@gmail.com
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Recipient Phone
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    0773172299
+                  </span>
+                </li>
+                <li
+                  className="list-group-item active"
+                >
+                  <strong>
+                    Stats
+                  </strong>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Price
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    8.03585461851507
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Qty
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Trip Distance
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    2.35723641234338
+                     
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Weight
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    6
+                  </span>
+                </li>
+                <li
+                  className="list-group-item"
+                >
+                  <strong>
+                    Status
+                  </strong>
+                  <span
+                    className="float-right"
+                  >
+                    order_placed
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>,
+          "className": "col-md-12",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="card-header"
+              >
+                Parcel Details
+                <div
+                  className="float-right"
+                >
+                  <button
+                    className="btn btn-info"
+                  >
+                    Update Destistination
+                  </button>
+                   
+                  <button
+                    className="btn btn-warning"
+                  >
+                    Cancel Order
+                  </button>
+                </div>
+              </div>,
+              <div
+                className="card-body"
+              >
+                <ul
+                  className="list-group"
+                >
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      PickUp Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Destination Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Current Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Name
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      AHEBWA CHRIS
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Email
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      mkyokusiima@gmail.com
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Phone
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      0773172299
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item active"
+                  >
+                    <strong>
+                      Stats
+                    </strong>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Price
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      8.03585461851507
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Qty
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      6
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Trip Distance
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      2.35723641234338
+                       
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Weight
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      6
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Status
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      order_placed
+                    </span>
+                  </li>
+                </ul>
+              </div>,
+            ],
+            "className": "card mt-4 block",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Parcel Details",
+                  <div
+                    className="float-right"
+                  >
+                    <button
+                      className="btn btn-info"
+                    >
+                      Update Destistination
+                    </button>
+                     
+                    <button
+                      className="btn btn-warning"
+                    >
+                      Cancel Order
+                    </button>
+                  </div>,
+                ],
+                "className": "card-header",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Parcel Details",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <button
+                        className="btn btn-info"
+                      >
+                        Update Destistination
+                      </button>,
+                      " ",
+                      <button
+                        className="btn btn-warning"
+                      >
+                        Cancel Order
+                      </button>,
+                    ],
+                    "className": "float-right",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Update Destistination",
+                        "className": "btn btn-info",
+                      },
+                      "ref": null,
+                      "rendered": "Update Destistination",
+                      "type": "button",
+                    },
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Cancel Order",
+                        "className": "btn btn-warning",
+                      },
+                      "ref": null,
+                      "rendered": "Cancel Order",
+                      "type": "button",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ul
+                  className="list-group"
+                >
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      PickUp Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Destination Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Current Location
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      Mbarara, Uganda
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Name
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      AHEBWA CHRIS
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Email
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      mkyokusiima@gmail.com
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Recipient Phone
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      0773172299
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item active"
+                  >
+                    <strong>
+                      Stats
+                    </strong>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Price
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      8.03585461851507
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Qty
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      6
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Trip Distance
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      2.35723641234338
+                       
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Weight
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      6
+                    </span>
+                  </li>
+                  <li
+                    className="list-group-item"
+                  >
+                    <strong>
+                      Status
+                    </strong>
+                    <span
+                      className="float-right"
+                    >
+                      order_placed
+                    </span>
+                  </li>
+                </ul>,
+                "className": "card-body",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        PickUp Location
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        Mbarara, Uganda
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Destination Location
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        Mbarara, Uganda
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Current Location
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        Mbarara, Uganda
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Recipient Name
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        AHEBWA CHRIS
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Recipient Email
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        mkyokusiima@gmail.com
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Recipient Phone
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        0773172299
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item active"
+                    >
+                      <strong>
+                        Stats
+                      </strong>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Price
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        8.03585461851507
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Qty
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        6
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Trip Distance
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        2.35723641234338
+                         
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Weight
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        6
+                      </span>
+                    </li>,
+                    <li
+                      className="list-group-item"
+                    >
+                      <strong>
+                        Status
+                      </strong>
+                      <span
+                        className="float-right"
+                      >
+                        order_placed
+                      </span>
+                    </li>,
+                  ],
+                  "className": "list-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          PickUp Location
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          Mbarara, Uganda
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "PickUp Location",
+                        },
+                        "ref": null,
+                        "rendered": "PickUp Location",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Mbarara, Uganda",
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": "Mbarara, Uganda",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Destination Location
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          Mbarara, Uganda
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Destination Location",
+                        },
+                        "ref": null,
+                        "rendered": "Destination Location",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Mbarara, Uganda",
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": "Mbarara, Uganda",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Current Location
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          Mbarara, Uganda
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Current Location",
+                        },
+                        "ref": null,
+                        "rendered": "Current Location",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Mbarara, Uganda",
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": "Mbarara, Uganda",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Recipient Name
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          AHEBWA CHRIS
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Recipient Name",
+                        },
+                        "ref": null,
+                        "rendered": "Recipient Name",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "AHEBWA CHRIS",
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": "AHEBWA CHRIS",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Recipient Email
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          mkyokusiima@gmail.com
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Recipient Email",
+                        },
+                        "ref": null,
+                        "rendered": "Recipient Email",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "mkyokusiima@gmail.com",
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": "mkyokusiima@gmail.com",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Recipient Phone
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          0773172299
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Recipient Phone",
+                        },
+                        "ref": null,
+                        "rendered": "Recipient Phone",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "0773172299",
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": "0773172299",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <strong>
+                        Stats
+                      </strong>,
+                      "className": "list-group-item active",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Stats",
+                      },
+                      "ref": null,
+                      "rendered": "Stats",
+                      "type": "strong",
+                    },
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Price
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          8.03585461851507
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Price",
+                        },
+                        "ref": null,
+                        "rendered": "Price",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 8.03585461851507,
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": 8.03585461851507,
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Qty
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          6
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Qty",
+                        },
+                        "ref": null,
+                        "rendered": "Qty",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 6,
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": 6,
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Trip Distance
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          2.35723641234338
+                           
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Trip Distance",
+                        },
+                        "ref": null,
+                        "rendered": "Trip Distance",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            2.35723641234338,
+                            " ",
+                          ],
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          2.35723641234338,
+                          " ",
+                        ],
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Weight
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          6
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Weight",
+                        },
+                        "ref": null,
+                        "rendered": "Weight",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 6,
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": 6,
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <strong>
+                          Status
+                        </strong>,
+                        <span
+                          className="float-right"
+                        >
+                          order_placed
+                        </span>,
+                      ],
+                      "className": "list-group-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Status",
+                        },
+                        "ref": null,
+                        "rendered": "Status",
+                        "type": "strong",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "order_placed",
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": "order_placed",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

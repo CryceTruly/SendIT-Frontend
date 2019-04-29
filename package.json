@@ -25,7 +25,7 @@
   },
   "engines": {
     "node": "10.15.1"
-},
+  },
   "homepage": "https://github.com/CryceTruly/si-react#readme",
   "dependencies": {
     "axios": "^0.18.0",
@@ -35,6 +35,7 @@
     "google-maps-react": "^2.0.2",
     "history": "^4.9.0",
     "moment": "^2.24.0",
+    "moxios": "^0.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -84,5 +85,16 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}",
+      "!src/index.js",
+      "!src/store/index.js",
+      "src/components",
+      "src/actions",
+      "src/reducers",
+      "!src/__tests__"
+    ]
   }
 }

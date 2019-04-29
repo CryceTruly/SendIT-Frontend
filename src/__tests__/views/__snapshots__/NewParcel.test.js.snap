@@ -1,0 +1,4718 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`New Parcel View Tests should not regress 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NewParcel
+    errorId={1}
+    errorMessage="Invalid password"
+    isAdding={true}
+    onChange={[MockFunction]}
+    onSubmit={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Card
+        tag="div"
+      >
+        <CardBody
+          tag="div"
+        >
+          <CardTitle
+            tag="div"
+          />
+          <CardTitle
+            tag="div"
+          >
+            <strong>
+              Add a new Parcel Request.
+            </strong>
+          </CardTitle>
+          <Form
+            onSubmit={[MockFunction]}
+            tag="form"
+          >
+            
+            <Row
+              tag="div"
+            >
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="pickup"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Pickup Location
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="pickup"
+                    name="pickup"
+                    onChange={[MockFunction]}
+                    placeholder="Pickup location"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="destination"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Destination address
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="destination"
+                    name="destination"
+                    onChange={[MockFunction]}
+                    placeholder="Destination Location"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="phoneNumber"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Recipient Phone Number
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    onChange={[MockFunction]}
+                    placeholder="phoneNumber"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="remail"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Recipient Email
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="remail"
+                    name="remail"
+                    onChange={[MockFunction]}
+                    placeholder="Email"
+                    required={true}
+                    type="email"
+                  />
+                </FormGroup>
+              </div>
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="rfullName"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Recipient Fullname
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="rfullName"
+                    name="rfullName"
+                    onChange={[MockFunction]}
+                    placeholder=""
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="description"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Parcel Description
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="description"
+                    name="description"
+                    onChange={[MockFunction]}
+                    placeholder=""
+                    required={true}
+                    type="description"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="qty"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Quantity 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="qty"
+                      name="qty"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="number"
+                    />
+                     
+                  </FormGroup>
+                  <Label
+                    for="weight"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Weight 
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="weight"
+                    name="weight"
+                    onChange={[MockFunction]}
+                    required={true}
+                    type="number"
+                  />
+                   
+                </FormGroup>
+                <Spinner />
+                <Button
+                  block={true}
+                  color="dark"
+                  disabled={true}
+                  style={
+                    Object {
+                      "marginTop": "2rem",
+                    }
+                  }
+                  tag="button"
+                >
+                  Please wait
+                </Button>
+              </div>
+            </Row>
+          </Form>
+        </CardBody>
+      </Card>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <CardBody
+          tag="div"
+        >
+          <CardTitle
+            tag="div"
+          />
+          <CardTitle
+            tag="div"
+          >
+            <strong>
+              Add a new Parcel Request.
+            </strong>
+          </CardTitle>
+          <Form
+            onSubmit={[MockFunction]}
+            tag="form"
+          >
+            
+            <Row
+              tag="div"
+            >
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="pickup"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Pickup Location
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="pickup"
+                    name="pickup"
+                    onChange={[MockFunction]}
+                    placeholder="Pickup location"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="destination"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Destination address
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="destination"
+                    name="destination"
+                    onChange={[MockFunction]}
+                    placeholder="Destination Location"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="phoneNumber"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Recipient Phone Number
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    onChange={[MockFunction]}
+                    placeholder="phoneNumber"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="remail"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Recipient Email
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="remail"
+                    name="remail"
+                    onChange={[MockFunction]}
+                    placeholder="Email"
+                    required={true}
+                    type="email"
+                  />
+                </FormGroup>
+              </div>
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="rfullName"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Recipient Fullname
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="rfullName"
+                    name="rfullName"
+                    onChange={[MockFunction]}
+                    placeholder=""
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="description"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Parcel Description
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="description"
+                    name="description"
+                    onChange={[MockFunction]}
+                    placeholder=""
+                    required={true}
+                    type="description"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="qty"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Quantity 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="qty"
+                      name="qty"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="number"
+                    />
+                     
+                  </FormGroup>
+                  <Label
+                    for="weight"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Weight 
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="weight"
+                    name="weight"
+                    onChange={[MockFunction]}
+                    required={true}
+                    type="number"
+                  />
+                   
+                </FormGroup>
+                <Spinner />
+                <Button
+                  block={true}
+                  color="dark"
+                  disabled={true}
+                  style={
+                    Object {
+                      "marginTop": "2rem",
+                    }
+                  }
+                  tag="button"
+                >
+                  Please wait
+                </Button>
+              </div>
+            </Row>
+          </Form>
+        </CardBody>,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <CardTitle
+              tag="div"
+            />,
+            <CardTitle
+              tag="div"
+            >
+              <strong>
+                Add a new Parcel Request.
+              </strong>
+            </CardTitle>,
+            <Form
+              onSubmit={[MockFunction]}
+              tag="form"
+            >
+              
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="pickup"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Pickup Location
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="pickup"
+                      name="pickup"
+                      onChange={[MockFunction]}
+                      placeholder="Pickup location"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="destination"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Destination address
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="destination"
+                      name="destination"
+                      onChange={[MockFunction]}
+                      placeholder="Destination Location"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="phoneNumber"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Phone Number
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      onChange={[MockFunction]}
+                      placeholder="phoneNumber"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="remail"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="remail"
+                      name="remail"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                </div>
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="rfullName"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Fullname
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="rfullName"
+                      name="rfullName"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="description"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Parcel Description
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="description"
+                      name="description"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="description"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="qty"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Quantity 
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="qty"
+                        name="qty"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="number"
+                      />
+                       
+                    </FormGroup>
+                    <Label
+                      for="weight"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Weight 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="weight"
+                      name="weight"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="number"
+                    />
+                     
+                  </FormGroup>
+                  <Spinner />
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "2rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait
+                  </Button>
+                </div>
+              </Row>
+            </Form>,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <strong>
+                Add a new Parcel Request.
+              </strong>,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add a new Parcel Request.",
+              },
+              "ref": null,
+              "rendered": "Add a new Parcel Request.",
+              "type": "strong",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "",
+                <Row
+                  tag="div"
+                >
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="pickup"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Pickup Location
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="pickup"
+                        name="pickup"
+                        onChange={[MockFunction]}
+                        placeholder="Pickup location"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="destination"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Destination address
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="destination"
+                        name="destination"
+                        onChange={[MockFunction]}
+                        placeholder="Destination Location"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="phoneNumber"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Recipient Phone Number
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        onChange={[MockFunction]}
+                        placeholder="phoneNumber"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="remail"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Recipient Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="remail"
+                        name="remail"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                  </div>
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="rfullName"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Recipient Fullname
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="rfullName"
+                        name="rfullName"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="description"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Parcel Description
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="description"
+                        name="description"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="description"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="qty"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Quantity 
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="qty"
+                          name="qty"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="number"
+                        />
+                         
+                      </FormGroup>
+                      <Label
+                        for="weight"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Weight 
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="weight"
+                        name="weight"
+                        onChange={[MockFunction]}
+                        required={true}
+                        type="number"
+                      />
+                       
+                    </FormGroup>
+                    <Spinner />
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "2rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait
+                    </Button>
+                  </div>
+                </Row>,
+              ],
+              "onSubmit": [MockFunction],
+              "tag": "form",
+            },
+            "ref": null,
+            "rendered": Array [
+              "",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="pickup"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Pickup Location
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="pickup"
+                          name="pickup"
+                          onChange={[MockFunction]}
+                          placeholder="Pickup location"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="destination"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Destination address
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="destination"
+                          name="destination"
+                          onChange={[MockFunction]}
+                          placeholder="Destination Location"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="phoneNumber"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Recipient Phone Number
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          onChange={[MockFunction]}
+                          placeholder="phoneNumber"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="remail"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Recipient Email
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="remail"
+                          name="remail"
+                          onChange={[MockFunction]}
+                          placeholder="Email"
+                          required={true}
+                          type="email"
+                        />
+                      </FormGroup>
+                    </div>,
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="rfullName"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Recipient Fullname
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="rfullName"
+                          name="rfullName"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="description"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Parcel Description
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="description"
+                          name="description"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="description"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="qty"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Quantity 
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="qty"
+                            name="qty"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="number"
+                          />
+                           
+                        </FormGroup>
+                        <Label
+                          for="weight"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Weight 
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="weight"
+                          name="weight"
+                          onChange={[MockFunction]}
+                          required={true}
+                          type="number"
+                        />
+                         
+                      </FormGroup>
+                      <Spinner />
+                      <Button
+                        block={true}
+                        color="dark"
+                        disabled={true}
+                        style={
+                          Object {
+                            "marginTop": "2rem",
+                          }
+                        }
+                        tag="button"
+                      >
+                        Please wait
+                      </Button>
+                    </div>,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="pickup"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Pickup Location
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="pickup"
+                            name="pickup"
+                            onChange={[MockFunction]}
+                            placeholder="Pickup location"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="destination"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Destination address
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="destination"
+                            name="destination"
+                            onChange={[MockFunction]}
+                            placeholder="Destination Location"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="phoneNumber"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Recipient Phone Number
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            onChange={[MockFunction]}
+                            placeholder="phoneNumber"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="remail"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Recipient Email
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="remail"
+                            name="remail"
+                            onChange={[MockFunction]}
+                            placeholder="Email"
+                            required={true}
+                            type="email"
+                          />
+                        </FormGroup>,
+                      ],
+                      "className": "col-md-6",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="pickup"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Pickup Location
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="pickup"
+                              name="pickup"
+                              onChange={[MockFunction]}
+                              placeholder="Pickup location"
+                              required={true}
+                              type="text"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Pickup Location",
+                              "for": "pickup",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Pickup Location",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "pickup",
+                              "name": "pickup",
+                              "onChange": [MockFunction],
+                              "placeholder": "Pickup location",
+                              "required": true,
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="destination"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Destination address
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="destination"
+                              name="destination"
+                              onChange={[MockFunction]}
+                              placeholder="Destination Location"
+                              required={true}
+                              type="text"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Destination address",
+                              "for": "destination",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Destination address",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "destination",
+                              "name": "destination",
+                              "onChange": [MockFunction],
+                              "placeholder": "Destination Location",
+                              "required": true,
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="phoneNumber"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Recipient Phone Number
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="phoneNumber"
+                              name="phoneNumber"
+                              onChange={[MockFunction]}
+                              placeholder="phoneNumber"
+                              required={true}
+                              type="text"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Recipient Phone Number",
+                              "for": "phoneNumber",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Recipient Phone Number",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "phoneNumber",
+                              "name": "phoneNumber",
+                              "onChange": [MockFunction],
+                              "placeholder": "phoneNumber",
+                              "required": true,
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="remail"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Recipient Email
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="remail"
+                              name="remail"
+                              onChange={[MockFunction]}
+                              placeholder="Email"
+                              required={true}
+                              type="email"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Recipient Email",
+                              "for": "remail",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Recipient Email",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "remail",
+                              "name": "remail",
+                              "onChange": [MockFunction],
+                              "placeholder": "Email",
+                              "required": true,
+                              "type": "email",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="rfullName"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Recipient Fullname
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="rfullName"
+                            name="rfullName"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="description"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Parcel Description
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="description"
+                            name="description"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="description"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="qty"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Quantity 
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="qty"
+                              name="qty"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="number"
+                            />
+                             
+                          </FormGroup>
+                          <Label
+                            for="weight"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Weight 
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="weight"
+                            name="weight"
+                            onChange={[MockFunction]}
+                            required={true}
+                            type="number"
+                          />
+                           
+                        </FormGroup>,
+                        <Spinner />,
+                        <Button
+                          block={true}
+                          color="dark"
+                          disabled={true}
+                          style={
+                            Object {
+                              "marginTop": "2rem",
+                            }
+                          }
+                          tag="button"
+                        >
+                          Please wait
+                        </Button>,
+                      ],
+                      "className": "col-md-6",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="rfullName"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Recipient Fullname
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="rfullName"
+                              name="rfullName"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="text"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Recipient Fullname",
+                              "for": "rfullName",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Recipient Fullname",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "rfullName",
+                              "name": "rfullName",
+                              "onChange": [MockFunction],
+                              "placeholder": "",
+                              "required": true,
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="description"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Parcel Description
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="description"
+                              name="description"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="description"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Parcel Description",
+                              "for": "description",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Parcel Description",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "description",
+                              "name": "description",
+                              "onChange": [MockFunction],
+                              "placeholder": "",
+                              "required": true,
+                              "type": "description",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <FormGroup
+                              tag="div"
+                            >
+                              <Label
+                                for="qty"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Quantity 
+                              </Label>
+                              <Input
+                                className="mb-3"
+                                id="qty"
+                                name="qty"
+                                onChange={[MockFunction]}
+                                placeholder=""
+                                required={true}
+                                type="number"
+                              />
+                               
+                            </FormGroup>,
+                            <Label
+                              for="weight"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Weight 
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="weight"
+                              name="weight"
+                              onChange={[MockFunction]}
+                              required={true}
+                              type="number"
+                            />,
+                            " ",
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": Array [
+                                <Label
+                                  for="qty"
+                                  tag="label"
+                                  widths={
+                                    Array [
+                                      "xs",
+                                      "sm",
+                                      "md",
+                                      "lg",
+                                      "xl",
+                                    ]
+                                  }
+                                >
+                                  Quantity 
+                                </Label>,
+                                <Input
+                                  className="mb-3"
+                                  id="qty"
+                                  name="qty"
+                                  onChange={[MockFunction]}
+                                  placeholder=""
+                                  required={true}
+                                  type="number"
+                                />,
+                                " ",
+                              ],
+                              "tag": "div",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "function",
+                                "props": Object {
+                                  "children": "Quantity ",
+                                  "for": "qty",
+                                  "tag": "label",
+                                  "widths": Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ],
+                                },
+                                "ref": null,
+                                "rendered": "Quantity ",
+                                "type": [Function],
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "class",
+                                "props": Object {
+                                  "className": "mb-3",
+                                  "id": "qty",
+                                  "name": "qty",
+                                  "onChange": [MockFunction],
+                                  "placeholder": "",
+                                  "required": true,
+                                  "type": "number",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": [Function],
+                              },
+                              " ",
+                            ],
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Weight ",
+                              "for": "weight",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Weight ",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "weight",
+                              "name": "weight",
+                              "onChange": [MockFunction],
+                              "required": true,
+                              "type": "number",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          " ",
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "block": true,
+                          "children": "Please wait",
+                          "color": "dark",
+                          "disabled": true,
+                          "style": Object {
+                            "marginTop": "2rem",
+                          },
+                          "tag": "button",
+                        },
+                        "ref": null,
+                        "rendered": "Please wait",
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Card
+          tag="div"
+        >
+          <CardBody
+            tag="div"
+          >
+            <CardTitle
+              tag="div"
+            />
+            <CardTitle
+              tag="div"
+            >
+              <strong>
+                Add a new Parcel Request.
+              </strong>
+            </CardTitle>
+            <Form
+              onSubmit={[MockFunction]}
+              tag="form"
+            >
+              
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="pickup"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Pickup Location
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="pickup"
+                      name="pickup"
+                      onChange={[MockFunction]}
+                      placeholder="Pickup location"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="destination"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Destination address
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="destination"
+                      name="destination"
+                      onChange={[MockFunction]}
+                      placeholder="Destination Location"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="phoneNumber"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Phone Number
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      onChange={[MockFunction]}
+                      placeholder="phoneNumber"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="remail"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="remail"
+                      name="remail"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                </div>
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="rfullName"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Fullname
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="rfullName"
+                      name="rfullName"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="description"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Parcel Description
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="description"
+                      name="description"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="description"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="qty"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Quantity 
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="qty"
+                        name="qty"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="number"
+                      />
+                       
+                    </FormGroup>
+                    <Label
+                      for="weight"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Weight 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="weight"
+                      name="weight"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="number"
+                    />
+                     
+                  </FormGroup>
+                  <Spinner />
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "2rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait
+                  </Button>
+                </div>
+              </Row>
+            </Form>
+          </CardBody>
+        </Card>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <CardBody
+            tag="div"
+          >
+            <CardTitle
+              tag="div"
+            />
+            <CardTitle
+              tag="div"
+            >
+              <strong>
+                Add a new Parcel Request.
+              </strong>
+            </CardTitle>
+            <Form
+              onSubmit={[MockFunction]}
+              tag="form"
+            >
+              
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="pickup"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Pickup Location
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="pickup"
+                      name="pickup"
+                      onChange={[MockFunction]}
+                      placeholder="Pickup location"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="destination"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Destination address
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="destination"
+                      name="destination"
+                      onChange={[MockFunction]}
+                      placeholder="Destination Location"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="phoneNumber"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Phone Number
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      onChange={[MockFunction]}
+                      placeholder="phoneNumber"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="remail"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="remail"
+                      name="remail"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                </div>
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="rfullName"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Recipient Fullname
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="rfullName"
+                      name="rfullName"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="description"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Parcel Description
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="description"
+                      name="description"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="description"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="qty"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Quantity 
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="qty"
+                        name="qty"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="number"
+                      />
+                       
+                    </FormGroup>
+                    <Label
+                      for="weight"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Weight 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="weight"
+                      name="weight"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="number"
+                    />
+                     
+                  </FormGroup>
+                  <Spinner />
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "2rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait
+                  </Button>
+                </div>
+              </Row>
+            </Form>
+          </CardBody>,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <CardTitle
+                tag="div"
+              />,
+              <CardTitle
+                tag="div"
+              >
+                <strong>
+                  Add a new Parcel Request.
+                </strong>
+              </CardTitle>,
+              <Form
+                onSubmit={[MockFunction]}
+                tag="form"
+              >
+                
+                <Row
+                  tag="div"
+                >
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="pickup"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Pickup Location
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="pickup"
+                        name="pickup"
+                        onChange={[MockFunction]}
+                        placeholder="Pickup location"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="destination"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Destination address
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="destination"
+                        name="destination"
+                        onChange={[MockFunction]}
+                        placeholder="Destination Location"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="phoneNumber"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Recipient Phone Number
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        onChange={[MockFunction]}
+                        placeholder="phoneNumber"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="remail"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Recipient Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="remail"
+                        name="remail"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                  </div>
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="rfullName"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Recipient Fullname
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="rfullName"
+                        name="rfullName"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="description"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Parcel Description
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="description"
+                        name="description"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="description"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="qty"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Quantity 
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="qty"
+                          name="qty"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="number"
+                        />
+                         
+                      </FormGroup>
+                      <Label
+                        for="weight"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Weight 
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="weight"
+                        name="weight"
+                        onChange={[MockFunction]}
+                        required={true}
+                        type="number"
+                      />
+                       
+                    </FormGroup>
+                    <Spinner />
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "2rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait
+                    </Button>
+                  </div>
+                </Row>
+              </Form>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <strong>
+                  Add a new Parcel Request.
+                </strong>,
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Add a new Parcel Request.",
+                },
+                "ref": null,
+                "rendered": "Add a new Parcel Request.",
+                "type": "strong",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "",
+                  <Row
+                    tag="div"
+                  >
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="pickup"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Pickup Location
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="pickup"
+                          name="pickup"
+                          onChange={[MockFunction]}
+                          placeholder="Pickup location"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="destination"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Destination address
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="destination"
+                          name="destination"
+                          onChange={[MockFunction]}
+                          placeholder="Destination Location"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="phoneNumber"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Recipient Phone Number
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          onChange={[MockFunction]}
+                          placeholder="phoneNumber"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="remail"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Recipient Email
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="remail"
+                          name="remail"
+                          onChange={[MockFunction]}
+                          placeholder="Email"
+                          required={true}
+                          type="email"
+                        />
+                      </FormGroup>
+                    </div>
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="rfullName"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Recipient Fullname
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="rfullName"
+                          name="rfullName"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="description"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Parcel Description
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="description"
+                          name="description"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="description"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="qty"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Quantity 
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="qty"
+                            name="qty"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="number"
+                          />
+                           
+                        </FormGroup>
+                        <Label
+                          for="weight"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Weight 
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="weight"
+                          name="weight"
+                          onChange={[MockFunction]}
+                          required={true}
+                          type="number"
+                        />
+                         
+                      </FormGroup>
+                      <Spinner />
+                      <Button
+                        block={true}
+                        color="dark"
+                        disabled={true}
+                        style={
+                          Object {
+                            "marginTop": "2rem",
+                          }
+                        }
+                        tag="button"
+                      >
+                        Please wait
+                      </Button>
+                    </div>
+                  </Row>,
+                ],
+                "onSubmit": [MockFunction],
+                "tag": "form",
+              },
+              "ref": null,
+              "rendered": Array [
+                "",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="col-md-6"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="pickup"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Pickup Location
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="pickup"
+                            name="pickup"
+                            onChange={[MockFunction]}
+                            placeholder="Pickup location"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="destination"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Destination address
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="destination"
+                            name="destination"
+                            onChange={[MockFunction]}
+                            placeholder="Destination Location"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="phoneNumber"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Recipient Phone Number
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            onChange={[MockFunction]}
+                            placeholder="phoneNumber"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="remail"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Recipient Email
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="remail"
+                            name="remail"
+                            onChange={[MockFunction]}
+                            placeholder="Email"
+                            required={true}
+                            type="email"
+                          />
+                        </FormGroup>
+                      </div>,
+                      <div
+                        className="col-md-6"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="rfullName"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Recipient Fullname
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="rfullName"
+                            name="rfullName"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="description"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Parcel Description
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="description"
+                            name="description"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="description"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="qty"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Quantity 
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="qty"
+                              name="qty"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="number"
+                            />
+                             
+                          </FormGroup>
+                          <Label
+                            for="weight"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Weight 
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="weight"
+                            name="weight"
+                            onChange={[MockFunction]}
+                            required={true}
+                            type="number"
+                          />
+                           
+                        </FormGroup>
+                        <Spinner />
+                        <Button
+                          block={true}
+                          color="dark"
+                          disabled={true}
+                          style={
+                            Object {
+                              "marginTop": "2rem",
+                            }
+                          }
+                          tag="button"
+                        >
+                          Please wait
+                        </Button>
+                      </div>,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="pickup"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Pickup Location
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="pickup"
+                              name="pickup"
+                              onChange={[MockFunction]}
+                              placeholder="Pickup location"
+                              required={true}
+                              type="text"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="destination"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Destination address
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="destination"
+                              name="destination"
+                              onChange={[MockFunction]}
+                              placeholder="Destination Location"
+                              required={true}
+                              type="text"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="phoneNumber"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Recipient Phone Number
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="phoneNumber"
+                              name="phoneNumber"
+                              onChange={[MockFunction]}
+                              placeholder="phoneNumber"
+                              required={true}
+                              type="text"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="remail"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Recipient Email
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="remail"
+                              name="remail"
+                              onChange={[MockFunction]}
+                              placeholder="Email"
+                              required={true}
+                              type="email"
+                            />
+                          </FormGroup>,
+                        ],
+                        "className": "col-md-6",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="pickup"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Pickup Location
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="pickup"
+                                name="pickup"
+                                onChange={[MockFunction]}
+                                placeholder="Pickup location"
+                                required={true}
+                                type="text"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Pickup Location",
+                                "for": "pickup",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Pickup Location",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "pickup",
+                                "name": "pickup",
+                                "onChange": [MockFunction],
+                                "placeholder": "Pickup location",
+                                "required": true,
+                                "type": "text",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="destination"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Destination address
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="destination"
+                                name="destination"
+                                onChange={[MockFunction]}
+                                placeholder="Destination Location"
+                                required={true}
+                                type="text"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Destination address",
+                                "for": "destination",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Destination address",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "destination",
+                                "name": "destination",
+                                "onChange": [MockFunction],
+                                "placeholder": "Destination Location",
+                                "required": true,
+                                "type": "text",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="phoneNumber"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Recipient Phone Number
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                onChange={[MockFunction]}
+                                placeholder="phoneNumber"
+                                required={true}
+                                type="text"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Recipient Phone Number",
+                                "for": "phoneNumber",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Recipient Phone Number",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "phoneNumber",
+                                "name": "phoneNumber",
+                                "onChange": [MockFunction],
+                                "placeholder": "phoneNumber",
+                                "required": true,
+                                "type": "text",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="remail"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Recipient Email
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="remail"
+                                name="remail"
+                                onChange={[MockFunction]}
+                                placeholder="Email"
+                                required={true}
+                                type="email"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Recipient Email",
+                                "for": "remail",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Recipient Email",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "remail",
+                                "name": "remail",
+                                "onChange": [MockFunction],
+                                "placeholder": "Email",
+                                "required": true,
+                                "type": "email",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="rfullName"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Recipient Fullname
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="rfullName"
+                              name="rfullName"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="text"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="description"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Parcel Description
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="description"
+                              name="description"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="description"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <FormGroup
+                              tag="div"
+                            >
+                              <Label
+                                for="qty"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Quantity 
+                              </Label>
+                              <Input
+                                className="mb-3"
+                                id="qty"
+                                name="qty"
+                                onChange={[MockFunction]}
+                                placeholder=""
+                                required={true}
+                                type="number"
+                              />
+                               
+                            </FormGroup>
+                            <Label
+                              for="weight"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Weight 
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="weight"
+                              name="weight"
+                              onChange={[MockFunction]}
+                              required={true}
+                              type="number"
+                            />
+                             
+                          </FormGroup>,
+                          <Spinner />,
+                          <Button
+                            block={true}
+                            color="dark"
+                            disabled={true}
+                            style={
+                              Object {
+                                "marginTop": "2rem",
+                              }
+                            }
+                            tag="button"
+                          >
+                            Please wait
+                          </Button>,
+                        ],
+                        "className": "col-md-6",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="rfullName"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Recipient Fullname
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="rfullName"
+                                name="rfullName"
+                                onChange={[MockFunction]}
+                                placeholder=""
+                                required={true}
+                                type="text"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Recipient Fullname",
+                                "for": "rfullName",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Recipient Fullname",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "rfullName",
+                                "name": "rfullName",
+                                "onChange": [MockFunction],
+                                "placeholder": "",
+                                "required": true,
+                                "type": "text",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="description"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Parcel Description
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="description"
+                                name="description"
+                                onChange={[MockFunction]}
+                                placeholder=""
+                                required={true}
+                                type="description"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Parcel Description",
+                                "for": "description",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Parcel Description",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "description",
+                                "name": "description",
+                                "onChange": [MockFunction],
+                                "placeholder": "",
+                                "required": true,
+                                "type": "description",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <FormGroup
+                                tag="div"
+                              >
+                                <Label
+                                  for="qty"
+                                  tag="label"
+                                  widths={
+                                    Array [
+                                      "xs",
+                                      "sm",
+                                      "md",
+                                      "lg",
+                                      "xl",
+                                    ]
+                                  }
+                                >
+                                  Quantity 
+                                </Label>
+                                <Input
+                                  className="mb-3"
+                                  id="qty"
+                                  name="qty"
+                                  onChange={[MockFunction]}
+                                  placeholder=""
+                                  required={true}
+                                  type="number"
+                                />
+                                 
+                              </FormGroup>,
+                              <Label
+                                for="weight"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Weight 
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="weight"
+                                name="weight"
+                                onChange={[MockFunction]}
+                                required={true}
+                                type="number"
+                              />,
+                              " ",
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": Array [
+                                  <Label
+                                    for="qty"
+                                    tag="label"
+                                    widths={
+                                      Array [
+                                        "xs",
+                                        "sm",
+                                        "md",
+                                        "lg",
+                                        "xl",
+                                      ]
+                                    }
+                                  >
+                                    Quantity 
+                                  </Label>,
+                                  <Input
+                                    className="mb-3"
+                                    id="qty"
+                                    name="qty"
+                                    onChange={[MockFunction]}
+                                    placeholder=""
+                                    required={true}
+                                    type="number"
+                                  />,
+                                  " ",
+                                ],
+                                "tag": "div",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "function",
+                                  "props": Object {
+                                    "children": "Quantity ",
+                                    "for": "qty",
+                                    "tag": "label",
+                                    "widths": Array [
+                                      "xs",
+                                      "sm",
+                                      "md",
+                                      "lg",
+                                      "xl",
+                                    ],
+                                  },
+                                  "ref": null,
+                                  "rendered": "Quantity ",
+                                  "type": [Function],
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "class",
+                                  "props": Object {
+                                    "className": "mb-3",
+                                    "id": "qty",
+                                    "name": "qty",
+                                    "onChange": [MockFunction],
+                                    "placeholder": "",
+                                    "required": true,
+                                    "type": "number",
+                                  },
+                                  "ref": null,
+                                  "rendered": null,
+                                  "type": [Function],
+                                },
+                                " ",
+                              ],
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Weight ",
+                                "for": "weight",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Weight ",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "weight",
+                                "name": "weight",
+                                "onChange": [MockFunction],
+                                "required": true,
+                                "type": "number",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                            " ",
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "block": true,
+                            "children": "Please wait",
+                            "color": "dark",
+                            "disabled": true,
+                            "style": Object {
+                              "marginTop": "2rem",
+                            },
+                            "tag": "button",
+                          },
+                          "ref": null,
+                          "rendered": "Please wait",
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

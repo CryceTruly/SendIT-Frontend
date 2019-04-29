@@ -1,0 +1,1293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile View Tests should not regress 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProfileView
+    parcels={
+      Array [
+        Object {
+          "parcel_id": 1,
+          "price": 8.03585461851507,
+          "quantity": 6,
+          "status": "order_placed",
+          "tripDistance": 2.35723641234338,
+          "weight": 6,
+        },
+        Object {
+          "parcel_id": 2,
+          "price": 8.03585461851507,
+          "quantity": 6,
+          "status": "order_placed",
+          "tripDistance": 2.35723641234338,
+          "weight": 6,
+        },
+      ]
+    }
+    user={
+      Object {
+        "email": "aacryce@gmail.com",
+        "fullname": "AHEBWA CHRIS",
+        "imageUrl": "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+        "is_admin": false,
+        "joined": "Sat, 20 Apr 2019 07:36:20 GMT",
+        "telephone_number": "0758939187",
+        "user_id": 10,
+        "username": "crycetrulytest",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="card mx-auto"
+        >
+          <div
+            className="card-body pt-5"
+          >
+            <img
+              alt=""
+              className="rounded-circle my-4"
+              height="150"
+              src="https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png"
+            />
+            <p
+              className="card-text"
+            >
+               
+              FullName:
+              <strong>
+                AHEBWA CHRIS
+              </strong>
+            </p>
+            <p
+              className="card-text"
+            >
+               
+              Username:
+              <strong>
+                crycetrulytest
+              </strong>
+            </p>
+            <p
+              className="card-text"
+            >
+              Email:
+              <strong>
+                aacryce@gmail.com
+              </strong>
+            </p>
+            <p
+              className="card-text"
+            >
+              Joined:
+              <strong>
+                Sat, 20 Apr 2019 07:36:20 GMT
+              </strong>
+            </p>
+            <Button
+              className="btn-success"
+              color="secondary"
+              tag="button"
+            >
+              Edit  Profile
+            </Button>
+          </div>
+        </div>,
+        <br />,
+        " ",
+        <div>
+          <Card
+            tag="div"
+          >
+            <CardBody
+              tag="div"
+            >
+              <CardTitle
+                tag="div"
+              >
+                Statistics
+              </CardTitle>
+            </CardBody>
+            <h6>
+              All orders
+              <span
+                className="badge badge-info"
+              >
+                2
+              </span>
+            </h6>
+            <h6>
+              Delivered
+              <span
+                className="badge badge-info"
+              >
+                0
+              </span>
+            </h6>
+            <h6>
+              Pending
+              <span
+                className="badge badge-info"
+              >
+                2
+              </span>
+            </h6>
+          </Card>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="card-body pt-5"
+          >
+            <img
+              alt=""
+              className="rounded-circle my-4"
+              height="150"
+              src="https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png"
+            />
+            <p
+              className="card-text"
+            >
+               
+              FullName:
+              <strong>
+                AHEBWA CHRIS
+              </strong>
+            </p>
+            <p
+              className="card-text"
+            >
+               
+              Username:
+              <strong>
+                crycetrulytest
+              </strong>
+            </p>
+            <p
+              className="card-text"
+            >
+              Email:
+              <strong>
+                aacryce@gmail.com
+              </strong>
+            </p>
+            <p
+              className="card-text"
+            >
+              Joined:
+              <strong>
+                Sat, 20 Apr 2019 07:36:20 GMT
+              </strong>
+            </p>
+            <Button
+              className="btn-success"
+              color="secondary"
+              tag="button"
+            >
+              Edit  Profile
+            </Button>
+          </div>,
+          "className": "card mx-auto",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt=""
+                className="rounded-circle my-4"
+                height="150"
+                src="https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png"
+              />,
+              <p
+                className="card-text"
+              >
+                 
+                FullName:
+                <strong>
+                  AHEBWA CHRIS
+                </strong>
+              </p>,
+              <p
+                className="card-text"
+              >
+                 
+                Username:
+                <strong>
+                  crycetrulytest
+                </strong>
+              </p>,
+              <p
+                className="card-text"
+              >
+                Email:
+                <strong>
+                  aacryce@gmail.com
+                </strong>
+              </p>,
+              <p
+                className="card-text"
+              >
+                Joined:
+                <strong>
+                  Sat, 20 Apr 2019 07:36:20 GMT
+                </strong>
+              </p>,
+              <Button
+                className="btn-success"
+                color="secondary"
+                tag="button"
+              >
+                Edit  Profile
+              </Button>,
+            ],
+            "className": "card-body pt-5",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "",
+                "className": "rounded-circle my-4",
+                "height": "150",
+                "src": "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "FullName:",
+                  <strong>
+                    AHEBWA CHRIS
+                  </strong>,
+                ],
+                "className": "card-text",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "FullName:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "AHEBWA CHRIS",
+                  },
+                  "ref": null,
+                  "rendered": "AHEBWA CHRIS",
+                  "type": "strong",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Username:",
+                  <strong>
+                    crycetrulytest
+                  </strong>,
+                ],
+                "className": "card-text",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Username:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "crycetrulytest",
+                  },
+                  "ref": null,
+                  "rendered": "crycetrulytest",
+                  "type": "strong",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Email:",
+                  <strong>
+                    aacryce@gmail.com
+                  </strong>,
+                ],
+                "className": "card-text",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Email:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "aacryce@gmail.com",
+                  },
+                  "ref": null,
+                  "rendered": "aacryce@gmail.com",
+                  "type": "strong",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Joined:",
+                  <strong>
+                    Sat, 20 Apr 2019 07:36:20 GMT
+                  </strong>,
+                ],
+                "className": "card-text",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Joined:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sat, 20 Apr 2019 07:36:20 GMT",
+                  },
+                  "ref": null,
+                  "rendered": "Sat, 20 Apr 2019 07:36:20 GMT",
+                  "type": "strong",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Edit  Profile",
+                "className": "btn-success",
+                "color": "secondary",
+                "tag": "button",
+              },
+              "ref": null,
+              "rendered": "Edit  Profile",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      " ",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Card
+            tag="div"
+          >
+            <CardBody
+              tag="div"
+            >
+              <CardTitle
+                tag="div"
+              >
+                Statistics
+              </CardTitle>
+            </CardBody>
+            <h6>
+              All orders
+              <span
+                className="badge badge-info"
+              >
+                2
+              </span>
+            </h6>
+            <h6>
+              Delivered
+              <span
+                className="badge badge-info"
+              >
+                0
+              </span>
+            </h6>
+            <h6>
+              Pending
+              <span
+                className="badge badge-info"
+              >
+                2
+              </span>
+            </h6>
+          </Card>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  tag="div"
+                >
+                  Statistics
+                </CardTitle>
+              </CardBody>,
+              <h6>
+                All orders
+                <span
+                  className="badge badge-info"
+                >
+                  2
+                </span>
+              </h6>,
+              <h6>
+                Delivered
+                <span
+                  className="badge badge-info"
+                >
+                  0
+                </span>
+              </h6>,
+              <h6>
+                Pending
+                <span
+                  className="badge badge-info"
+                >
+                  2
+                </span>
+              </h6>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <CardTitle
+                  tag="div"
+                >
+                  Statistics
+                </CardTitle>,
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Statistics",
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": "Statistics",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "All orders",
+                  <span
+                    className="badge badge-info"
+                  >
+                    2
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "All orders",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 2,
+                    "className": "badge badge-info",
+                  },
+                  "ref": null,
+                  "rendered": 2,
+                  "type": "span",
+                },
+              ],
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Delivered",
+                  <span
+                    className="badge badge-info"
+                  >
+                    0
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Delivered",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "badge badge-info",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
+              ],
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Pending",
+                  <span
+                    className="badge badge-info"
+                  >
+                    2
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Pending",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 2,
+                    "className": "badge badge-info",
+                  },
+                  "ref": null,
+                  "rendered": 2,
+                  "type": "span",
+                },
+              ],
+              "type": "h6",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "center",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card mx-auto"
+          >
+            <div
+              className="card-body pt-5"
+            >
+              <img
+                alt=""
+                className="rounded-circle my-4"
+                height="150"
+                src="https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png"
+              />
+              <p
+                className="card-text"
+              >
+                 
+                FullName:
+                <strong>
+                  AHEBWA CHRIS
+                </strong>
+              </p>
+              <p
+                className="card-text"
+              >
+                 
+                Username:
+                <strong>
+                  crycetrulytest
+                </strong>
+              </p>
+              <p
+                className="card-text"
+              >
+                Email:
+                <strong>
+                  aacryce@gmail.com
+                </strong>
+              </p>
+              <p
+                className="card-text"
+              >
+                Joined:
+                <strong>
+                  Sat, 20 Apr 2019 07:36:20 GMT
+                </strong>
+              </p>
+              <Button
+                className="btn-success"
+                color="secondary"
+                tag="button"
+              >
+                Edit  Profile
+              </Button>
+            </div>
+          </div>,
+          <br />,
+          " ",
+          <div>
+            <Card
+              tag="div"
+            >
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  tag="div"
+                >
+                  Statistics
+                </CardTitle>
+              </CardBody>
+              <h6>
+                All orders
+                <span
+                  className="badge badge-info"
+                >
+                  2
+                </span>
+              </h6>
+              <h6>
+                Delivered
+                <span
+                  className="badge badge-info"
+                >
+                  0
+                </span>
+              </h6>
+              <h6>
+                Pending
+                <span
+                  className="badge badge-info"
+                >
+                  2
+                </span>
+              </h6>
+            </Card>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="card-body pt-5"
+            >
+              <img
+                alt=""
+                className="rounded-circle my-4"
+                height="150"
+                src="https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png"
+              />
+              <p
+                className="card-text"
+              >
+                 
+                FullName:
+                <strong>
+                  AHEBWA CHRIS
+                </strong>
+              </p>
+              <p
+                className="card-text"
+              >
+                 
+                Username:
+                <strong>
+                  crycetrulytest
+                </strong>
+              </p>
+              <p
+                className="card-text"
+              >
+                Email:
+                <strong>
+                  aacryce@gmail.com
+                </strong>
+              </p>
+              <p
+                className="card-text"
+              >
+                Joined:
+                <strong>
+                  Sat, 20 Apr 2019 07:36:20 GMT
+                </strong>
+              </p>
+              <Button
+                className="btn-success"
+                color="secondary"
+                tag="button"
+              >
+                Edit  Profile
+              </Button>
+            </div>,
+            "className": "card mx-auto",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt=""
+                  className="rounded-circle my-4"
+                  height="150"
+                  src="https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png"
+                />,
+                <p
+                  className="card-text"
+                >
+                   
+                  FullName:
+                  <strong>
+                    AHEBWA CHRIS
+                  </strong>
+                </p>,
+                <p
+                  className="card-text"
+                >
+                   
+                  Username:
+                  <strong>
+                    crycetrulytest
+                  </strong>
+                </p>,
+                <p
+                  className="card-text"
+                >
+                  Email:
+                  <strong>
+                    aacryce@gmail.com
+                  </strong>
+                </p>,
+                <p
+                  className="card-text"
+                >
+                  Joined:
+                  <strong>
+                    Sat, 20 Apr 2019 07:36:20 GMT
+                  </strong>
+                </p>,
+                <Button
+                  className="btn-success"
+                  color="secondary"
+                  tag="button"
+                >
+                  Edit  Profile
+                </Button>,
+              ],
+              "className": "card-body pt-5",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "",
+                  "className": "rounded-circle my-4",
+                  "height": "150",
+                  "src": "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "FullName:",
+                    <strong>
+                      AHEBWA CHRIS
+                    </strong>,
+                  ],
+                  "className": "card-text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "FullName:",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "AHEBWA CHRIS",
+                    },
+                    "ref": null,
+                    "rendered": "AHEBWA CHRIS",
+                    "type": "strong",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Username:",
+                    <strong>
+                      crycetrulytest
+                    </strong>,
+                  ],
+                  "className": "card-text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Username:",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "crycetrulytest",
+                    },
+                    "ref": null,
+                    "rendered": "crycetrulytest",
+                    "type": "strong",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Email:",
+                    <strong>
+                      aacryce@gmail.com
+                    </strong>,
+                  ],
+                  "className": "card-text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Email:",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "aacryce@gmail.com",
+                    },
+                    "ref": null,
+                    "rendered": "aacryce@gmail.com",
+                    "type": "strong",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Joined:",
+                    <strong>
+                      Sat, 20 Apr 2019 07:36:20 GMT
+                    </strong>,
+                  ],
+                  "className": "card-text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Joined:",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sat, 20 Apr 2019 07:36:20 GMT",
+                    },
+                    "ref": null,
+                    "rendered": "Sat, 20 Apr 2019 07:36:20 GMT",
+                    "type": "strong",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Edit  Profile",
+                  "className": "btn-success",
+                  "color": "secondary",
+                  "tag": "button",
+                },
+                "ref": null,
+                "rendered": "Edit  Profile",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        " ",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Card
+              tag="div"
+            >
+              <CardBody
+                tag="div"
+              >
+                <CardTitle
+                  tag="div"
+                >
+                  Statistics
+                </CardTitle>
+              </CardBody>
+              <h6>
+                All orders
+                <span
+                  className="badge badge-info"
+                >
+                  2
+                </span>
+              </h6>
+              <h6>
+                Delivered
+                <span
+                  className="badge badge-info"
+                >
+                  0
+                </span>
+              </h6>
+              <h6>
+                Pending
+                <span
+                  className="badge badge-info"
+                >
+                  2
+                </span>
+              </h6>
+            </Card>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <CardBody
+                  tag="div"
+                >
+                  <CardTitle
+                    tag="div"
+                  >
+                    Statistics
+                  </CardTitle>
+                </CardBody>,
+                <h6>
+                  All orders
+                  <span
+                    className="badge badge-info"
+                  >
+                    2
+                  </span>
+                </h6>,
+                <h6>
+                  Delivered
+                  <span
+                    className="badge badge-info"
+                  >
+                    0
+                  </span>
+                </h6>,
+                <h6>
+                  Pending
+                  <span
+                    className="badge badge-info"
+                  >
+                    2
+                  </span>
+                </h6>,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <CardTitle
+                    tag="div"
+                  >
+                    Statistics
+                  </CardTitle>,
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Statistics",
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": "Statistics",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "All orders",
+                    <span
+                      className="badge badge-info"
+                    >
+                      2
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "All orders",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": 2,
+                      "className": "badge badge-info",
+                    },
+                    "ref": null,
+                    "rendered": 2,
+                    "type": "span",
+                  },
+                ],
+                "type": "h6",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Delivered",
+                    <span
+                      className="badge badge-info"
+                    >
+                      0
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Delivered",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": 0,
+                      "className": "badge badge-info",
+                    },
+                    "ref": null,
+                    "rendered": 0,
+                    "type": "span",
+                  },
+                ],
+                "type": "h6",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Pending",
+                    <span
+                      className="badge badge-info"
+                    >
+                      2
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Pending",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": 2,
+                      "className": "badge badge-info",
+                    },
+                    "ref": null,
+                    "rendered": 2,
+                    "type": "span",
+                  },
+                ],
+                "type": "h6",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "center",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Parcel Item View Tests should not regress 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ParcelItem
+    data={
+      Object {
+        "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+        "parcel_id": 42,
+        "stats": Object {
+          "price": 8.03585461851507,
+          "quantity": 6,
+          "status": "order_placed",
+          "tripDistance": 2.35723641234338,
+          "weight": 6,
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <td>
+          42
+        </td>,
+        <td>
+          order_placed
+        </td>,
+        <td>
+          <t
+            ago={false}
+            calendar={false}
+            decimal={false}
+            element="time"
+            filter={[Function]}
+            fromNow={true}
+            interval={60000}
+            onChange={[Function]}
+            titleFormat=""
+            toNow={false}
+            unit={null}
+            unix={false}
+            utc={false}
+            withTitle={false}
+          >
+            Sun, 28 Apr 2019 15:39:10 GMT
+          </t>
+        </td>,
+        <td>
+          <Link
+            replace={false}
+            to={
+              Object {
+                "pathname": "/details",
+                "state": Object {
+                  "data": Object {
+                    "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+                    "parcel_id": 42,
+                    "stats": Object {
+                      "price": 8.03585461851507,
+                      "quantity": 6,
+                      "status": "order_placed",
+                      "tripDistance": 2.35723641234338,
+                      "weight": 6,
+                    },
+                  },
+                },
+              }
+            }
+          >
+            <i
+              class="fa fa-arrow-alt-circle-right"
+            />
+          </Link>
+        </td>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 42,
+        },
+        "ref": null,
+        "rendered": 42,
+        "type": "td",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "order_placed",
+        },
+        "ref": null,
+        "rendered": "order_placed",
+        "type": "td",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <t
+            ago={false}
+            calendar={false}
+            decimal={false}
+            element="time"
+            filter={[Function]}
+            fromNow={true}
+            interval={60000}
+            onChange={[Function]}
+            titleFormat=""
+            toNow={false}
+            unit={null}
+            unix={false}
+            utc={false}
+            withTitle={false}
+          >
+            Sun, 28 Apr 2019 15:39:10 GMT
+          </t>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "ago": false,
+            "calendar": false,
+            "children": "Sun, 28 Apr 2019 15:39:10 GMT",
+            "decimal": false,
+            "element": "time",
+            "filter": [Function],
+            "fromNow": true,
+            "interval": 60000,
+            "onChange": [Function],
+            "titleFormat": "",
+            "toNow": false,
+            "unit": null,
+            "unix": false,
+            "utc": false,
+            "withTitle": false,
+          },
+          "ref": null,
+          "rendered": "Sun, 28 Apr 2019 15:39:10 GMT",
+          "type": [Function],
+        },
+        "type": "td",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to={
+              Object {
+                "pathname": "/details",
+                "state": Object {
+                  "data": Object {
+                    "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+                    "parcel_id": 42,
+                    "stats": Object {
+                      "price": 8.03585461851507,
+                      "quantity": 6,
+                      "status": "order_placed",
+                      "tripDistance": 2.35723641234338,
+                      "weight": 6,
+                    },
+                  },
+                },
+              }
+            }
+          >
+            <i
+              class="fa fa-arrow-alt-circle-right"
+            />
+          </Link>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <i
+              class="fa fa-arrow-alt-circle-right"
+            />,
+            "replace": false,
+            "to": Object {
+              "pathname": "/details",
+              "state": Object {
+                "data": Object {
+                  "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+                  "parcel_id": 42,
+                  "stats": Object {
+                    "price": 8.03585461851507,
+                    "quantity": 6,
+                    "status": "order_placed",
+                    "tripDistance": 2.35723641234338,
+                    "weight": 6,
+                  },
+                },
+              },
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "class": "fa fa-arrow-alt-circle-right",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          "type": [Function],
+        },
+        "type": "td",
+      },
+    ],
+    "type": "tr",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <td>
+            42
+          </td>,
+          <td>
+            order_placed
+          </td>,
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              decimal={false}
+              element="time"
+              filter={[Function]}
+              fromNow={true}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              Sun, 28 Apr 2019 15:39:10 GMT
+            </t>
+          </td>,
+          <td>
+            <Link
+              replace={false}
+              to={
+                Object {
+                  "pathname": "/details",
+                  "state": Object {
+                    "data": Object {
+                      "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+                      "parcel_id": 42,
+                      "stats": Object {
+                        "price": 8.03585461851507,
+                        "quantity": 6,
+                        "status": "order_placed",
+                        "tripDistance": 2.35723641234338,
+                        "weight": 6,
+                      },
+                    },
+                  },
+                }
+              }
+            >
+              <i
+                class="fa fa-arrow-alt-circle-right"
+              />
+            </Link>
+          </td>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 42,
+          },
+          "ref": null,
+          "rendered": 42,
+          "type": "td",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "order_placed",
+          },
+          "ref": null,
+          "rendered": "order_placed",
+          "type": "td",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <t
+              ago={false}
+              calendar={false}
+              decimal={false}
+              element="time"
+              filter={[Function]}
+              fromNow={true}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              Sun, 28 Apr 2019 15:39:10 GMT
+            </t>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "ago": false,
+              "calendar": false,
+              "children": "Sun, 28 Apr 2019 15:39:10 GMT",
+              "decimal": false,
+              "element": "time",
+              "filter": [Function],
+              "fromNow": true,
+              "interval": 60000,
+              "onChange": [Function],
+              "titleFormat": "",
+              "toNow": false,
+              "unit": null,
+              "unix": false,
+              "utc": false,
+              "withTitle": false,
+            },
+            "ref": null,
+            "rendered": "Sun, 28 Apr 2019 15:39:10 GMT",
+            "type": [Function],
+          },
+          "type": "td",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to={
+                Object {
+                  "pathname": "/details",
+                  "state": Object {
+                    "data": Object {
+                      "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+                      "parcel_id": 42,
+                      "stats": Object {
+                        "price": 8.03585461851507,
+                        "quantity": 6,
+                        "status": "order_placed",
+                        "tripDistance": 2.35723641234338,
+                        "weight": 6,
+                      },
+                    },
+                  },
+                }
+              }
+            >
+              <i
+                class="fa fa-arrow-alt-circle-right"
+              />
+            </Link>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <i
+                class="fa fa-arrow-alt-circle-right"
+              />,
+              "replace": false,
+              "to": Object {
+                "pathname": "/details",
+                "state": Object {
+                  "data": Object {
+                    "created": "Sun, 28 Apr 2019 15:39:10 GMT",
+                    "parcel_id": 42,
+                    "stats": Object {
+                      "price": 8.03585461851507,
+                      "quantity": 6,
+                      "status": "order_placed",
+                      "tripDistance": 2.35723641234338,
+                      "weight": 6,
+                    },
+                  },
+                },
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "fa fa-arrow-alt-circle-right",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+            "type": [Function],
+          },
+          "type": "td",
+        },
+      ],
+      "type": "tr",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

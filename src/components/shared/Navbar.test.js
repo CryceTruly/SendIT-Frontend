@@ -1,38 +1,42 @@
 import React from "react";
 import {
-    shallow
+  shallow, mount,
 } from "enzyme";
-// Components
-import Navigationbar from "./Navbar";
-import {mapStateToProps} from './Navbar'
-function setup() {
-    const wrapper = shallow( <Navigationbar /> );
-    return {
-        wrapper
-    };
-}
+import Provider from "react-redux";
+import { Navigationbar, mapStateToProps } from "./Navbar";
+import store from "../../Store";
 
 describe("Nav TestSuite", () => {
-    it("Should not regress", () => {
-        const {
-            wrapper
-        } = setup();
-        expect(wrapper).toMatchSnapshot()
-    });
+  const props = {
+    auth: {
+      isAuthenticated: true,
+      user: {
+        email: "crycetruly@gmail.com",
+        username: "fredgreg",
+      },
+    },
+    logout: jest.fn(),
+  };
 
-    test('should map state to props', () => {
-            const auth=
-                {
-                    user_id:localStorage.getItem("user_id"),
-                    isAuthenticated: null,
-                    isLoading: false,
-                    user:null
-                }
-        const appState={auth}
-        const componentState=mapStateToProps(appState);
-        expect(componentState).toEqual(appState)
-    })
+  it("Should not regress", () => {
+    const wrapper = shallow(<Navigationbar {...props} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 
+  it("should handle user logout", () => {
+    const wrapper = shallow(<Navigationbar {...props} />);
+    wrapper.instance().onLogoutClick();
+  });
 
-}
-)
+  test("should map state to props", () => {
+    const auth = {
+      user_id: localStorage.getItem("user_id"),
+      isAuthenticated: null,
+      isLoading: false,
+      user: null,
+    };
+    const appState = { auth };
+    const componentState = mapStateToProps(appState);
+    expect(componentState).toEqual(appState);
+  });
+});

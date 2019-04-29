@@ -1,3 +1,4 @@
-const BASE_URL="https://senditbackend.herokuapp.com/api/v2/";
+const BASE_URL = "https://senditbackend.herokuapp.com/api/v2";
 
-export {BASE_URL as default}
+// https://senditbackend.herokuapp.com/api/v2";
+export { BASE_URL as default };

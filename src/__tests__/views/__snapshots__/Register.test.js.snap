@@ -1,0 +1,3933 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register View Tests should not regress 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Register
+    errorId={1}
+    errorMessage="Invalid password"
+    msg="Logged In success"
+    onChange={[MockFunction]}
+    onSubmit={[MockFunction]}
+    processing={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Card
+        tag="div"
+      >
+        <CardBody
+          tag="div"
+        >
+          <CardTitle
+            tag="div"
+          />
+          <CardTitle
+            tag="div"
+          >
+            <strong>
+              Register an Account.
+            </strong>
+          </CardTitle>
+          <Form
+            onSubmit={[MockFunction]}
+            tag="form"
+          >
+            <Alert
+              closeAriaLabel="Close"
+              color="danger"
+              fade={true}
+              isOpen={true}
+              tag="div"
+              transition={
+                Object {
+                  "appear": true,
+                  "baseClass": "fade",
+                  "baseClassActive": "show",
+                  "enter": true,
+                  "exit": true,
+                  "in": true,
+                  "mountOnEnter": false,
+                  "onEnter": [Function],
+                  "onEntered": [Function],
+                  "onEntering": [Function],
+                  "onExit": [Function],
+                  "onExited": [Function],
+                  "onExiting": [Function],
+                  "tag": "div",
+                  "timeout": 150,
+                  "unmountOnExit": true,
+                }
+              }
+            >
+              Logged In success
+            </Alert>
+            <Row
+              tag="div"
+            >
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="fullname"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Fullname
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="fullname"
+                    name="fullname"
+                    onChange={[MockFunction]}
+                    placeholder="Full Name"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="email"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Email
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="email"
+                    name="email"
+                    onChange={[MockFunction]}
+                    placeholder="Email"
+                    required={true}
+                    type="email"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="phone_number"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Phone Number
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="phone_number"
+                    name="phone_number"
+                    onChange={[MockFunction]}
+                    placeholder="phone_number"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+              </div>
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="username"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Username
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="username"
+                    name="username"
+                    onChange={[MockFunction]}
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="password"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Password
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="password"
+                    name="password"
+                    onChange={[MockFunction]}
+                    required={true}
+                    type="password"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="password_comfirm"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Confirm Password 
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="password_comfirm"
+                    name="password_comfirm"
+                    onChange={[MockFunction]}
+                    placeholder=""
+                    required={true}
+                    type="password"
+                  />
+                  <Spinner />
+                </FormGroup>
+                <Button
+                  block={true}
+                  color="dark"
+                  disabled={true}
+                  style={
+                    Object {
+                      "marginTop": "2rem",
+                    }
+                  }
+                  tag="button"
+                >
+                  Please wait...
+                </Button>
+              </div>
+            </Row>
+          </Form>
+        </CardBody>
+      </Card>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <CardBody
+          tag="div"
+        >
+          <CardTitle
+            tag="div"
+          />
+          <CardTitle
+            tag="div"
+          >
+            <strong>
+              Register an Account.
+            </strong>
+          </CardTitle>
+          <Form
+            onSubmit={[MockFunction]}
+            tag="form"
+          >
+            <Alert
+              closeAriaLabel="Close"
+              color="danger"
+              fade={true}
+              isOpen={true}
+              tag="div"
+              transition={
+                Object {
+                  "appear": true,
+                  "baseClass": "fade",
+                  "baseClassActive": "show",
+                  "enter": true,
+                  "exit": true,
+                  "in": true,
+                  "mountOnEnter": false,
+                  "onEnter": [Function],
+                  "onEntered": [Function],
+                  "onEntering": [Function],
+                  "onExit": [Function],
+                  "onExited": [Function],
+                  "onExiting": [Function],
+                  "tag": "div",
+                  "timeout": 150,
+                  "unmountOnExit": true,
+                }
+              }
+            >
+              Logged In success
+            </Alert>
+            <Row
+              tag="div"
+            >
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="fullname"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Fullname
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="fullname"
+                    name="fullname"
+                    onChange={[MockFunction]}
+                    placeholder="Full Name"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="email"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Email
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="email"
+                    name="email"
+                    onChange={[MockFunction]}
+                    placeholder="Email"
+                    required={true}
+                    type="email"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="phone_number"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Phone Number
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="phone_number"
+                    name="phone_number"
+                    onChange={[MockFunction]}
+                    placeholder="phone_number"
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+              </div>
+              <div
+                className="col-md-6"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="username"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Username
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="username"
+                    name="username"
+                    onChange={[MockFunction]}
+                    required={true}
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="password"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Password
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="password"
+                    name="password"
+                    onChange={[MockFunction]}
+                    required={true}
+                    type="password"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="password_comfirm"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Confirm Password 
+                  </Label>
+                  <Input
+                    className="mb-3"
+                    id="password_comfirm"
+                    name="password_comfirm"
+                    onChange={[MockFunction]}
+                    placeholder=""
+                    required={true}
+                    type="password"
+                  />
+                  <Spinner />
+                </FormGroup>
+                <Button
+                  block={true}
+                  color="dark"
+                  disabled={true}
+                  style={
+                    Object {
+                      "marginTop": "2rem",
+                    }
+                  }
+                  tag="button"
+                >
+                  Please wait...
+                </Button>
+              </div>
+            </Row>
+          </Form>
+        </CardBody>,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <CardTitle
+              tag="div"
+            />,
+            <CardTitle
+              tag="div"
+            >
+              <strong>
+                Register an Account.
+              </strong>
+            </CardTitle>,
+            <Form
+              onSubmit={[MockFunction]}
+              tag="form"
+            >
+              <Alert
+                closeAriaLabel="Close"
+                color="danger"
+                fade={true}
+                isOpen={true}
+                tag="div"
+                transition={
+                  Object {
+                    "appear": true,
+                    "baseClass": "fade",
+                    "baseClassActive": "show",
+                    "enter": true,
+                    "exit": true,
+                    "in": true,
+                    "mountOnEnter": false,
+                    "onEnter": [Function],
+                    "onEntered": [Function],
+                    "onEntering": [Function],
+                    "onExit": [Function],
+                    "onExited": [Function],
+                    "onExiting": [Function],
+                    "tag": "div",
+                    "timeout": 150,
+                    "unmountOnExit": true,
+                  }
+                }
+              >
+                Logged In success
+              </Alert>
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="fullname"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Fullname
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="fullname"
+                      name="fullname"
+                      onChange={[MockFunction]}
+                      placeholder="Full Name"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="email"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="email"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="phone_number"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Phone Number
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="phone_number"
+                      name="phone_number"
+                      onChange={[MockFunction]}
+                      placeholder="phone_number"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                </div>
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="username"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Username
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="username"
+                      name="username"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Password
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password"
+                      name="password"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="password"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password_comfirm"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Confirm Password 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password_comfirm"
+                      name="password_comfirm"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="password"
+                    />
+                    <Spinner />
+                  </FormGroup>
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "2rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait...
+                  </Button>
+                </div>
+              </Row>
+            </Form>,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <strong>
+                Register an Account.
+              </strong>,
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Register an Account.",
+              },
+              "ref": null,
+              "rendered": "Register an Account.",
+              "type": "strong",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Alert
+                  closeAriaLabel="Close"
+                  color="danger"
+                  fade={true}
+                  isOpen={true}
+                  tag="div"
+                  transition={
+                    Object {
+                      "appear": true,
+                      "baseClass": "fade",
+                      "baseClassActive": "show",
+                      "enter": true,
+                      "exit": true,
+                      "in": true,
+                      "mountOnEnter": false,
+                      "onEnter": [Function],
+                      "onEntered": [Function],
+                      "onEntering": [Function],
+                      "onExit": [Function],
+                      "onExited": [Function],
+                      "onExiting": [Function],
+                      "tag": "div",
+                      "timeout": 150,
+                      "unmountOnExit": true,
+                    }
+                  }
+                >
+                  Logged In success
+                </Alert>,
+                <Row
+                  tag="div"
+                >
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="fullname"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Fullname
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="fullname"
+                        name="fullname"
+                        onChange={[MockFunction]}
+                        placeholder="Full Name"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="email"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="email"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="phone_number"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Phone Number
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="phone_number"
+                        name="phone_number"
+                        onChange={[MockFunction]}
+                        placeholder="phone_number"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                  </div>
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="username"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Username
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="username"
+                        name="username"
+                        onChange={[MockFunction]}
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Password
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password"
+                        name="password"
+                        onChange={[MockFunction]}
+                        required={true}
+                        type="password"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password_comfirm"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Confirm Password 
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password_comfirm"
+                        name="password_comfirm"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="password"
+                      />
+                      <Spinner />
+                    </FormGroup>
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "2rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait...
+                    </Button>
+                  </div>
+                </Row>,
+              ],
+              "onSubmit": [MockFunction],
+              "tag": "form",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Logged In success",
+                  "closeAriaLabel": "Close",
+                  "color": "danger",
+                  "fade": true,
+                  "isOpen": true,
+                  "tag": "div",
+                  "transition": Object {
+                    "appear": true,
+                    "baseClass": "fade",
+                    "baseClassActive": "show",
+                    "enter": true,
+                    "exit": true,
+                    "in": true,
+                    "mountOnEnter": false,
+                    "onEnter": [Function],
+                    "onEntered": [Function],
+                    "onEntering": [Function],
+                    "onExit": [Function],
+                    "onExited": [Function],
+                    "onExiting": [Function],
+                    "tag": "div",
+                    "timeout": 150,
+                    "unmountOnExit": true,
+                  },
+                },
+                "ref": null,
+                "rendered": "Logged In success",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="fullname"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Fullname
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="fullname"
+                          name="fullname"
+                          onChange={[MockFunction]}
+                          placeholder="Full Name"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="email"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Email
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="email"
+                          name="email"
+                          onChange={[MockFunction]}
+                          placeholder="Email"
+                          required={true}
+                          type="email"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="phone_number"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Phone Number
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="phone_number"
+                          name="phone_number"
+                          onChange={[MockFunction]}
+                          placeholder="phone_number"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                    </div>,
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="username"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Username
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="username"
+                          name="username"
+                          onChange={[MockFunction]}
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="password"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Password
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="password"
+                          name="password"
+                          onChange={[MockFunction]}
+                          required={true}
+                          type="password"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="password_comfirm"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Confirm Password 
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="password_comfirm"
+                          name="password_comfirm"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="password"
+                        />
+                        <Spinner />
+                      </FormGroup>
+                      <Button
+                        block={true}
+                        color="dark"
+                        disabled={true}
+                        style={
+                          Object {
+                            "marginTop": "2rem",
+                          }
+                        }
+                        tag="button"
+                      >
+                        Please wait...
+                      </Button>
+                    </div>,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="fullname"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Fullname
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="fullname"
+                            name="fullname"
+                            onChange={[MockFunction]}
+                            placeholder="Full Name"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="email"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Email
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="email"
+                            name="email"
+                            onChange={[MockFunction]}
+                            placeholder="Email"
+                            required={true}
+                            type="email"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="phone_number"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Phone Number
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="phone_number"
+                            name="phone_number"
+                            onChange={[MockFunction]}
+                            placeholder="phone_number"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>,
+                      ],
+                      "className": "col-md-6",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="fullname"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Fullname
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="fullname"
+                              name="fullname"
+                              onChange={[MockFunction]}
+                              placeholder="Full Name"
+                              required={true}
+                              type="text"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Fullname",
+                              "for": "fullname",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Fullname",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "fullname",
+                              "name": "fullname",
+                              "onChange": [MockFunction],
+                              "placeholder": "Full Name",
+                              "required": true,
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="email"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Email
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="email"
+                              name="email"
+                              onChange={[MockFunction]}
+                              placeholder="Email"
+                              required={true}
+                              type="email"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Email",
+                              "for": "email",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Email",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "email",
+                              "name": "email",
+                              "onChange": [MockFunction],
+                              "placeholder": "Email",
+                              "required": true,
+                              "type": "email",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="phone_number"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Phone Number
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="phone_number"
+                              name="phone_number"
+                              onChange={[MockFunction]}
+                              placeholder="phone_number"
+                              required={true}
+                              type="text"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Phone Number",
+                              "for": "phone_number",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Phone Number",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "phone_number",
+                              "name": "phone_number",
+                              "onChange": [MockFunction],
+                              "placeholder": "phone_number",
+                              "required": true,
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="username"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Username
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="username"
+                            name="username"
+                            onChange={[MockFunction]}
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="password"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Password
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="password"
+                            name="password"
+                            onChange={[MockFunction]}
+                            required={true}
+                            type="password"
+                          />
+                        </FormGroup>,
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="password_comfirm"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Confirm Password 
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="password_comfirm"
+                            name="password_comfirm"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="password"
+                          />
+                          <Spinner />
+                        </FormGroup>,
+                        <Button
+                          block={true}
+                          color="dark"
+                          disabled={true}
+                          style={
+                            Object {
+                              "marginTop": "2rem",
+                            }
+                          }
+                          tag="button"
+                        >
+                          Please wait...
+                        </Button>,
+                      ],
+                      "className": "col-md-6",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="username"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Username
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="username"
+                              name="username"
+                              onChange={[MockFunction]}
+                              required={true}
+                              type="text"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Username",
+                              "for": "username",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Username",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "username",
+                              "name": "username",
+                              "onChange": [MockFunction],
+                              "required": true,
+                              "type": "text",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="password"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Password
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="password"
+                              name="password"
+                              onChange={[MockFunction]}
+                              required={true}
+                              type="password"
+                            />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Password",
+                              "for": "password",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Password",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "password",
+                              "name": "password",
+                              "onChange": [MockFunction],
+                              "required": true,
+                              "type": "password",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            <Label
+                              for="password_comfirm"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Confirm Password 
+                            </Label>,
+                            <Input
+                              className="mb-3"
+                              id="password_comfirm"
+                              name="password_comfirm"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="password"
+                            />,
+                            <Spinner />,
+                          ],
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Confirm Password ",
+                              "for": "password_comfirm",
+                              "tag": "label",
+                              "widths": Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": "Confirm Password ",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "className": "mb-3",
+                              "id": "password_comfirm",
+                              "name": "password_comfirm",
+                              "onChange": [MockFunction],
+                              "placeholder": "",
+                              "required": true,
+                              "type": "password",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "block": true,
+                          "children": "Please wait...",
+                          "color": "dark",
+                          "disabled": true,
+                          "style": Object {
+                            "marginTop": "2rem",
+                          },
+                          "tag": "button",
+                        },
+                        "ref": null,
+                        "rendered": "Please wait...",
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Card
+          tag="div"
+        >
+          <CardBody
+            tag="div"
+          >
+            <CardTitle
+              tag="div"
+            />
+            <CardTitle
+              tag="div"
+            >
+              <strong>
+                Register an Account.
+              </strong>
+            </CardTitle>
+            <Form
+              onSubmit={[MockFunction]}
+              tag="form"
+            >
+              <Alert
+                closeAriaLabel="Close"
+                color="danger"
+                fade={true}
+                isOpen={true}
+                tag="div"
+                transition={
+                  Object {
+                    "appear": true,
+                    "baseClass": "fade",
+                    "baseClassActive": "show",
+                    "enter": true,
+                    "exit": true,
+                    "in": true,
+                    "mountOnEnter": false,
+                    "onEnter": [Function],
+                    "onEntered": [Function],
+                    "onEntering": [Function],
+                    "onExit": [Function],
+                    "onExited": [Function],
+                    "onExiting": [Function],
+                    "tag": "div",
+                    "timeout": 150,
+                    "unmountOnExit": true,
+                  }
+                }
+              >
+                Logged In success
+              </Alert>
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="fullname"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Fullname
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="fullname"
+                      name="fullname"
+                      onChange={[MockFunction]}
+                      placeholder="Full Name"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="email"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="email"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="phone_number"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Phone Number
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="phone_number"
+                      name="phone_number"
+                      onChange={[MockFunction]}
+                      placeholder="phone_number"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                </div>
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="username"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Username
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="username"
+                      name="username"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Password
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password"
+                      name="password"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="password"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password_comfirm"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Confirm Password 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password_comfirm"
+                      name="password_comfirm"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="password"
+                    />
+                    <Spinner />
+                  </FormGroup>
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "2rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait...
+                  </Button>
+                </div>
+              </Row>
+            </Form>
+          </CardBody>
+        </Card>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <CardBody
+            tag="div"
+          >
+            <CardTitle
+              tag="div"
+            />
+            <CardTitle
+              tag="div"
+            >
+              <strong>
+                Register an Account.
+              </strong>
+            </CardTitle>
+            <Form
+              onSubmit={[MockFunction]}
+              tag="form"
+            >
+              <Alert
+                closeAriaLabel="Close"
+                color="danger"
+                fade={true}
+                isOpen={true}
+                tag="div"
+                transition={
+                  Object {
+                    "appear": true,
+                    "baseClass": "fade",
+                    "baseClassActive": "show",
+                    "enter": true,
+                    "exit": true,
+                    "in": true,
+                    "mountOnEnter": false,
+                    "onEnter": [Function],
+                    "onEntered": [Function],
+                    "onEntering": [Function],
+                    "onExit": [Function],
+                    "onExited": [Function],
+                    "onExiting": [Function],
+                    "tag": "div",
+                    "timeout": 150,
+                    "unmountOnExit": true,
+                  }
+                }
+              >
+                Logged In success
+              </Alert>
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="fullname"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Fullname
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="fullname"
+                      name="fullname"
+                      onChange={[MockFunction]}
+                      placeholder="Full Name"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="email"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="email"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email"
+                      required={true}
+                      type="email"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="phone_number"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Phone Number
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="phone_number"
+                      name="phone_number"
+                      onChange={[MockFunction]}
+                      placeholder="phone_number"
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                </div>
+                <div
+                  className="col-md-6"
+                >
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="username"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Username
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="username"
+                      name="username"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="text"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Password
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password"
+                      name="password"
+                      onChange={[MockFunction]}
+                      required={true}
+                      type="password"
+                    />
+                  </FormGroup>
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="password_comfirm"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Confirm Password 
+                    </Label>
+                    <Input
+                      className="mb-3"
+                      id="password_comfirm"
+                      name="password_comfirm"
+                      onChange={[MockFunction]}
+                      placeholder=""
+                      required={true}
+                      type="password"
+                    />
+                    <Spinner />
+                  </FormGroup>
+                  <Button
+                    block={true}
+                    color="dark"
+                    disabled={true}
+                    style={
+                      Object {
+                        "marginTop": "2rem",
+                      }
+                    }
+                    tag="button"
+                  >
+                    Please wait...
+                  </Button>
+                </div>
+              </Row>
+            </Form>
+          </CardBody>,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <CardTitle
+                tag="div"
+              />,
+              <CardTitle
+                tag="div"
+              >
+                <strong>
+                  Register an Account.
+                </strong>
+              </CardTitle>,
+              <Form
+                onSubmit={[MockFunction]}
+                tag="form"
+              >
+                <Alert
+                  closeAriaLabel="Close"
+                  color="danger"
+                  fade={true}
+                  isOpen={true}
+                  tag="div"
+                  transition={
+                    Object {
+                      "appear": true,
+                      "baseClass": "fade",
+                      "baseClassActive": "show",
+                      "enter": true,
+                      "exit": true,
+                      "in": true,
+                      "mountOnEnter": false,
+                      "onEnter": [Function],
+                      "onEntered": [Function],
+                      "onEntering": [Function],
+                      "onExit": [Function],
+                      "onExited": [Function],
+                      "onExiting": [Function],
+                      "tag": "div",
+                      "timeout": 150,
+                      "unmountOnExit": true,
+                    }
+                  }
+                >
+                  Logged In success
+                </Alert>
+                <Row
+                  tag="div"
+                >
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="fullname"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Fullname
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="fullname"
+                        name="fullname"
+                        onChange={[MockFunction]}
+                        placeholder="Full Name"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="email"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Email
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="email"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email"
+                        required={true}
+                        type="email"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="phone_number"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Phone Number
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="phone_number"
+                        name="phone_number"
+                        onChange={[MockFunction]}
+                        placeholder="phone_number"
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                  </div>
+                  <div
+                    className="col-md-6"
+                  >
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="username"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Username
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="username"
+                        name="username"
+                        onChange={[MockFunction]}
+                        required={true}
+                        type="text"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Password
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password"
+                        name="password"
+                        onChange={[MockFunction]}
+                        required={true}
+                        type="password"
+                      />
+                    </FormGroup>
+                    <FormGroup
+                      tag="div"
+                    >
+                      <Label
+                        for="password_comfirm"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Confirm Password 
+                      </Label>
+                      <Input
+                        className="mb-3"
+                        id="password_comfirm"
+                        name="password_comfirm"
+                        onChange={[MockFunction]}
+                        placeholder=""
+                        required={true}
+                        type="password"
+                      />
+                      <Spinner />
+                    </FormGroup>
+                    <Button
+                      block={true}
+                      color="dark"
+                      disabled={true}
+                      style={
+                        Object {
+                          "marginTop": "2rem",
+                        }
+                      }
+                      tag="button"
+                    >
+                      Please wait...
+                    </Button>
+                  </div>
+                </Row>
+              </Form>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <strong>
+                  Register an Account.
+                </strong>,
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Register an Account.",
+                },
+                "ref": null,
+                "rendered": "Register an Account.",
+                "type": "strong",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Alert
+                    closeAriaLabel="Close"
+                    color="danger"
+                    fade={true}
+                    isOpen={true}
+                    tag="div"
+                    transition={
+                      Object {
+                        "appear": true,
+                        "baseClass": "fade",
+                        "baseClassActive": "show",
+                        "enter": true,
+                        "exit": true,
+                        "in": true,
+                        "mountOnEnter": false,
+                        "onEnter": [Function],
+                        "onEntered": [Function],
+                        "onEntering": [Function],
+                        "onExit": [Function],
+                        "onExited": [Function],
+                        "onExiting": [Function],
+                        "tag": "div",
+                        "timeout": 150,
+                        "unmountOnExit": true,
+                      }
+                    }
+                  >
+                    Logged In success
+                  </Alert>,
+                  <Row
+                    tag="div"
+                  >
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="fullname"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Fullname
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="fullname"
+                          name="fullname"
+                          onChange={[MockFunction]}
+                          placeholder="Full Name"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="email"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Email
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="email"
+                          name="email"
+                          onChange={[MockFunction]}
+                          placeholder="Email"
+                          required={true}
+                          type="email"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="phone_number"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Phone Number
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="phone_number"
+                          name="phone_number"
+                          onChange={[MockFunction]}
+                          placeholder="phone_number"
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                    </div>
+                    <div
+                      className="col-md-6"
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="username"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Username
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="username"
+                          name="username"
+                          onChange={[MockFunction]}
+                          required={true}
+                          type="text"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="password"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Password
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="password"
+                          name="password"
+                          onChange={[MockFunction]}
+                          required={true}
+                          type="password"
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <Label
+                          for="password_comfirm"
+                          tag="label"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                        >
+                          Confirm Password 
+                        </Label>
+                        <Input
+                          className="mb-3"
+                          id="password_comfirm"
+                          name="password_comfirm"
+                          onChange={[MockFunction]}
+                          placeholder=""
+                          required={true}
+                          type="password"
+                        />
+                        <Spinner />
+                      </FormGroup>
+                      <Button
+                        block={true}
+                        color="dark"
+                        disabled={true}
+                        style={
+                          Object {
+                            "marginTop": "2rem",
+                          }
+                        }
+                        tag="button"
+                      >
+                        Please wait...
+                      </Button>
+                    </div>
+                  </Row>,
+                ],
+                "onSubmit": [MockFunction],
+                "tag": "form",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Logged In success",
+                    "closeAriaLabel": "Close",
+                    "color": "danger",
+                    "fade": true,
+                    "isOpen": true,
+                    "tag": "div",
+                    "transition": Object {
+                      "appear": true,
+                      "baseClass": "fade",
+                      "baseClassActive": "show",
+                      "enter": true,
+                      "exit": true,
+                      "in": true,
+                      "mountOnEnter": false,
+                      "onEnter": [Function],
+                      "onEntered": [Function],
+                      "onEntering": [Function],
+                      "onExit": [Function],
+                      "onExited": [Function],
+                      "onExiting": [Function],
+                      "tag": "div",
+                      "timeout": 150,
+                      "unmountOnExit": true,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "Logged In success",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="col-md-6"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="fullname"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Fullname
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="fullname"
+                            name="fullname"
+                            onChange={[MockFunction]}
+                            placeholder="Full Name"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="email"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Email
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="email"
+                            name="email"
+                            onChange={[MockFunction]}
+                            placeholder="Email"
+                            required={true}
+                            type="email"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="phone_number"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Phone Number
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="phone_number"
+                            name="phone_number"
+                            onChange={[MockFunction]}
+                            placeholder="phone_number"
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>
+                      </div>,
+                      <div
+                        className="col-md-6"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="username"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Username
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="username"
+                            name="username"
+                            onChange={[MockFunction]}
+                            required={true}
+                            type="text"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="password"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Password
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="password"
+                            name="password"
+                            onChange={[MockFunction]}
+                            required={true}
+                            type="password"
+                          />
+                        </FormGroup>
+                        <FormGroup
+                          tag="div"
+                        >
+                          <Label
+                            for="password_comfirm"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            Confirm Password 
+                          </Label>
+                          <Input
+                            className="mb-3"
+                            id="password_comfirm"
+                            name="password_comfirm"
+                            onChange={[MockFunction]}
+                            placeholder=""
+                            required={true}
+                            type="password"
+                          />
+                          <Spinner />
+                        </FormGroup>
+                        <Button
+                          block={true}
+                          color="dark"
+                          disabled={true}
+                          style={
+                            Object {
+                              "marginTop": "2rem",
+                            }
+                          }
+                          tag="button"
+                        >
+                          Please wait...
+                        </Button>
+                      </div>,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="fullname"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Fullname
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="fullname"
+                              name="fullname"
+                              onChange={[MockFunction]}
+                              placeholder="Full Name"
+                              required={true}
+                              type="text"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="email"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Email
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="email"
+                              name="email"
+                              onChange={[MockFunction]}
+                              placeholder="Email"
+                              required={true}
+                              type="email"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="phone_number"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Phone Number
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="phone_number"
+                              name="phone_number"
+                              onChange={[MockFunction]}
+                              placeholder="phone_number"
+                              required={true}
+                              type="text"
+                            />
+                          </FormGroup>,
+                        ],
+                        "className": "col-md-6",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="fullname"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Fullname
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="fullname"
+                                name="fullname"
+                                onChange={[MockFunction]}
+                                placeholder="Full Name"
+                                required={true}
+                                type="text"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Fullname",
+                                "for": "fullname",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Fullname",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "fullname",
+                                "name": "fullname",
+                                "onChange": [MockFunction],
+                                "placeholder": "Full Name",
+                                "required": true,
+                                "type": "text",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="email"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Email
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="email"
+                                name="email"
+                                onChange={[MockFunction]}
+                                placeholder="Email"
+                                required={true}
+                                type="email"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Email",
+                                "for": "email",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Email",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "email",
+                                "name": "email",
+                                "onChange": [MockFunction],
+                                "placeholder": "Email",
+                                "required": true,
+                                "type": "email",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="phone_number"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Phone Number
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="phone_number"
+                                name="phone_number"
+                                onChange={[MockFunction]}
+                                placeholder="phone_number"
+                                required={true}
+                                type="text"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Phone Number",
+                                "for": "phone_number",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Phone Number",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "phone_number",
+                                "name": "phone_number",
+                                "onChange": [MockFunction],
+                                "placeholder": "phone_number",
+                                "required": true,
+                                "type": "text",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="username"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Username
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="username"
+                              name="username"
+                              onChange={[MockFunction]}
+                              required={true}
+                              type="text"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="password"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Password
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="password"
+                              name="password"
+                              onChange={[MockFunction]}
+                              required={true}
+                              type="password"
+                            />
+                          </FormGroup>,
+                          <FormGroup
+                            tag="div"
+                          >
+                            <Label
+                              for="password_comfirm"
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              Confirm Password 
+                            </Label>
+                            <Input
+                              className="mb-3"
+                              id="password_comfirm"
+                              name="password_comfirm"
+                              onChange={[MockFunction]}
+                              placeholder=""
+                              required={true}
+                              type="password"
+                            />
+                            <Spinner />
+                          </FormGroup>,
+                          <Button
+                            block={true}
+                            color="dark"
+                            disabled={true}
+                            style={
+                              Object {
+                                "marginTop": "2rem",
+                              }
+                            }
+                            tag="button"
+                          >
+                            Please wait...
+                          </Button>,
+                        ],
+                        "className": "col-md-6",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="username"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Username
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="username"
+                                name="username"
+                                onChange={[MockFunction]}
+                                required={true}
+                                type="text"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Username",
+                                "for": "username",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Username",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "username",
+                                "name": "username",
+                                "onChange": [MockFunction],
+                                "required": true,
+                                "type": "text",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="password"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Password
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="password"
+                                name="password"
+                                onChange={[MockFunction]}
+                                required={true}
+                                type="password"
+                              />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Password",
+                                "for": "password",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Password",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "password",
+                                "name": "password",
+                                "onChange": [MockFunction],
+                                "required": true,
+                                "type": "password",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              <Label
+                                for="password_comfirm"
+                                tag="label"
+                                widths={
+                                  Array [
+                                    "xs",
+                                    "sm",
+                                    "md",
+                                    "lg",
+                                    "xl",
+                                  ]
+                                }
+                              >
+                                Confirm Password 
+                              </Label>,
+                              <Input
+                                className="mb-3"
+                                id="password_comfirm"
+                                name="password_comfirm"
+                                onChange={[MockFunction]}
+                                placeholder=""
+                                required={true}
+                                type="password"
+                              />,
+                              <Spinner />,
+                            ],
+                            "tag": "div",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Confirm Password ",
+                                "for": "password_comfirm",
+                                "tag": "label",
+                                "widths": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": "Confirm Password ",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "className": "mb-3",
+                                "id": "password_comfirm",
+                                "name": "password_comfirm",
+                                "onChange": [MockFunction],
+                                "placeholder": "",
+                                "required": true,
+                                "type": "password",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {},
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "block": true,
+                            "children": "Please wait...",
+                            "color": "dark",
+                            "disabled": true,
+                            "style": Object {
+                              "marginTop": "2rem",
+                            },
+                            "tag": "button",
+                          },
+                          "ref": null,
+                          "rendered": "Please wait...",
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

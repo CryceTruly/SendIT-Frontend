@@ -1,9 +1,7 @@
-import React, {
-    Component
-} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
-import "./style.scss";
+import App from "../src/components/App";
+import "../src/style.scss";
 import JavascriptTimeAgo from 'javascript-time-ago'
 
 // The desired locales.
