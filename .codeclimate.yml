@@ -1,6 +1,7 @@
 exclude_patterns:
  - "**/*.test.js"
  - "src/index.js"
+checks:
   method-lines:
     config:
       threshold: 80
