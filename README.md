@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/CryceTruly/si-react.svg?branch=develop)](https://travis-ci.org/CryceTruly/si-react) [![Test Coverage](https://api.codeclimate.com/v1/badges/2a89a0fb83a69a9edba6/test_coverage)](https://codeclimate.com/github/CryceTruly/si-react/test_coverage)
+[![Build Status](https://travis-ci.org/CryceTruly/si-react.svg?branch=develop)](https://travis-ci.org/CryceTruly/si-react) [![Test Coverage](https://api.codeclimate.com/v1/badges/6d2f005cd11ce0aa7fb7/test_coverage)](https://codeclimate.com/github/CryceTruly/si-react/test_coverage)
 
 ## What is SendIT? :open_mouth:
 SendIT is a courier service app that helps users deliver parcels to different destinations.
