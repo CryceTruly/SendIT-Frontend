@@ -9,7 +9,6 @@ import {
   REGISTER_FAIL,
 } from "../../actions/types";
 
-
 import authReducer from "../../reducers/authReducer";
 
 test("initial auth state", () => {
@@ -19,6 +18,8 @@ test("initial auth state", () => {
     isAuthenticated: null,
     isLoading: false,
     user: null,
+    messages: [],
+    reset_loading: false,
   });
 });
 
@@ -36,7 +37,8 @@ describe("Auth Reducer Tests", () => {
       payload: {
         email: "aacryce@gmail.com",
         fullname: "AHEBWA CHRIS",
-        imageUrl: "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+        imageUrl:
+          "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
         is_admin: false,
         joined: "Sat, 20 Apr 2019 07:36:20 GMT",
         telephone_number: "0758939187",
@@ -49,7 +51,8 @@ describe("Auth Reducer Tests", () => {
       user: {
         email: "aacryce@gmail.com",
         fullname: "AHEBWA CHRIS",
-        imageUrl: "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+        imageUrl:
+          "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
         is_admin: false,
         joined: "Sat, 20 Apr 2019 07:36:20 GMT",
         telephone_number: "0758939187",
@@ -72,7 +75,8 @@ describe("Auth Reducer Tests", () => {
         user: {
           email: "aacryce@gmail.com",
           fullname: "AHEBWA CHRIS",
-          imageUrl: "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+          imageUrl:
+            "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
           is_admin: false,
           joined: "Sat, 20 Apr 2019 07:36:20 GMT",
           telephone_number: "0758939187",
@@ -87,7 +91,8 @@ describe("Auth Reducer Tests", () => {
       user: {
         email: "aacryce@gmail.com",
         fullname: "AHEBWA CHRIS",
-        imageUrl: "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
+        imageUrl:
+          "https://d3n32ilufxuvd1.cloudfront.net/56fd5ecfedf7a42502965830/716244/upload-57c882a0-fdc2-11e6-8942-e1606bea3fc0.png",
         is_admin: false,
         joined: "Sat, 20 Apr 2019 07:36:20 GMT",
         telephone_number: "0758939187",
@@ -101,7 +106,6 @@ describe("Auth Reducer Tests", () => {
     };
     expect(authReducer(initialState, successAction)).toEqual(successState);
   });
-
 
   it("should register a user", () => {
     const successAction = {
@@ -121,7 +125,6 @@ describe("Auth Reducer Tests", () => {
     expect(authReducer(initialState, successAction)).toEqual(successState);
   });
 
-
   it("should catch auth errors", () => {
     const successAction = {
       type: AUTH_ERROR,
@@ -140,7 +143,6 @@ describe("Auth Reducer Tests", () => {
     expect(authReducer(initialState, successAction)).toEqual(successState);
   });
 
-
   it("should fail to login", () => {
     const successAction = {
       type: LOGIN_FAIL,
@@ -156,7 +158,6 @@ describe("Auth Reducer Tests", () => {
     };
     expect(authReducer(initialState, successAction)).toEqual(successState);
   });
-
 
   it("should Load when loading a user", () => {
     const dispatchedAction = {

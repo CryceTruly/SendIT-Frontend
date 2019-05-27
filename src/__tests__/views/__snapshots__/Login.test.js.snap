@@ -150,11 +150,13 @@ ShallowWrapper {
                     </div>
                   </div>
                 </FormGroup>
-                <p
-                  className="text-right"
+                <Link
+                  className="float-right my-1"
+                  replace={false}
+                  to="/reset_password"
                 >
                   Forgot Password?
-                </p>
+                </Link>
                 <Button
                   block={true}
                   color="dark"
@@ -320,11 +322,13 @@ ShallowWrapper {
                       </div>
                     </div>
                   </FormGroup>
-                  <p
-                    className="text-right"
+                  <Link
+                    className="float-right my-1"
+                    replace={false}
+                    to="/reset_password"
                   >
                     Forgot Password?
-                  </p>
+                  </Link>
                   <Button
                     block={true}
                     color="dark"
@@ -496,11 +500,13 @@ ShallowWrapper {
                       </div>
                     </div>
                   </FormGroup>
-                  <p
-                    className="text-right"
+                  <Link
+                    className="float-right my-1"
+                    replace={false}
+                    to="/reset_password"
                   >
                     Forgot Password?
-                  </p>
+                  </Link>
                   <Button
                     block={true}
                     color="dark"
@@ -652,11 +658,13 @@ ShallowWrapper {
                       </div>
                     </div>
                   </FormGroup>
-                  <p
-                    className="text-right"
+                  <Link
+                    className="float-right my-1"
+                    replace={false}
+                    to="/reset_password"
                   >
                     Forgot Password?
-                  </p>
+                  </Link>
                   <Button
                     block={true}
                     color="dark"
@@ -805,11 +813,13 @@ ShallowWrapper {
                         </div>
                       </div>
                     </FormGroup>
-                    <p
-                      className="text-right"
+                    <Link
+                      className="float-right my-1"
+                      replace={false}
+                      to="/reset_password"
                     >
                       Forgot Password?
-                    </p>
+                    </Link>
                     <Button
                       block={true}
                       color="dark"
@@ -973,11 +983,13 @@ ShallowWrapper {
                           </div>
                         </div>
                       </FormGroup>,
-                      <p
-                        className="text-right"
+                      <Link
+                        className="float-right my-1"
+                        replace={false}
+                        to="/reset_password"
                       >
                         Forgot Password?
-                      </p>,
+                      </Link>,
                       <Button
                         block={true}
                         color="dark"
@@ -1261,14 +1273,16 @@ ShallowWrapper {
                     Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
+                      "nodeType": "class",
                       "props": Object {
                         "children": "Forgot Password?",
-                        "className": "text-right",
+                        "className": "float-right my-1",
+                        "replace": false,
+                        "to": "/reset_password",
                       },
                       "ref": null,
                       "rendered": "Forgot Password?",
-                      "type": "p",
+                      "type": [Function],
                     },
                     Object {
                       "instance": null,
@@ -1504,11 +1518,13 @@ ShallowWrapper {
                       </div>
                     </div>
                   </FormGroup>
-                  <p
-                    className="text-right"
+                  <Link
+                    className="float-right my-1"
+                    replace={false}
+                    to="/reset_password"
                   >
                     Forgot Password?
-                  </p>
+                  </Link>
                   <Button
                     block={true}
                     color="dark"
@@ -1674,11 +1690,13 @@ ShallowWrapper {
                         </div>
                       </div>
                     </FormGroup>
-                    <p
-                      className="text-right"
+                    <Link
+                      className="float-right my-1"
+                      replace={false}
+                      to="/reset_password"
                     >
                       Forgot Password?
-                    </p>
+                    </Link>
                     <Button
                       block={true}
                       color="dark"
@@ -1850,11 +1868,13 @@ ShallowWrapper {
                         </div>
                       </div>
                     </FormGroup>
-                    <p
-                      className="text-right"
+                    <Link
+                      className="float-right my-1"
+                      replace={false}
+                      to="/reset_password"
                     >
                       Forgot Password?
-                    </p>
+                    </Link>
                     <Button
                       block={true}
                       color="dark"
@@ -2006,11 +2026,13 @@ ShallowWrapper {
                         </div>
                       </div>
                     </FormGroup>
-                    <p
-                      className="text-right"
+                    <Link
+                      className="float-right my-1"
+                      replace={false}
+                      to="/reset_password"
                     >
                       Forgot Password?
-                    </p>
+                    </Link>
                     <Button
                       block={true}
                       color="dark"
@@ -2159,11 +2181,13 @@ ShallowWrapper {
                           </div>
                         </div>
                       </FormGroup>
-                      <p
-                        className="text-right"
+                      <Link
+                        className="float-right my-1"
+                        replace={false}
+                        to="/reset_password"
                       >
                         Forgot Password?
-                      </p>
+                      </Link>
                       <Button
                         block={true}
                         color="dark"
@@ -2327,11 +2351,13 @@ ShallowWrapper {
                             </div>
                           </div>
                         </FormGroup>,
-                        <p
-                          className="text-right"
+                        <Link
+                          className="float-right my-1"
+                          replace={false}
+                          to="/reset_password"
                         >
                           Forgot Password?
-                        </p>,
+                        </Link>,
                         <Button
                           block={true}
                           color="dark"
@@ -2615,14 +2641,16 @@ ShallowWrapper {
                       Object {
                         "instance": null,
                         "key": undefined,
-                        "nodeType": "host",
+                        "nodeType": "class",
                         "props": Object {
                           "children": "Forgot Password?",
-                          "className": "text-right",
+                          "className": "float-right my-1",
+                          "replace": false,
+                          "to": "/reset_password",
                         },
                         "ref": null,
                         "rendered": "Forgot Password?",
-                        "type": "p",
+                        "type": [Function],
                       },
                       Object {
                         "instance": null,
