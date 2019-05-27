@@ -34,7 +34,7 @@ export class RegisterComponent extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     const {
-      username, fullname, phone_number, email, password, password_comfirm,
+      username, fullname, phone_number, email, password, password_comfirm, 
     } = this.state;
     // Create user object
     const newUser = {
@@ -43,13 +43,12 @@ export class RegisterComponent extends Component {
       password,
       phone_number,
       fullname,
-
     };
 
     if (password !== password_comfirm) {
       this.setState({ msg: "Passwords donot match" });
-    } else
-    /* istanbul ignore next */{
+    } else {
+    /* istanbul ignore next */
       this.setState({ msg: null });
       this.props.register(newUser, this.props);
     }
@@ -58,8 +57,7 @@ export class RegisterComponent extends Component {
   render() {
     return (
       <Register
-        processing={
-          this.props.error.processing}
+        processing={this.props.error.processing}
         msg={this.state.msg}
         onChange={this.onChange}
         onSubmit={this.onSubmit}
@@ -72,4 +70,7 @@ export const mapStateToProps = state => ({
   error: state.errors,
 });
 
-export default connect(mapStateToProps, { register, clearErrors })(RegisterComponent);
+export default connect(
+  mapStateToProps,
+  { register, clearErrors },
+)(RegisterComponent);

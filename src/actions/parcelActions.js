@@ -1,12 +1,15 @@
 import Axios from "axios";
 import {
-  ADDING_PARCEL, ADD_PARCEL_SUCCESS, ADD_PARCEL_FAIL, GET_PARCELS, GET_PARCEL,
+  ADDING_PARCEL,
+  ADD_PARCEL_SUCCESS,
+  ADD_PARCEL_FAIL,
+  GET_PARCELS,
+  GET_PARCEL,
 } from "./types";
 import { returnErrors } from "./errorActions";
 import BASE_URL from "../constants";
 
 export const getParcels = () => dispatch => Axios.get(`${BASE_URL}/users/${localStorage.getItem("user_id")}/parcels`, {
-
   headers: {
     Authorization: `Bearer ${localStorage.getItem("auth_token")}`,
   },
@@ -16,7 +19,6 @@ export const getParcels = () => dispatch => Axios.get(`${BASE_URL}/users/${local
 }));
 
 export const getParcel = id => dispatch => Axios.get(`${BASE_URL}/parcels/${id}`, {
-
   headers: {
     Authorization: `Bearer ${localStorage.getItem("auth_token")}`,
   },
@@ -38,8 +40,7 @@ export const createParcel = (data, routes) => (dispatch) => {
   };
   const body = data;
 
-  return Axios
-    .post(`${BASE_URL}/parcels`, body, config)
+  return Axios.post(`${BASE_URL}/parcels`, body, config)
     .then((res) => {
       dispatch({
         type: ADD_PARCEL_SUCCESS,
@@ -48,15 +49,11 @@ export const createParcel = (data, routes) => (dispatch) => {
       routes.history.push("/");
     })
     .catch(
-      /* istanbul ignore next */(err) => {
-        dispatch(
-          returnErrors(err.response.data.message, err.response.status, "ADD_PARCEL_FAIL"),
-        );
+      /* istanbul ignore next */ (err) => {
+        dispatch(returnErrors(err.response.data.message, err.response.status, "ADD_PARCEL_FAIL"));
         dispatch({
           type: ADD_PARCEL_FAIL,
         });
-
-
       },
     );
 };

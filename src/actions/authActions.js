@@ -181,3 +181,30 @@ export const requestResetEmail = email => (dispatch) => {
       console.log(err);
     });
 };
+
+export const updatePassword = (password, token) => (dispatch) => {
+  dispatch({
+    type: SENDING_RESET_EMAIL,
+  });
+
+  const body = JSON.stringify({ password, token });
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  axios
+    .post(`${BASE_URL}/auth/password_change`, body, config)
+    .then((res) => {
+      dispatch({ type: SENDING_RESET_EMAIL_SUCCESS, payload: res.data, clearErrors });
+    })
+    .catch((err) => {
+      dispatch(
+        returnErrors(err.response.data.message, err.response.status, "SENDING_RESET_EMAIL_FAILED"),
+      );
+      dispatch({
+        type: SENDING_RESET_EMAIL_FAILED,
+      });
+    });
+};
