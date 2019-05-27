@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { updatePassword } from "../../actions/authActions";
 import Spinner from "../../views/Spinner";
+import PasswordChangeView from "../../views/PasswordChangeView";
 
 export class PasswordChange extends Component {
   state = {
@@ -65,58 +66,12 @@ export class PasswordChange extends Component {
     }
 
     return (
-      <Row>
-        <div className="col-md-3" />
-        <div className="col-md-6">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Please enter your desired new password</h5>
-              <form onSubmit={this.onSubmit} autoComplete="off">
-                <div className="form-group">
-                  <label htmlFor="exampleInputpassword">Password</label>
-
-                  {this.state.msg ? <div className="alert alert-danger">{this.state.msg}</div> : ""}
-
-                  <input
-                    type="password"
-                    className="form-control"
-                    id="exampleInputpassword"
-                    name="password"
-                    onChange={this.onChange}
-                    aria-describedby="passwordHelp"
-                    placeholder="Enter Password"
-                  />
-                  <div className="form-group">
-                    <label htmlFor="exampleInputpassword1">Password Confirmation</label>
-
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="exampleInputpassword1"
-                      name="password_confirm"
-                      onChange={this.onChange}
-                      aria-describedby="passwordHelp"
-                      placeholder="Confirm Password"
-                    />
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  disabled={auth.reset_loading || this.state.msg !== null}
-                  onClick={this.onClick}
-                  className="btn btn-primary"
-                >
-                  {auth.reset_loading ? "Please wait" : "Submit"}
-                </button>
-
-                {auth.reset_loading ? <Spinner /> : null}
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-3" />
-      </Row>
+      <PasswordChangeView
+        onChange={this.onChange}
+        onSubmit={this.onSubmit}
+        msg={this.state.msg}
+        auth={auth}
+      />
     );
   }
 }
