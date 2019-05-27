@@ -15,7 +15,7 @@ import {
 
 const LoginView = (props) => {
   const {
-    errorId, errorMessage, onChange, onSubmit, processing, msg,
+    errorId, errorMessage, onChange, onSubmit, processing, msg, 
   } = props;
   return (
     <div>
@@ -24,16 +24,14 @@ const LoginView = (props) => {
         <div className="col-md-6">
           <Card>
             <CardBody>
-              <CardTitle><strong>Login to SendIT.</strong></CardTitle>
+              <CardTitle>
+                <strong>Login to SendIT.</strong>
+              </CardTitle>
               <Form onSubmit={onSubmit}>
-                {msg ? (
-                  <Alert color="danger">{msg}</Alert>
+                {msg ? <Alert color="danger">{msg}</Alert> : null}
+                {errorId === "LOGOUT-SUCCESS" ? (
+                  <Alert color="success">{errorMessage}</Alert>
                 ) : null}
-                {
-                  errorId === "LOGOUT-SUCCESS" ? (
-                    <Alert color="success">{errorMessage}</Alert>
-                  ) : null
-                }
                 <FormGroup>
                   <Label for="email">Email</Label>
                   <Input
@@ -57,30 +55,28 @@ const LoginView = (props) => {
                     className="mb-3"
                     onChange={onChange}
                   />
-                  {
-                    processing ? (
-                      <div className="d-flex text-primary justify-content-center">
-                        <div className="spinner-border" role="status">
-                          <span className="sr-only">Loading...</span>
-                        </div>
+                  {processing ? (
+                    <div className="d-flex text-primary justify-content-center">
+                      <div className="spinner-border" role="status">
+                        <span className="sr-only">Loading...</span>
                       </div>
-                    ) : null
-                  }
+                    </div>
+                  ) : null}
                 </FormGroup>
-                <p className="text-right">Forgot Password?</p>
-                {
-                  processing ? (
-                    <Button disabled color="dark" style={{ marginTop: "1rem" }} block>
-  Please wait
-                    </Button>
-                  ) : (
-                    <Button color="dark" style={{ marginTop: "1rem" }} block>
-  Login
-                    </Button>
-                  )
-                }
+                <Link to="/reset_password" className="float-right my-1">
+                  Forgot Password?
+                </Link>
+                {processing ? (
+                  <Button disabled color="dark" style={{ marginTop: "1rem" }} block>
+                    Please wait
+                  </Button>
+                ) : (
+                  <Button color="dark" style={{ marginTop: "1rem" }} block>
+                    Login
+                  </Button>
+                )}
                 <p className="text-center mb-2 mt-2">
-  New to SendIT?
+                  New to SendIT?
                   <span>
                     {" "}
                     <Link to="/register">Create an account</Link>

@@ -1,27 +1,21 @@
-import React, {
-  Component,
-} from "react";
+import React, { Component } from "react";
+import { Provider } from "react-redux";
+import { Container } from "reactstrap";
 import {
-  Provider,
-} from "react-redux";
-import {
-  Container,
-} from "reactstrap";
-import {
-  BrowserRouter as Router, Switch, Link, Route,
+  BrowserRouter as Router, Switch, Link, Route, 
 } from "react-router-dom";
 import store from "../Store";
 import Parcels from "./Parcels";
 import Navbar from "./shared/Navbar";
-import {
-  loadUser,
-} from "../actions/authActions";
+import { loadUser } from "../actions/authActions";
 import Login from "./Login";
 import RegisterComponent from "./Register";
 import PrivateRoute from "./common/PrivateRoute";
 import NewOrder from "./NewOrder";
 import ParcelDetails from "../views/ParcelDetails";
 import Dashboard from "./Dashboard";
+import ResetPassword from "./passwords/ResetPassword";
+import PasswordChange from "./passwords/PasswordChange";
 
 export class App extends Component {
   componentDidMount() {
@@ -41,6 +35,8 @@ export class App extends Component {
               <PrivateRoute exact path="/details" component={ParcelDetails} />
               <PrivateRoute exact path="/new" component={NewOrder} />
               <Route exact path="/register" component={RegisterComponent} />
+              <Route exact path="/change_password" component={PasswordChange} />
+              <Route exact path="/reset_password" component={ResetPassword} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
           </Container>
