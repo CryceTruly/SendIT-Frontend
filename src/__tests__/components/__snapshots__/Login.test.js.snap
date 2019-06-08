@@ -12,6 +12,11 @@ ShallowWrapper {
         "processing": true,
       }
     }
+    location={
+      Object {
+        "search": "test",
+      }
+    }
     login={[MockFunction]}
     onChange={[MockFunction]}
     onSubmit={[MockFunction]}
@@ -32,6 +37,7 @@ ShallowWrapper {
     "props": Object {
       "errorId": undefined,
       "errorMessage": "",
+      "message": "",
       "msg": null,
       "onChange": [Function],
       "onSubmit": [Function],
@@ -49,6 +55,7 @@ ShallowWrapper {
       "props": Object {
         "errorId": undefined,
         "errorMessage": "",
+        "message": "",
         "msg": null,
         "onChange": [Function],
         "onSubmit": [Function],

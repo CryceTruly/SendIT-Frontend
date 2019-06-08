@@ -10,6 +10,9 @@ describe("login tests", () => {
     onChange: jest.fn(),
     onSubmit: jest.fn(),
     login: jest.fn(),
+    location:{
+      search:"test"
+    }
   };
 
   const wrapper = shallow(<Login {...props} />);
