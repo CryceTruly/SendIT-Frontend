@@ -31,9 +31,7 @@ export class PasswordChange extends Component {
     this.setState({ [e.target.name]: e.target.value });
     if (!this.validatePassword(this.state.password)) {
       this.setState({ msg: "Passwords should be atleast 6 characters" });
-    } else if (
-      this.state.password_confirm.length > 0
-      && !this.doPasswordsMatch(this.state.password, this.state.password_confirm)
+    } else if (this.doPasswordsMatch(this.state.password, this.state.password_confirm)
     ) {
       this.setState({ msg: "Passwords donot match" });
     } else {
@@ -45,24 +43,28 @@ export class PasswordChange extends Component {
     e.preventDefault();
     if (!this.doPasswordsMatch(this.state.password, this.state.password_confirm)) {
       this.setState({ msg: "Passwords donot match" });
+      return;
     } else {
       this.setState({ msg: null });
     }
 
     const { password } = this.state;
-    const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTkwNzg0MDYsInVzZXJfaWQiOjEwMCwiZW1haWwiOiJzZW5kaXRhZG1pbiIsImlzX2FkbWluIjp0cnVlfQ.0A4N-mxtJAYzDn59Y2qiaR_RCpir-TpmYFCmWa7OUyY";
+    let search = new URLSearchParams(this.props.location.search);
+    let token = search.get("auth_token");
+    if(token){
 
-    this.props.updatePassword(password, token);
+      this.props.updatePassword(password, token);
+    } else{
+      this.setState({ msg: "what are you trying to do boss??" });
+     
+    }
   };
-
   validatePassword = password => password.length >= 6;
-
   doPasswordsMatch = (password1, password2) => password1 === password2;
-
   render() {
     const { auth, errors } = this.props;
     if (auth.messages.length) {
-      return <Redirect to="/login?message=password reset success" />;
+      return <Redirect to="/login?message=success" />;
     }
 
     return (

@@ -36,7 +36,7 @@ const Nav = (props) => {
   );
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <span className="navbar-brand"><i class="fa fa-paper-plane" aria-hidden="true"></i>SendIT</span>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

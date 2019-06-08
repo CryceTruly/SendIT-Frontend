@@ -15,7 +15,7 @@ import {
 
 const LoginView = (props) => {
   const {
-    errorId, errorMessage, onChange, onSubmit, processing, msg, 
+    errorId, errorMessage, onChange, onSubmit, processing, msg,message 
   } = props;
   return (
     <div>
@@ -28,10 +28,13 @@ const LoginView = (props) => {
                 <strong>Login to SendIT.</strong>
               </CardTitle>
               <Form onSubmit={onSubmit}>
-                {msg ? <Alert color="danger">{msg}</Alert> : null}
-                {errorId === "LOGOUT-SUCCESS" ? (
+                {msg ? <Alert color="danger">{msg}</Alert> : message.length>3 ? (
+                  <Alert color="info">Your Account is now set up,you can now log in</Alert>
+                ) : null}
+                {errorId === "LOGOUT-SUCCESS"? (
                   <Alert color="success">{errorMessage}</Alert>
                 ) : null}
+                
                 <FormGroup>
                   <Label for="email">Email</Label>
                   <Input

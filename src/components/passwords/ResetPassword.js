@@ -15,9 +15,7 @@ export class ResetPassword extends Component {
     if (errors !== prevProps.errors) {
       /* istanbul ignore next */
       if (errors.id === "SENDING_RESET_EMAIL_FAILED") {
-        console.log(errors.msg);
-
-        this.setState({ msg: errors.msg });
+      this.setState({ msg: errors.msg });
       } else {
         this.setState({ msg: null });
       }
@@ -26,17 +24,26 @@ export class ResetPassword extends Component {
 
   onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
+
     if (!this.validateEmail(this.state.email)) {
-      this.setState({ msg: "Email format is invalid" });
-    } else {
-      this.setState({ msg: null });
+      this.setState({ msg: "Please provide a valid email" });
+    }else{
+      this.setState({ msg: null});
     }
   };
 
   onSubmit = (e) => {
     e.preventDefault();
     const { email } = this.state;
-    this.props.requestResetEmail(email);
+
+    if (!this.validateEmail(this.state.email)) {
+      this.setState({ msg: "Please provide a valid email" });
+      return;
+    } else {
+      this.props.requestResetEmail(email);
+    }
+    
+    
   };
 
   validateEmail = (email) => {

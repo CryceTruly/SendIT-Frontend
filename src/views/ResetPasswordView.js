@@ -13,7 +13,7 @@ const ResetPasswordView = (props) => {
       <div className="col-md-6">
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Please enter your email,to get reset instructions</h5>
+            <h5 className="card-title">Please enter your email to get reset instructions</h5>
             <form onSubmit={onSubmit} autoComplete="off">
               <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
@@ -31,6 +31,7 @@ const ResetPasswordView = (props) => {
                   className="form-control"
                   id="exampleInputEmail1"
                   name="email"
+                  required
                   onChange={onChange}
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
@@ -39,9 +40,10 @@ const ResetPasswordView = (props) => {
                   Please provide an email you use for your account.
                 </small>
               </div>
+             
               <button
                 type="submit"
-                disabled={auth.reset_loading}
+                disabled={msg && msg.length>0||auth.reset_loading }
                 onClick={onSubmit}
                 className="btn btn-primary"
               >
