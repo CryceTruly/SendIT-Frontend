@@ -33,6 +33,7 @@ export class Login extends Component {
     e.preventDefault();
 
     const { email, password } = this.state;
+    
 
     // Create user data
     const newUser = {
@@ -45,6 +46,13 @@ export class Login extends Component {
   };
 
   render() {
+    let search = new URLSearchParams(this.props.location.search);
+    let message=""
+    let newMessage = search.get("message");
+    if (newMessage){
+message=newMessage
+    }
+
     return (
       <LoginView
         msg={this.state.msg}
@@ -53,6 +61,7 @@ export class Login extends Component {
         errorMessage={this.props.error.msg}
         errorId={this.props.error.id}
         processing={this.props.error.processing}
+        message={message}
       />
     );
   }
@@ -63,4 +72,7 @@ export const mapStateToProps = state => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps, { login, clearErrors })(Login);
+export default connect(
+  mapStateToProps,
+  { login, clearErrors },
+)(Login);

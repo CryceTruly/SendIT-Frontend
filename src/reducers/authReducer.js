@@ -7,6 +7,9 @@ import {
   LOGOUT_SUCCESS,
   REGISTER_SUCCESS,
   REGISTER_FAIL,
+  SENDING_RESET_EMAIL,
+  SENDING_RESET_EMAIL_FAILED,
+  SENDING_RESET_EMAIL_SUCCESS,
 } from "../actions/types";
 
 const initialState = {
@@ -14,6 +17,8 @@ const initialState = {
   isAuthenticated: null,
   isLoading: false,
   user: null,
+  reset_loading: false,
+  messages: [],
 };
 
 export default function (state = initialState, action) {
@@ -64,6 +69,23 @@ export default function (state = initialState, action) {
       user: null,
       isAuthenticated: false,
       isLoading: false,
+    };
+
+  case SENDING_RESET_EMAIL:
+    return {
+      ...state,
+      reset_loading: true,
+    };
+  case SENDING_RESET_EMAIL_FAILED:
+    return {
+      ...state,
+      reset_loading: false,
+    };
+  case SENDING_RESET_EMAIL_SUCCESS:
+    return {
+      ...state,
+      reset_loading: false,
+      messages: [action.payload.message],
     };
   default:
     return state;

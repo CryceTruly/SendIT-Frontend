@@ -60,6 +60,16 @@ ShallowWrapper {
               exact={true}
               path="/register"
             />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/change_password"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/reset_password"
+            />
             <Connect(PrivateRoute)
               component={[Function]}
               exact={true}
@@ -106,6 +116,16 @@ ShallowWrapper {
                 component={[Function]}
                 exact={true}
                 path="/register"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/change_password"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/reset_password"
               />
               <Connect(PrivateRoute)
                 component={[Function]}
@@ -167,6 +187,16 @@ ShallowWrapper {
                   exact={true}
                   path="/register"
                 />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/change_password"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/reset_password"
+                />
                 <Connect(PrivateRoute)
                   component={[Function]}
                   exact={true}
@@ -217,6 +247,16 @@ ShallowWrapper {
                     component={[Function]}
                     exact={true}
                     path="/register"
+                  />,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/change_password"
+                  />,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/reset_password"
                   />,
                   <Connect(PrivateRoute)
                     component={[Function]}
@@ -299,6 +339,32 @@ ShallowWrapper {
                   "props": Object {
                     "component": [Function],
                     "exact": true,
+                    "path": "/change_password",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/reset_password",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
                     "path": "/dashboard",
                   },
                   "ref": null,
@@ -364,6 +430,16 @@ ShallowWrapper {
                 exact={true}
                 path="/register"
               />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/change_password"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/reset_password"
+              />
               <Connect(PrivateRoute)
                 component={[Function]}
                 exact={true}
@@ -410,6 +486,16 @@ ShallowWrapper {
                   component={[Function]}
                   exact={true}
                   path="/register"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/change_password"
+                />
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/reset_password"
                 />
                 <Connect(PrivateRoute)
                   component={[Function]}
@@ -471,6 +557,16 @@ ShallowWrapper {
                     exact={true}
                     path="/register"
                   />
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/change_password"
+                  />
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/reset_password"
+                  />
                   <Connect(PrivateRoute)
                     component={[Function]}
                     exact={true}
@@ -521,6 +617,16 @@ ShallowWrapper {
                       component={[Function]}
                       exact={true}
                       path="/register"
+                    />,
+                    <Route
+                      component={[Function]}
+                      exact={true}
+                      path="/change_password"
+                    />,
+                    <Route
+                      component={[Function]}
+                      exact={true}
+                      path="/reset_password"
                     />,
                     <Connect(PrivateRoute)
                       component={[Function]}
@@ -591,6 +697,32 @@ ShallowWrapper {
                       "component": [Function],
                       "exact": true,
                       "path": "/register",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/change_password",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "exact": true,
+                      "path": "/reset_password",
                     },
                     "ref": null,
                     "rendered": null,

@@ -1,7 +1,5 @@
 import axios from "axios";
-import {
-  returnErrors,
-} from "./errorActions";
+import { returnErrors, clearErrors } from "./errorActions";
 // history.js
 import {
   USER_LOADED,
@@ -14,6 +12,9 @@ import {
   REGISTER_FAIL,
   ADD_MESSAGE,
   SOMETHING_LOADING,
+  SENDING_RESET_EMAIL,
+  SENDING_RESET_EMAIL_FAILED,
+  SENDING_RESET_EMAIL_SUCCESS,
 } from "./types";
 import BASE_URL from "../constants";
 // Check token & load user
@@ -37,8 +38,7 @@ export const loadUser = () => (dispatch) => {
     })
 
     .catch(
-
-      /* istanbul ignore next */(err) => {
+      /* istanbul ignore next */ (err) => {
         dispatch(returnErrors(err.response.data.message, err.response.status));
         dispatch({
           type: AUTH_ERROR,
@@ -48,13 +48,12 @@ export const loadUser = () => (dispatch) => {
 };
 
 // Register User
-export const register = ({
-  fullname,
-  phone_number,
-  username,
-  email,
-  password,
-}, routes) => (dispatch) => {
+export const register = (
+  {
+    fullname, phone_number, username, email, password, 
+  },
+  routes,
+) => (dispatch) => {
   dispatch({
     type: SOMETHING_LOADING,
   });
@@ -83,22 +82,17 @@ export const register = ({
       dispatch({
         type: ADD_MESSAGE,
         payload: {
-          msg: "Account created successfully,You may login now",
+          msg: "Account created successfully,please check your email to activate your account",
           status: "Success",
           id: "LOGOUT-SUCCESS",
         },
-
       }),
-
-
       routes.history.push("/login");
     })
     .catch(
       /* istanbul ignore next */
       (err) => {
-        dispatch(
-          returnErrors(err.response.data.message, err.response.status, "REGISTER_FAIL"),
-        );
+        dispatch(returnErrors(err.response.data.message, err.response.status, "REGISTER_FAIL"));
         dispatch({
           type: REGISTER_FAIL,
         });
@@ -125,18 +119,18 @@ export const login = ({ email, password }, routes) => (dispatch) => {
   return axios
     .post(`${BASE_URL}/auth/login`, body, config)
     .then((res) => {
-      localStorage.setItem("auth_token", res.data.auth_token);
-      localStorage.setItem("user_id", res.data.user.user_id);
+      console.log(res.data.data.auth_token);
+
+      localStorage.setItem("auth_token", res.data.data.auth_token);
+      localStorage.setItem("user_id", res.data.data.user.user_id);
       dispatch({
         type: LOGIN_SUCCESS,
-        payload: res.data,
+        payload: res.data.data,
       });
       routes.history.push("/");
     })
     .catch((err) => {
-      dispatch(
-        returnErrors(err.response.data.message, err.response.status, "LOGIN_FAIL"),
-      );
+      dispatch(returnErrors(err.response.data.message, err.response.status, "LOGIN_FAIL"));
       dispatch({
         type: LOGIN_FAIL,
       });
@@ -152,9 +146,65 @@ export const logout = props => (dispatch) => {
       status: "Success",
       id: "LOGOUT-SUCCESS",
     },
-
   });
   dispatch({
     type: LOGOUT_SUCCESS,
   });
+};
+
+export const requestResetEmail = email => (dispatch) => {
+  dispatch({
+    type: SENDING_RESET_EMAIL,
+  });
+
+  const body = JSON.stringify({ email });
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  axios
+    .post(`${BASE_URL}/auth/reset_password/`, body, config)
+    .then((res) => {
+      console.log(res);
+
+      dispatch({ type: SENDING_RESET_EMAIL_SUCCESS, payload: res.data, clearErrors });
+    })
+    .catch((err) => {
+      dispatch(
+        returnErrors(err.response.data.message, err.response.status, "SENDING_RESET_EMAIL_FAILED"),
+      );
+      dispatch({
+        type: SENDING_RESET_EMAIL_FAILED,
+      });
+      console.log(err);
+    });
+};
+
+export const updatePassword = (password, token) => (dispatch) => {
+  dispatch({
+    type: SENDING_RESET_EMAIL,
+  });
+
+  const body = JSON.stringify({ password, token });
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  axios
+    .post(`${BASE_URL}/auth/password_change`, body, config)
+    .then((res) => {
+      dispatch({ type: SENDING_RESET_EMAIL_SUCCESS, payload: res.data, clearErrors });
+    })
+    .catch((err) => {
+      dispatch(
+        returnErrors(err.response.data.message, err.response.status, "SENDING_RESET_EMAIL_FAILED"),
+      );
+      dispatch({
+        type: SENDING_RESET_EMAIL_FAILED,
+      });
+    });
 };

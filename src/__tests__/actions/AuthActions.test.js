@@ -2,12 +2,17 @@ import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import moxios from "moxios";
 import {
-  login, logout, register, loadUser,
+  login, logout, register, loadUser, 
 } from "../../actions/authActions";
 
 import {
-  LOGIN_FAIL, LOGIN_SUCCESS, LOGOUT_SUCCESS, ADD_MESSAGE, REGISTER_FAIL,
-  REGISTER_LOADING, REGISTER_SUCCESS,
+  LOGIN_FAIL,
+  LOGIN_SUCCESS,
+  LOGOUT_SUCCESS,
+  ADD_MESSAGE,
+  REGISTER_FAIL,
+  REGISTER_LOADING,
+  REGISTER_SUCCESS,
 } from "../../actions/types";
 
 const middlewares = [thunk];
@@ -17,7 +22,6 @@ describe("authentication process", () => {
   const props = {
     history: {
       push: jest.fn(),
-
     },
   };
   beforeEach(() => {
@@ -35,16 +39,17 @@ describe("authentication process", () => {
       requestM.respondWith({
         status: 200,
         response: {
-          auth_token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTY1NjM2NDksInVzZX",
-          user: {
-            email: "aacryce@gmail.com",
-            fullname: "AHEBWA CHRIS",
-            is_admin: false,
-            joined: "Sat, 20 Apr 2019 07:36:20 GMT",
-            telephone_number: "0758939187",
-            user_id: 10,
-            username: "crycetrulytest",
-
+          data: {
+            auth_token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTY1NjM2NDksInVzZX",
+            user: {
+              email: "aacryce@gmail.com",
+              fullname: "AHEBWA CHRIS",
+              is_admin: false,
+              joined: "Sat, 20 Apr 2019 07:36:20 GMT",
+              telephone_number: "0758939187",
+              user_id: 10,
+              username: "crycetrulytest",
+            },
           },
         },
       });
@@ -68,7 +73,6 @@ describe("authentication process", () => {
       },
     ];
     const valiData = {
-
       email: "jerry@gmail.com",
       password: "Roselyn123",
     };
@@ -99,7 +103,6 @@ describe("authentication process", () => {
     const invalidData = {
       email: "",
       password: "",
-
     };
     return store.dispatch(login(invalidData, props)).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
@@ -115,14 +118,15 @@ describe("authentication process", () => {
           msg: "You have successfuly logged out",
           status: "Success",
           id: LOGOUT_SUCCESS,
-
         },
       });
     });
     const expectedActions = [
       {
         payload: {
-          id: "LOGOUT-SUCCESS", msg: "You have successfuly logged out", status: "Success",
+          id: "LOGOUT-SUCCESS",
+          msg: "You have successfuly logged out",
+          status: "Success",
         },
       },
       { type: "ADD_MESSAGE" },
@@ -133,7 +137,6 @@ describe("authentication process", () => {
     expect(store.getActions()).toBeDefined();
   });
 
-
   it("Should Register A User successfully", () => {
     const store = mockStore({});
     moxios.wait(() => {
@@ -141,20 +144,30 @@ describe("authentication process", () => {
       requestM.respondWith({
         status: 201,
         response: {
-
           message: "Please visit your email to verify your account",
           status: "Success",
-
         },
       });
     });
     const expectedActions = [
       { type: "SOMETHING_LOADING" },
       {
-        payload: { id: "LOGOUT_SUCCESS", msg: "You have successfuly logged out", status: "Success" },
+        payload: {
+          id: "LOGOUT_SUCCESS",
+          msg: "You have successfuly logged out",
+          status: "Success",
+        },
         type: "REGISTER_SUCCESS",
-      }, { payload: { id: "LOGOUT-SUCCESS", msg: "Account created successfully,You may login now", status: "Success" }, type: "ADD_MESSAGE" }];
-
+      },
+      {
+        payload: {
+          id: "LOGOUT-SUCCESS",
+          msg: "Account created successfully,please check your email to activate your account",
+          status: "Success",
+        },
+        type: "ADD_MESSAGE",
+      },
+    ];
 
     const registerData = {
       email: "aacryce@gmaAil.com",
@@ -167,7 +180,6 @@ describe("authentication process", () => {
       expect(store.getActions()).toEqual(expectedActions);
     });
   });
-
 
   it("Should fetch a user", () => {
     const store = mockStore({});
@@ -184,7 +196,13 @@ describe("authentication process", () => {
         },
       });
     });
-    const expectedActions = [{ type: "USER_LOADING" }, { payload: { message: "Please visit your email to verify your account", status: "Success" }, type: "USER_LOADED" }];
+    const expectedActions = [
+      { type: "USER_LOADING" },
+      {
+        payload: { message: "Please visit your email to verify your account", status: "Success" },
+        type: "USER_LOADED",
+      },
+    ];
     return store.dispatch(loadUser()).then(() => {
       expect(store.getActions()).toBeDefined();
     });
