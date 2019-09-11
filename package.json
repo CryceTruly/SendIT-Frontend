@@ -80,7 +80,7 @@
     "tslint": "^5.14.0",
     "tslint-loader": "^3.5.4",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.3.4000",
+    "typescript": "^3.6.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
