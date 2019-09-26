@@ -1,6 +1,7 @@
 import axios from "axios";
 import { returnErrors, clearErrors } from "./errorActions";
-// history.js
+
+
 import {
   USER_LOADED,
   USER_LOADING,
@@ -119,8 +120,6 @@ export const login = ({ email, password }, routes) => (dispatch) => {
   return axios
     .post(`${BASE_URL}/auth/login`, body, config)
     .then((res) => {
-      console.log(res.data.data.auth_token);
-
       localStorage.setItem("auth_token", res.data.data.auth_token);
       localStorage.setItem("user_id", res.data.data.user.user_id);
       dispatch({
