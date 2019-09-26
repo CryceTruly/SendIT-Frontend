@@ -6,7 +6,7 @@
     "start": "npm run build && node server.js",
     "dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "jest",
+    "test": "jest --u",
     "lint": "eslint . --ignore-path .gitignore",
     "fix": "eslint . --ignore-path .gitignore --fix",
     "test:coverage": "jest --coverage --colors"

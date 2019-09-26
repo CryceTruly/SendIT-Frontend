@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/CryceTruly/si-react.svg?branch=develop)](https://travis-ci.org/CryceTruly/si-react) [![Test Coverage](https://api.codeclimate.com/v1/badges/6d2f005cd11ce0aa7fb7/test_coverage)](https://codeclimate.com/github/CryceTruly/si-react/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/6d2f005cd11ce0aa7fb7/maintainability)](https://codeclimate.com/github/CryceTruly/si-react/maintainability)
+[![Build Status](https://travis-ci.org/CryceTruly/SendIT-Frontend.svg?branch=develop)](https://travis-ci.org/CryceTruly/SendIT-Frontend) [![Test Coverage](https://api.codeclimate.com/v1/badges/c0f9d9fac85dfaf6f959/test_coverage)](https://codeclimate.com/github/CryceTruly/SendIT-Frontend/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c0f9d9fac85dfaf6f959/maintainability)](https://codeclimate.com/github/CryceTruly/SendIT-Frontend/maintainability)
 
 ## What is SendIT? :open_mouth:
 
