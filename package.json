@@ -42,7 +42,7 @@
     "react-redux": "^6.0.1",
     "react-router-dom": "^5.1.1",
     "react-router-redux": "^4.0.8",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "^3.4.3",
     "react-test-renderer": "^16.8.6",
     "react-time-ago": "^5.0.2",
     "reactstrap": "^8.0.1",
